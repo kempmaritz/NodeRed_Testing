@@ -2,12 +2,473 @@
     {
         "id": "6e2de0a8.936f6",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "GeyserWorx Testing",
         "disabled": false,
-        "info": ""
+        "info": "gwCECC50E32854A4"
     },
     {
-        "id": "3ee5b371.0f9dbc",
+        "id": "81bb5ec6.c700e",
+        "type": "tab",
+        "label": "Recovered Nodes",
+        "disabled": false,
+        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
+    },
+    {
+        "id": "360f140a.f42c3c",
+        "type": "tab",
+        "label": "Recovered Nodes",
+        "disabled": false,
+        "info": "The nodes on this flow were missing a valid flow id when they were imported. They have been added to this flow so you can either restore or delete them."
+    },
+    {
+        "id": "ea070992.9873a8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "samworx.dedicated.co.za",
+        "port": "1883",
+        "clientid": "localhost_testing",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "d746eaa8.c41a38",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "76347d9a.2c0094",
+        "type": "MSSQL-UCGv2-CN",
+        "z": "",
+        "name": "SQL",
+        "server": "192.168.1.25",
+        "port": "1433",
+        "encyption": false,
+        "database": "30Snipe",
+        "pool": "32",
+        "connectionTimeout": "16000",
+        "requestTimeout": "15000"
+    },
+    {
+        "id": "6f4991fa.a7d08",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e55ad75.a83bc28",
+        "type": "ui_tab",
+        "z": "",
+        "name": "GeyserWorx",
+        "icon": "fa-shower",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fbbc4141.094d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Dashboard",
+        "tab": "e55ad75.a83bc28",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe1ee148.0ce71",
+        "type": "ui_group",
+        "z": "",
+        "name": "Settings",
+        "tab": "e55ad75.a83bc28",
+        "order": 2,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "6952e3f6.75037c",
+        "type": "debug",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c49c78f7.8bebe8",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "gwCECC50E32854A4",
+        "payloadType": "str",
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "ec7a891a.9977a8"
+            ]
+        ]
+    },
+    {
+        "id": "ec7a891a.9977a8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "flow.set(\"unit\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e58386ab.8fd6d8",
+        "type": "mqtt-in-dynamicsub",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "qos": "2",
+        "datatype": "json",
+        "unsubscribe-after-first-msg-recv": false,
+        "debug-subscribe": false,
+        "broker": "ea070992.9873a8",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "3b16a50a.25a6da"
+            ]
+        ]
+    },
+    {
+        "id": "87ca802e.e8dc3",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "v": "unit",
+                "vt": "flow"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "2acf6900.9a4388"
+            ]
+        ]
+    },
+    {
+        "id": "2acf6900.9a4388",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Compile Topic",
+        "func": "// GW/gwCECC50E32854A4/#\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GW/\"+unit+\"/#\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "e58386ab.8fd6d8"
+            ]
+        ]
+    },
+    {
+        "id": "3b16a50a.25a6da",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Process JSON",
+        "func": "/*#################################################################################################################################################################################################\n\tGLOBAL VARIABLES\n#################################################################################################################################################################################################*/\n\t// Message Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topic\t\t\t= msg.topic;\n\t\tvar payload\t\t\t= msg.payload;\t//\n\t\tvar unitID          = flow.get(\"unit\");\n\t\tmsg.payload         = null;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Topic Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar systemType\t\t= \"\";\t\t\t// GW\n\t\tvar systemID\t\t= \"\";\t\t\t// gw2E2C3AE83E76C0\n\t\tvar subID_1\t\t\t= \"\";\t\t\t// 1\n\t\tvar subID_2\t\t\t= \"\";\t\t\t// A\n\t\tvar subID_3\t\t\t= \"\";\t\t\t//\n\t\tvar subID_4\t\t\t= \"\";\t\t\t//\n\t\tvar subID_5\t\t\t= \"\";\t\t\t//\n\t\tvar subID_6\t\t\t= \"\";\t\t\t//\n\t\tvar subID_7\t\t\t= \"\";\t\t\t//\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Index Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topicLength\t\t= topic.length;\n\t\tvar topicSeperator\t= topic.indexOf(\"/\");\n\t\tvar indexGW_ID\t\t= -1;\n\t\tvar indexGW_Unit\t= -1;\n\t\tvar indexGW_Func\t= -1;\n\t\tvar index_5\t\t\t= -1;\n\t\tvar index_6\t\t\t= -1;\n\t\tvar index_7\t\t\t= -1;\n\t\tvar index_8\t\t\t= -1;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Memory Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar\t_unitID;\n\t\tvar\t_geyserDataSN;\n\t\tvar\t_geyserData;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Time & Date variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar date\t\t\t= new Date();\n\n\t\tvar system_Year\t\t= String( date.getFullYear() );\n\t\tvar system_Month\t= String( date.getMonth() + 1 );\n\t\tvar system_Day\t\t= String( date.getDate() );\n\t\tvar system_Hour\t\t= String( date.getHours() );\n\t\tvar system_Minute\t= String( date.getMinutes() );\n\t\tvar system_Second\t= String( date.getSeconds() );\n\n\t\tsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\n\t\tsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\n\t\tsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\n\t\tsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\n\t\tsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\n\t\tsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\n\t\tvar system_time\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day + \" \" + system_Hour + \":\" + system_Minute;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Output Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t// Output array\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output\t\t= [];\n\t\t//-----------------------------------------------------------------------------------------\n\n\t\t// Output array components\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output_sys_t;\n\t\t\tvar output_unitUpdate_CS\t= null;\n\t\t\tvar output_debug\t        = null;\n\t\t//-----------------------------------------------------------------------------------------\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n/*#################################################################################################################################################################################################\n\tFUNCTIONS\n#################################################################################################################################################################################################*/\n\t// Topic Breakdown\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tsystemType\t= topic;\n\n\t\tif (topicSeperator >= 0)\n\t\t{\n\t\t\tsystemType\t= topic.slice(0, topicSeperator);\n\t\t\tsystemID\t= topic.slice(topicSeperator + 1);\n\n\t\t\tindexGW_ID\t\t= topic.indexOf(\"/\", topicSeperator + 1);\n\t\t\tif (indexGW_ID >= 0)\n\t\t\t{\n\t\t\t\tsystemID\t= topic.slice(topicSeperator + 1, indexGW_ID);\n\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1);\n\n\t\t\t\tindexGW_Unit\t= topic.indexOf(\"/\", indexGW_ID + 1);\n\t\t\t\tif (indexGW_Unit >= 0)\n\t\t\t\t{\n\t\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1, indexGW_Unit);\n\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1);\n\n\t\t\t\t\tindexGW_Func\t= topic.indexOf(\"/\", indexGW_Unit + 1);\n\t\t\t\t\tif (indexGW_Func >= 0)\n\t\t\t\t\t{\n\t\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1, indexGW_Func);\n\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1);\n\n\t\t\t\t\t\tindex_5\t\t= topic.indexOf(\"/\", indexGW_Func + 1);\n\t\t\t\t\t\tif (index_5 >= 0)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1, index_5);\n\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1);\n\n\t\t\t\t\t\t\tindex_6\t\t= topic.indexOf(\"/\", index_5 + 1);\n\t\t\t\t\t\t\tif (index_6 >= 0)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1, index_6);\n\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1);\n\n\t\t\t\t\t\t\t\tindex_7\t\t= topic.indexOf(\"/\", index_6 + 1);\n\t\t\t\t\t\t\t\tif (index_7 >= 0)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1, index_7);\n\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1);\n\n\t\t\t\t\t\t\t\t\tindex_8\t\t= topic.indexOf(\"/\", index_7 + 1);\n\t\t\t\t\t\t\t\t\tif (index_8 >= 0)\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1, index_8);\n\t\t\t\t\t\t\t\t\t\tsubID_7\t\t= topic.slice(index_8 + 1);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Contents Generation\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tif( topicSeperator > -1 )\n\t\t{\n\t\t\tif( systemType === \"GW\" )\n\t\t\t{\n\t\t\t\tif( (indexGW_ID > -1)&&( indexGW_Unit > -1 )&&(systemID === unitID) )\n\t\t\t\t{\n\t\t\t\t    output_debug    = msg;\n\t\t\t\t\t_unitID\t\t\t= systemID;\n\t\t\t\t\t_geyserDataSN\t= \"_geyserTestData_gw2E2C3AE83E76C0\";\n\n\t\t\t\t\t_geyserData\t\t= global.get(_geyserDataSN)||{\n\t\t\t\t\t\t\t\t\t\t\"SN\":\t_unitID,\n\t\t\t\t\t\t\t\t\t\t\"CS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"S\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"I\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"t\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t    \t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"A\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"AVG\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"G1\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"G2\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t    }\n\t\t\t\t\t\n\t\t\t\t\tif( (subID_1 === \"S\")&&( subID_2 === \"CW\" ) )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( ( _geyserData.CS.S !== payload.S )||( _geyserData.CS.I !== payload.I ) )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t_geyserData.CS.S\t=\tpayload.S;\n\t\t\t\t\t\t\t_geyserData.CS.I\t=\tpayload.I;\n\t\t\t\t\t\t\t_geyserData.CS.t\t=\t{\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n                    else if( subID_1 === \"1\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.G\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t}   // end if unit 1\n                    else if( subID_1 === \"2\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.G\t\t\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\n\t\t\t\t\t}   // end if unit 2\n\n                    // Reset Variables to 0 if Comms is lost\n    \t\t\t    if(_geyserData.CS.S === 0)\n    \t\t\t    {\n    \t\t\t\t\t_geyserData.G1.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G1.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G1.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G1.I.PV\t    = 0;\n    \t\t\t\t\t_geyserData.G2.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G2.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G2.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G2.I.PV\t    = 0;\n    \t\t\t    }\n    \n    \t\t\t\tglobal.set(\"_geyserTestData_gw2E2C3AE83E76C0\", _geyserData);\n    \t\t\t\tflow.set(\"unit\", unitID)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\nmsg.payload = _geyserData; // _geyserData\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [
+                "6952e3f6.75037c"
+            ]
+        ]
+    },
+    {
+        "id": "bda96dd9.aac59",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "Connection",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "61e7593c.711258"
+            ]
+        ]
+    },
+    {
+        "id": "33d32594.a6d1ba",
+        "type": "comment",
+        "z": "6e2de0a8.936f6",
+        "name": "Request Data from Unit",
+        "info": "",
+        "x": 120,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "56e95b8b.bb1e44",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "Update",
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "GWA/gw8684F3EB1034EA/U",
+        "payload": "",
+        "payloadType": "str",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "363a59ee.789fa6",
+                "ca340238.4a9f2"
+            ]
+        ]
+    },
+    {
+        "id": "363a59ee.789fa6",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Get Analogues",
+        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/1/A\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "874baa5e.769658"
+            ]
+        ]
+    },
+    {
+        "id": "ca340238.4a9f2",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Get Update",
+        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/U\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "874baa5e.769658"
+            ]
+        ]
+    },
+    {
+        "id": "61e7593c.711258",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Get Connection Status",
+        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/S/CW\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "874baa5e.769658"
+            ]
+        ]
+    },
+    {
+        "id": "874baa5e.769658",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 530,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "774a510d.5fe66",
         "type": "inject",
         "z": "6e2de0a8.936f6",
         "name": "",
@@ -23,32 +484,1630 @@
         "repeat": "",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
+        "onceDelay": "0.3",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 60,
+        "x": 720,
+        "y": 260,
         "wires": [
             [
-                "7fbdf8ee.98aa38"
+                "5b9e4899.b61108",
+                "aabff94f.47e538"
             ]
         ]
     },
     {
-        "id": "7fbdf8ee.98aa38",
-        "type": "debug",
+        "id": "5b9e4899.b61108",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "G1 - Analog",
+        "func": "msg.payload = global.get(\"_geyserTestData_gw2E2C3AE83E76C0\");\nvar dateValue = msg.payload.CS.t.Y + msg.payload.CS.t.M + msg.payload.CS.t.D;\nvar timeValue = msg.payload.CS.t.h +\":\"+ msg.payload.CS.t.m +\":\"+ msg.payload.CS.t.s;\nvar connectionServer = msg.payload.CS.S;\nvar connectionWifi = msg.payload.CS.I;\n\nvar G1temperaturePCB = msg.payload.G1.T.PCB;\nvar G1temperatureGeyser = msg.payload.G1.T.G;\n\nvar G1currentAC = msg.payload.G1.I.AC;\nvar G1currentPV = msg.payload.G1.I.PV;\nvar date\t\t\t= new Date();\nvar system_Year\t\t= String( date.getFullYear() );\nvar system_Month\t= String( date.getMonth() + 1 );\nvar system_Day\t\t= String( date.getDate() );\nvar system_Hour\t\t= String( date.getHours() );\nvar system_Minute\t= String( date.getMinutes() );\nvar system_Second\t= String( date.getSeconds() );\n\nsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\nsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\nsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\nsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\nsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\nsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\nvar system_date\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day;\nvar system_time\t\t= system_Hour + \":\" + system_Minute + \":\" + system_Second;\n\nvar ts = msg.timestamp || Date.now();\nvar d = new Date(ts);\ndt = d.toISOString();\ne = d.getTime();\n\nvar a = d.toJSON().split(/\\D+/);\nvar hrs = a[3];\nvar min = a[4];\nvar sec = a[5];\nvar year = a[0];\nvar month = a[1];\nvar day = a[2];\n\nvar logDate = (year+\"-\"+month+\"-\"+day);\nvar logTime = (hrs+\":\"+min+\":\"+sec);\n\nvar insertSelect = \"INSERT INTO [dbo].[geyserWorxData]([GW_Unit],[entrydate],[entrytime],[CS_S],[CS_I],[CS_Date],[CS_Time],[T_PCB],[T_G],[I_AC],[I_PV],[V_AC],[V_PV],[T_PCB_AVG],[T_G_AVG],[I_AC_AVG],[I_PV_AVG],[V_AC_AVG],[V_PV_AVG])\";\nvar values = \"VALUES('G1_gw2E2C3AE83E76C0','\"+system_date+\"','\"+system_time+\"',\"+connectionServer+\",\"+connectionWifi+\",'\"+dateValue+\"','\"+timeValue+\"',\";\nvar G1values = G1temperaturePCB+\",\"+G1temperatureGeyser+\",\"+G1currentAC+\",\"+G1currentPV+\",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0)\";\n\nvar outputs = [];\nvar sql;\nsql = insertSelect + \" \" + values + G1values;\nmsg.payload=sql;\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"Time: \"+system_time});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 890,
+        "y": 260,
+        "wires": [
+            [
+                "2df30f96.c610f"
+            ]
+        ]
+    },
+    {
+        "id": "aabff94f.47e538",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "G1 - Power",
+        "func": "var date\t\t\t= new Date();\nvar system_Year\t\t= String( date.getFullYear() );\nvar system_Month\t= String( date.getMonth() + 1 );\nvar system_Day\t\t= String( date.getDate() );\nvar system_Hour\t\t= String( date.getHours() );\nvar system_Minute\t= String( date.getMinutes() );\nvar system_Second\t= String( date.getSeconds() );\n\nsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\nsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\nsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\nsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\nsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\nsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\nvar system_date\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day;\nvar system_time\t\t= system_Hour + \":\" + system_Minute + \":\" + system_Second;\n\nvar payload = global.get(\"_geyserTestData_gw2E2C3AE83E76C0\");\n\nvar Raw_AC = payload.G1.Pt.Raw.I2AC;\nvar Raw_PV = payload.G1.Pt.Raw.I2PV;\nvar kWh_AC = payload.G1.Pt.kWh.AC;\nvar kWh_PV = payload.G1.Pt.kWh.PV;\n\nvar ts = msg.timestamp || Date.now();\nvar d = new Date(ts);\ndt = d.toISOString();\ne = d.getTime();\n\nvar a = d.toJSON().split(/\\D+/);\nvar h = a[3];\nvar m = a[4];\nvar s = a[5];\nvar y = a[0];\nvar month = a[1];\nvar day = a[2];\n\nvar logDate = (y+\"-\"+month+\"-\"+day);\nvar logTime = (h+\":\"+m+\":\"+s);\n\nvar insertSelect = \"INSERT INTO [dbo].[geyserWorxPowerData]([GW_Unit],[entryDate],[entryTime],[Pt_Raw_AC],[Pt_Raw_PV],[Pt_kWh_AC],[Pt_kWh_PV])\";\nvar values = \"VALUES ('G1_gw2E2C3AE83E76C0','\"+system_date+\"','\"+system_time+\"',\"+Raw_AC+\",\"+Raw_PV+\",\"+kWh_AC+\",\"+kWh_PV+\")\";\n\nmsg.payload = insertSelect + \" \" + values;\nnode.status({fill:\"green\",shape:\"ring\",text:\"Time: \"+system_time});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 890,
+        "y": 300,
+        "wires": [
+            [
+                "2df30f96.c610f"
+            ]
+        ]
+    },
+    {
+        "id": "2df30f96.c610f",
+        "type": "MSSQL-UCGv2",
+        "z": "6e2de0a8.936f6",
+        "mssqlCN": "76347d9a.2c0094",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1080,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8be3dbec.3b3dc8",
+        "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 310,
-        "y": 60,
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 860,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbed780b.7eda28",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACOT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 860,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcbd5599.6b1f48",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"PVT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 860,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "716e686d.0b5e68",
+        "type": "comment",
+        "z": "6e2de0a8.936f6",
+        "name": "Dashboard 1",
+        "info": "",
+        "x": 80,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8851fe0b.7cb81",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 500,
+        "wires": [
+            [
+                "bc34ea3.608a218"
+            ]
+        ]
+    },
+    {
+        "id": "96a180df.a6328",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nvar temperature;    // 0-100\nvar setpoint;       // 0-100\nvar gwState;        // \"heating\", \"cooling\"\nvar leaf;\nvar away = flow.get(\"enabled1\") || 0;\nvar _output = {};\n\n\nif(payload.G1.STS.O_PV===1){gwState = \"cooling\";}\nif(payload.G1.STS.O_AC===1){gwState = \"heating\";}\nif(payload.G1.STS.O_PV===0 && payload.G1.STS.O_AC===0){gwState = \"Off\";}\n\n//if(payload.G1.SET.O.PVM===1 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===0){gwState = \"Off\";}\n\ntemperature = parseInt(payload.G1.T.G);\nglobal.set(\"GW_Temperature\", temperature);\nif (gwState == \"heating\")\n{\n    setpoint = parseInt(payload.G1.SET.S.ACT);\n}\nelse if(gwState == \"cooling\")\n{\n    setpoint = parseInt(payload.G1.SET.S.PVT);\n}\n\nleaf = 0;\n//away = 0;   // holiday mode\n\nvar output\t= [];\n\nvar _output = {\n        \"payload\": {\n\t\t\t\t    \"temperature\":setpoint,\n\t\t\t\t    \"setpoint\":temperature,\n\t\t\t\t    \"state\":gwState,\n\t\t\t\t    \"leaf\":leaf,\n\t\t\t\t    \"away\":away\n        }\n};\noutput = [\n\t\t\t_output\n\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 660,
+        "wires": [
+            [
+                "4a1d86b9.27b458"
+            ]
+        ]
+    },
+    {
+        "id": "65d64cf6.e6a4a4",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "msg.payload=1\nmsg.text = \"GeyserWorx\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "c5110632.f2e218"
+            ]
+        ]
+    },
+    {
+        "id": "3f230999.6a5516",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1ACkW\")||0;\nmsg.text = \"AC: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 700,
+        "wires": [
+            [
+                "7f82f9e1.9cfab8"
+            ]
+        ]
+    },
+    {
+        "id": "bc34ea3.608a218",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "msg.payload = \"gw2E2C3AE83E76C0\";\nmsg.unit = 1;\nmsg.desc = \"Test 1\"\nmsg.data = global.get(\"_geyserTestData_\"+msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "65d64cf6.e6a4a4",
+                "96a180df.a6328",
+                "3f230999.6a5516",
+                "7641f2b5.b5b8ac",
+                "824f013.56817",
+                "7a89280a.5da208",
+                "77bb160a.b63398",
+                "ad1a9940.a428e8",
+                "2074ebf6.899e94",
+                "695cc3c8.fc92bc",
+                "5ccfc62c.72c568",
+                "c60215e7.5c1398",
+                "dc153a8d.d532e8",
+                "3f3b3e4b.18fcf2",
+                "4e817d5c.0f8e84",
+                "95c7e7bd.ee80a8",
+                "ca2e3c4.5abf6c",
+                "9fc2f20d.afb29"
+            ]
+        ]
+    },
+    {
+        "id": "c8bd71be.6aa8f",
+        "type": "rbe",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "fcbd5599.6b1f48"
+            ]
+        ]
+    },
+    {
+        "id": "7641f2b5.b5b8ac",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1PVkW\")||0;\nmsg.text = \"PV: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "73f55b93.59fcc4"
+            ]
+        ]
+    },
+    {
+        "id": "824f013.56817",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1ACCost\")||0;\nmsg.text = \"AC cost: <b>R \"+payload+\"</b>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 740,
+        "wires": [
+            [
+                "e52f5dd2.ccc3a"
+            ]
+        ]
+    },
+    {
+        "id": "7a89280a.5da208",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1PVCost\")||0;\nmsg.text = \"PV saving: <b>R \"+payload+\"</b>\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 760,
+        "wires": [
+            [
+                "b5e233b.fd7e2d"
+            ]
+        ]
+    },
+    {
+        "id": "77bb160a.b63398",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1PVUsage\")||0;\nmsg.text = \"PV usage: <b>\"+payload+\" </b>%\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [
+                "3a3e523a.4bb81e"
+            ]
+        ]
+    },
+    {
+        "id": "ad1a9940.a428e8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = flow.get(\"G1Carbon\")||0;\nmsg.text = \"CO2: <b>\"+payload+\"</b> tCO2e\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 800,
+        "wires": [
+            [
+                "ca24fd24.0e039"
+            ]
+        ]
+    },
+    {
+        "id": "2074ebf6.899e94",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nvar alarms;\n\nif(payload.G1.STS.Tr_Th==1 || payload.G1.STS.Tr_Te==1 || payload.G1.STS.Tr_DR==1 || payload.G1.STS.Tr_CS==1 || payload.G1.STS.Tr_PCB==1 || payload.G1.STS.A_Sc==1 || payload.G1.STS.A_An==1 || payload.G1.STS.A_DT==1)\n{\n    if(payload.G1.STS.Tr_Th==1){alarms=\"Over Temperature\"}\n    if(payload.G1.STS.Tr_Te==1){alarms=\"Low Temperature\"}\n    if(payload.G1.STS.Tr_DR==1){alarms=\"Dry Burn Alarm\"}\n    if(payload.G1.STS.Tr_CS==1){alarms=\"Contactor Fault\"}\n    if(payload.G1.STS.Tr_PCB==1){alarms=\"PCB Temperature Hi\"}\n    if(payload.G1.STS.A_Sc==1){alarms=\"Scale Build-up\"}\n    if(payload.G1.STS.A_An==1){alarms=\"Anode Depletion Alarm\"}\n    if(payload.G1.STS.A_DT==1){alarms=\"Driptray Water Alarm\"}\n}\nelse\n{\n    alarms = \"None\";\n}\n\nmsg.text = \"Alarms: <b>\"+alarms+\"</b>\";\nif(alarms != \"None\")\n{\n    msg.payload = \"1\";\n}\nelse\n{\n    msg.payload = \"0\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "be70ae9d.1682c"
+            ]
+        ]
+    },
+    {
+        "id": "695cc3c8.fc92bc",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nif(payload.G1.STS.O_AC===0)\n{\n    msg.topic = \"AC:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"AC:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_AC;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "8f3cdbbe.456618"
+            ]
+        ]
+    },
+    {
+        "id": "5ccfc62c.72c568",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nif(payload.G1.STS.O_PV===0)\n{\n    msg.topic = \"PV:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"PV:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_PV;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "4578b6ee.9ac6d8"
+            ]
+        ]
+    },
+    {
+        "id": "c60215e7.5c1398",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nif(payload.G1.SET.O.ACO===0)\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.SET.O.ACO;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "a271c8d0.c90f98"
+            ]
+        ]
+    },
+    {
+        "id": "dc153a8d.d532e8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nmsg.topic       = \"AC: \"+payload.G1.SET.S.ACT;\nmsg.payload     = payload.G1.SET.S.ACT;\nmsg.background  = payload.G1.SET.O.ACM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 580,
+        "wires": [
+            [
+                "367905e1.8df65a"
+            ]
+        ]
+    },
+    {
+        "id": "3f3b3e4b.18fcf2",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nmsg.topic       = \"Boost: \"+payload.G1.SET.S.ACOT;\nmsg.payload     = payload.G1.SET.S.ACOT;\nmsg.background  = payload.G1.SET.O.ACO == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "d0e644a9.855178"
+            ]
+        ]
+    },
+    {
+        "id": "4e817d5c.0f8e84",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nmsg.topic       = \"PV: \"+payload.G1.SET.S.PVT;\nmsg.payload     = payload.G1.SET.S.PVT;\nmsg.background  = payload.G1.SET.O.PVM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 620,
+        "wires": [
+            [
+                "d96d1a80.0ae378"
+            ]
+        ]
+    },
+    {
+        "id": "95c7e7bd.ee80a8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "//var payload = msg.data;\n//var I = parseFloat(payload.G1.I.AC);\nvar I = parseFloat(flow.get(\"AC_I\"));\n\nmsg.text = \"AC: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 860,
+        "wires": [
+            [
+                "ee973f35.9815d"
+            ]
+        ]
+    },
+    {
+        "id": "ca2e3c4.5abf6c",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nvar I = parseFloat(payload.G1.I.PV);\nmsg.text = \"PV: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 880,
+        "wires": [
+            [
+                "ed62c97b.1d7e68"
+            ]
+        ]
+    },
+    {
+        "id": "9fc2f20d.afb29",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.data;\nvar I = parseInt(payload.G1.T.PCB);\nmsg.text = \"PCB: <b>\"+I+\"</b>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "bcb46b7e.c68578"
+            ]
+        ]
+    },
+    {
+        "id": "a19a4c14.f0eb7",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "Reset Alarms",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 570,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "b0da8ce1.9f192",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var unit = flow.get(\"unit\");\nvar payload = msg.payload;\nvar output\t= [];\n// GWR/gwCECC50E32854A4/1/STS\nvar topic = \"GWR/\"+unit+\"/1/STS\";\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"A\":{\n    \t\t\t\t    \"Tr_DR\": \"\",\n    \t\t\t\t    \"A_Sc\": \"\",\n    \t\t\t\t    \"A_An\": \"\",\n    \t\t\t\t    \"A_DT\": \"\"\n    \t\t\t\t}\n        },\n    \t\"topic\": topic\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nnode.status({text:msg.payload});\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 940,
+        "wires": [
+            [
+                "a19a4c14.f0eb7"
+            ]
+        ]
+    },
+    {
+        "id": "367905e1.8df65a",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "AC Setpoint",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "8166bb4.62a0e48"
+            ]
+        ]
+    },
+    {
+        "id": "d0e644a9.855178",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "Boost Setpoint",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [
+                "1fb2a2ed.4b8a1d"
+            ]
+        ]
+    },
+    {
+        "id": "d96d1a80.0ae378",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "PV Setpoint",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "c8bd71be.6aa8f"
+            ]
+        ]
+    },
+    {
+        "id": "50061e96.8b0e5",
+        "type": "ui_button",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "group": "fbbc4141.094d",
+        "order": 20,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Grey",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 270,
+        "y": 940,
+        "wires": [
+            [
+                "b0da8ce1.9f192"
+            ]
+        ]
+    },
+    {
+        "id": "b86d3510.8d1778",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "order": 8,
+        "width": "1",
+        "height": "1",
+        "name": "Blank",
+        "label": "",
+        "format": "",
+        "layout": "row-spread",
+        "x": 700,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "4a1d86b9.27b458",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "Dial",
+        "order": 9,
+        "width": "4",
+        "height": "4",
+        "format": "<div id=\"thermostat\"></div>\n\n<style>\n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);\n#thermostat {\n  margin: 0 auto;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n.dial {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.dial.away .dial__ico__leaf {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--target {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--target--half {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--away {\n  opacity: 1;\n}\n.dial .dial__shape {\n  -webkit-transition: fill 0.5s;\n  transition: fill 0.5s;\n}\n.dial__ico__leaf {\n  fill: #13EB13;\n  opacity: 0;\n  -webkit-transition: opacity 0.5s;\n  transition: opacity 0.5s;\n  pointer-events: none;\n}\n.dial.has-leaf .dial__ico__leaf {\n  display: block;\n  opacity: 1;\n  pointer-events: initial;\n}\n.dial__editableIndicator {\n  fill: white;\n  fill-rule: evenodd;\n  opacity: 0;\n  -webkit-transition: opacity 0.5s;\n  transition: opacity 0.5s;\n}\n.dial--edit .dial__editableIndicator {\n  opacity: 1;\n}\n.dial--state--off .dial__shape {\n  fill: #3d3c3c;\n}\n.dial--state--heating .dial__shape {\n  fill: #E36304;\n}\n.dial--state--cooling .dial__shape {\n  fill: #3c9517;\n}\n.dial__ticks path {\n  fill: rgba(255, 255, 255, 0.3);\n}\n.dial__ticks path.active {\n  fill: rgba(255, 255, 255, 0.8);\n}\n.dial text {\n  fill: white;\n  text-anchor: middle;\n  font-family: Helvetica, sans-serif;\n  alignment-baseline: central;\n}\n.dial__lbl--target {\n  font-size: 120px;\n  font-weight: bold;\n}\n.dial__lbl--target--half {\n  font-size: 40px;\n  font-weight: bold;\n  opacity: 0;\n  -webkit-transition: opacity 0.1s;\n  transition: opacity 0.1s;\n}\n.dial__lbl--target--half.shown {\n  opacity: 1;\n  -webkit-transition: opacity 0s;\n  transition: opacity 0s;\n}\n.dial__lbl--ambient {\n  font-size: 22px;\n  font-weight: bold;\n}\n.dial__lbl--away {\n  font-size: 72px;\n  font-weight: bold;\n  opacity: 0;\n  pointer-events: none;\n}\n#controls {\n  font-family: Open Sans;\n  background-color: rgba(255, 255, 255, 0.25);\n  padding: 20px;\n  border-radius: 5px;\n  position: absolute;\n  left: 50%;\n  -webkit-transform: translatex(-50%);\n          transform: translatex(-50%);\n  margin-top: 20px;\n}\n#controls label {\n  text-align: left;\n  display: block;\n}\n#controls label span {\n  display: inline-block;\n  width: 200px;\n  text-align: right;\n  font-size: 0.8em;\n  text-transform: uppercase;\n}\n#controls p {\n  margin: 0;\n  margin-bottom: 1em;\n  padding-bottom: 1em;\n  border-bottom: 2px solid #ccc;\n}\n</style>\n<script>\n    var thermostatDial = (function() {\n\t\n\t/*\n\t * Utility functions\n\t */\n\t\n\t// Create an element with proper SVG namespace, optionally setting its attributes and appending it to another element\n\tfunction createSVGElement(tag,attributes,appendTo) {\n\t\tvar element = document.createElementNS('http://www.w3.org/2000/svg',tag);\n\t\tattr(element,attributes);\n\t\tif (appendTo) {\n\t\t\tappendTo.appendChild(element);\n\t\t}\n\t\treturn element;\n\t}\n\t\n\t// Set attributes for an element\n\tfunction attr(element,attrs) {\n\t\tfor (var i in attrs) {\n\t\t\telement.setAttribute(i,attrs[i]);\n\t\t}\n\t}\n\t\n\t// Rotate a cartesian point about given origin by X degrees\n\tfunction rotatePoint(point, angle, origin) {\n\t\tvar radians = angle * Math.PI/180;\n\t\tvar x = point[0]-origin[0];\n\t\tvar y = point[1]-origin[1];\n\t\tvar x1 = x*Math.cos(radians) - y*Math.sin(radians) + origin[0];\n\t\tvar y1 = x*Math.sin(radians) + y*Math.cos(radians) + origin[1];\n\t\treturn [x1,y1];\n\t}\n\t\n\t// Rotate an array of cartesian points about a given origin by X degrees\n\tfunction rotatePoints(points, angle, origin) {\n\t\treturn points.map(function(point) {\n\t\t\treturn rotatePoint(point, angle, origin);\n\t\t});\n\t}\n\t\n\t// Given an array of points, return an SVG path string representing the shape they define\n\tfunction pointsToPath(points) {\n\t\treturn points.map(function(point, iPoint) {\n\t\t\treturn (iPoint>0?'L':'M') + point[0] + ' ' + point[1];\n\t\t}).join(' ')+'Z';\n\t}\n\t\n\tfunction circleToPath(cx, cy, r) {\n\t\treturn [\n\t\t\t\"M\",cx,\",\",cy,\n\t\t\t\"m\",0-r,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,r*2,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,0-r*2,\",\",0,\n\t\t\t\"z\"\n\t\t].join(' ').replace(/\\s,\\s/g,\",\");\n\t}\n\t\n\tfunction donutPath(cx,cy,rOuter,rInner) {\n\t\treturn circleToPath(cx,cy,rOuter) + \" \" + circleToPath(cx,cy,rInner);\n\t}\n\t\n\t// Restrict a number to a min + max range\n\tfunction restrictToRange(val,min,max) {\n\t\tif (val < min) return min;\n\t\tif (val > max) return max;\n\t\treturn val;\n\t}\n\t\n\t// Round a number to the nearest 0.5\n\tfunction roundHalf(num) {\n\t\treturn Math.round(num*2)/2;\n\t}\n\t\n\tfunction setClass(el, className, state) {\n\t\tel.classList[state ? 'add' : 'remove'](className);\n\t}\n\t\n\t/*\n\t * The \"MEAT\"\n\t */\n\n\treturn function(targetElement, options) {\n\t\tvar self = this;\n\t\t\n\t\t/*\n\t\t * Options\n\t\t */\n\t\toptions = options || {};\n\t\toptions = {\n\t\t\tdiameter: options.diameter || 400,\n\t\t\tminValue: options.minValue || 00, // Minimum value for target temperature\n\t\t\tmaxValue: options.maxValue || 85, // Maximum value for target temperature\n\t\t\tnumTicks: options.numTicks || 200, // Number of tick lines to display around the dial\n\t\t\tonSetTargetTemperature: options.onSetTargetTemperature || function() {}, // Function called when new target temperature set by the dial\n\t\t};\n\t\t\n\t\t/*\n\t\t * Properties - calculated from options in many cases\n\t\t */\n\t\tvar properties = {\n\t\t\ttickDegrees: 300, //  Degrees of the dial that should be covered in tick lines\n\t\t\trangeValue: options.maxValue - options.minValue,\n\t\t\tradius: options.diameter/2,\n\t\t\tticksOuterRadius: options.diameter / 30,\n\t\t\tticksInnerRadius: options.diameter / 8,\n\t\t\thvac_states: ['off', 'heating', 'cooling'],\n\t\t\tdragLockAxisDistance: 15,\n\t\t}\n\t\tproperties.lblAmbientPosition = [properties.radius, properties.ticksOuterRadius-(properties.ticksOuterRadius-properties.ticksInnerRadius)/2]\n\t\tproperties.offsetDegrees = 180-(360-properties.tickDegrees)/2;\n\t\t\n\t\t/*\n\t\t * Object state\n\t\t */\n\t\tvar state = {\n\t\t\ttarget_temperature: options.minValue,\n\t\t\tambient_temperature: options.minValue,\n\t\t\thvac_state: properties.hvac_states[0],\n\t\t\thas_leaf: false,\n\t\t\taway: false\n\t\t};\n\t\t\n\t\t/*\n\t\t * Property getter / setters\n\t\t */\n\t\tObject.defineProperty(this,'target_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.target_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.target_temperature = restrictTargetTemperature(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'ambient_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.ambient_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.ambient_temperature = roundHalf(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'hvac_state',{\n\t\t\tget: function() {\n\t\t\t\treturn state.hvac_state;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tif (properties.hvac_states.indexOf(val)>=0) {\n\t\t\t\t\tstate.hvac_state = val;\n\t\t\t\t\trender();\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'has_leaf',{\n\t\t\tget: function() {\n\t\t\t\treturn state.has_leaf;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.has_leaf = !!val;\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'away',{\n\t\t\tget: function() {\n\t\t\t\treturn state.away;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.away = !!val;\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\t\n\t\t/*\n\t\t * SVG\n\t\t */\n\t\tvar svg = createSVGElement('svg',{\n\t\t\twidth: '100%', //options.diameter+'px',\n\t\t\theight: '100%', //options.diameter+'px',\n\t\t\tviewBox: '0 0 '+options.diameter+' '+options.diameter,\n\t\t\tclass: 'dial'\n\t\t},targetElement);\n\t\t// CIRCULAR DIAL\n\t\tvar circle = createSVGElement('circle',{\n\t\t\tcx: properties.radius,\n\t\t\tcy: properties.radius,\n\t\t\tr: properties.radius,\n\t\t\tclass: 'dial__shape'\n\t\t},svg);\n\t\t// EDITABLE INDICATOR\n\t\tvar editCircle = createSVGElement('path',{\n\t\t\td: donutPath(properties.radius,properties.radius,properties.radius-4,properties.radius-8),\n\t\t\tclass: 'dial__editableIndicator',\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * Ticks\n\t\t */\n\t\tvar ticks = createSVGElement('g',{\n\t\t\tclass: 'dial__ticks'\t\n\t\t},svg);\n\t\tvar tickPoints = [\n\t\t\t[properties.radius-1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksInnerRadius],\n\t\t\t[properties.radius-1, properties.ticksInnerRadius]\n\t\t];\n\t\tvar tickPointsLarge = [\n\t\t\t[properties.radius-1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksInnerRadius+20],\n\t\t\t[properties.radius-1.5, properties.ticksInnerRadius+20]\n\t\t];\n\t\tvar theta = properties.tickDegrees/options.numTicks;\n\t\tvar tickArray = [];\n\t\tfor (var iTick=0; iTick<options.numTicks; iTick++) {\n\t\t\ttickArray.push(createSVGElement('path',{d:pointsToPath(tickPoints)},ticks));\n\t\t};\n\t\t\n\t\t/*\n\t\t * Labels\n\t\t */\n\t\tvar lblTarget = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--target'\n\t\t},svg);\n\t\tvar lblTarget_text = document.createTextNode('');\n\t\tlblTarget.appendChild(lblTarget_text);\n\t\t//\n\t\tvar lblTargetHalf = createSVGElement('text',{\n\t\t\tx: properties.radius + properties.radius/2.5,\n\t\t\ty: properties.radius - properties.radius/8,\n\t\t\tclass: 'dial__lbl dial__lbl--target--half'\n\t\t},svg);\n\t\tvar lblTargetHalf_text = document.createTextNode('5');\n\t\tlblTargetHalf.appendChild(lblTargetHalf_text);\n\t\t//\n\t\tvar lblAmbient = createSVGElement('text',{\n\t\t\tclass: 'dial__lbl dial__lbl--ambient'\n\t\t},svg);\n\t\tvar lblAmbient_text = document.createTextNode('');\n\t\tlblAmbient.appendChild(lblAmbient_text);\n\t\t//\n\t\tvar lblAway = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--away'\n\t\t},svg);\n\t\tvar lblAway_text = document.createTextNode('AWAY');\n\t\tlblAway.appendChild(lblAway_text);\n\t\t//\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf'\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * LEAF\n\t\t */\n\t\tvar leafScale = properties.radius/5/100;\n\t\tvar leafDef = [\"M\", 3, 84, \"c\", 24, 17, 51, 18, 73, -6, \"C\", 100, 52, 100, 22, 100, 4, \"c\", -13, 15, -37, 9, -70, 19, \"C\", 4, 32, 0, 63, 0, 76, \"c\", 6, -7, 18, -17, 33, -23, 24, -9, 34, -9, 48, -20, -9, 10, -20, 16, -43, 24, \"C\", 22, 63, 8, 78, 3, 84, \"z\"].map(function(x) {\n\t\t\treturn isNaN(x) ? x : x*leafScale;\n\t\t}).join(' ');\n\t\tvar translate = [properties.radius-(leafScale*100*0.5),properties.radius*1.5]\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf',\n\t\t\td: leafDef,\n\t\t\ttransform: 'translate('+translate[0]+','+translate[1]+')'\n\t\t},svg);\n\t\t\t\n\t\t/*\n\t\t * RENDER\n\t\t */\n\t\tfunction render() {\n\t\t\trenderAway();\n\t\t\trenderHvacState();\n\t\t\trenderTicks();\n\t\t\trenderTargetTemperature();\n\t\t\trenderAmbientTemperature();\n\t\t\trenderLeaf();\n\t\t}\n\t\trender();\n\n\t\t/*\n\t\t * RENDER - ticks\n\t\t */\n\t\tfunction renderTicks() {\n\t\t\tvar vMin, vMax;\n\t\t\tif (self.away) {\n\t\t\t\tvMin = self.ambient_temperature;\n\t\t\t\tvMax = vMin;\n\t\t\t} else {\n\t\t\t\tvMin = Math.min(self.ambient_temperature, self.target_temperature);\n\t\t\t\tvMax = Math.max(self.ambient_temperature, self.target_temperature);\n\t\t\t}\n\t\t\tvar min = restrictToRange(Math.round((vMin-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\tvar max = restrictToRange(Math.round((vMax-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\t//\n\t\t\ttickArray.forEach(function(tick,iTick) {\n\t\t\t\tvar isLarge = iTick==min || iTick==max;\n\t\t\t\tvar isActive = iTick >= min && iTick <= max;\n\t\t\t\tattr(tick,{\n\t\t\t\t\td: pointsToPath(rotatePoints(isLarge ? tickPointsLarge: tickPoints,iTick*theta-properties.offsetDegrees,[properties.radius, properties.radius])),\n\t\t\t\t\tclass: isActive ? 'active' : ''\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\t\n\t\t/*\n\t\t * RENDER - ambient temperature\n\t\t */\n\t\tfunction renderAmbientTemperature() {\n\t\t\tlblAmbient_text.nodeValue = Math.floor(self.ambient_temperature);\n\t\t\tif (self.ambient_temperature%1!=0) {\n\t\t\t\tlblAmbient_text.nodeValue += '⁵';\n\t\t\t}\n\t\t\tvar peggedValue = restrictToRange(self.ambient_temperature, options.minValue, options.maxValue);\n\t\t\tdegs = properties.tickDegrees * (peggedValue-options.minValue)/properties.rangeValue - properties.offsetDegrees;\n\t\t\tif (peggedValue > self.target_temperature) {\n\t\t\t\tdegs += 8;\n\t\t\t} else {\n\t\t\t\tdegs -= 8;\n\t\t\t}\n\t\t\tvar pos = rotatePoint(properties.lblAmbientPosition,degs,[properties.radius, properties.radius]);\n\t\t\tattr(lblAmbient,{\n\t\t\t\tx: pos[0],\n\t\t\t\ty: pos[1]\n\t\t\t});\n\t\t}\n\n\t\t/*\n\t\t * RENDER - target temperature\n\t\t */\n\t\tfunction renderTargetTemperature() {\n\t\t\tlblTarget_text.nodeValue = Math.floor(self.target_temperature);\n\t\t\tsetClass(lblTargetHalf,'shown',self.target_temperature%1!=0);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - leaf\n\t\t */\n\t\tfunction renderLeaf() {\n\t\t\tsetClass(svg,'has-leaf',self.has_leaf);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - HVAC state\n\t\t */\n\t\tfunction renderHvacState() {\n\t\t\tArray.prototype.slice.call(svg.classList).forEach(function(c) {\n\t\t\t\tif (c.match(/^dial--state--/)) {\n\t\t\t\t\tsvg.classList.remove(c);\n\t\t\t\t};\n\t\t\t});\n\t\t\tsvg.classList.add('dial--state--'+self.hvac_state);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - away\n\t\t */\n\t\tfunction renderAway() {\n\t\t\tsvg.classList[self.away ? 'add' : 'remove']('away');\n\t\t}\n\t\t\n\t\t/*\n\t\t * Drag to control\n\t\t */\n\t\tvar _drag = {\n\t\t\tinProgress: false,\n\t\t\tstartPoint: null,\n\t\t\tstartTemperature: 0,\n\t\t\tlockAxis: undefined\n\t\t};\n\t\t\n\t\tfunction eventPosition(ev) {\n\t\t\tif (ev.targetTouches && ev.targetTouches.length) {\n\t\t\t\treturn  [ev.targetTouches[0].clientX, ev.targetTouches[0].clientY];\n\t\t\t} else {\n\t\t\t\treturn [ev.x, ev.y];\n\t\t\t};\n\t\t}\n\t\t\n\t\tvar startDelay;\n\t\tfunction dragStart(ev) {\n\t\t\tstartDelay = setTimeout(function() {\n\t\t\t\tsetClass(svg, 'dial--edit', true);\n\t\t\t\t_drag.inProgress = true;\n\t\t\t\t_drag.startPoint = eventPosition(ev);\n\t\t\t\t_drag.startTemperature = self.ambient_temperature || options.minValue;\n\t\t\t\t_drag.lockAxis = undefined;\n\t\t\t},1000);\n\t\t};\n\t\t\n\t\tfunction dragEnd (ev) {\n\t\t\tclearTimeout(startDelay);\n\t\t\tsetClass(svg, 'dial--edit', false);\n\t\t\tif (!_drag.inProgress) return;\n\t\t\t_drag.inProgress = false;\n\t\t\tif (self.ambient_temperature != _drag.startTemperature) {\n\t\t\t\tif (typeof options.onSetTargetTemperature == 'function') {\n\t\t\t\t\toptions.onSetTargetTemperature(self.ambient_temperature);\n\t\t\t\t};\n\t\t\t};\n\t\t};\n\t\t\n\t\tfunction dragMove(ev) {\n\t\t\tev.preventDefault();\n\t\t\tif (!_drag.inProgress) return;\n\t\t\tvar evPos =  eventPosition(ev);\n\t\t\tvar dy = _drag.startPoint[1]-evPos[1];\n\t\t\tvar dx = evPos[0] - _drag.startPoint[0];\n\t\t\tvar dxy;\n\t\t\tif (_drag.lockAxis == 'x') {\n\t\t\t\tdxy  = dx;\n\t\t\t} else if (_drag.lockAxis == 'y') {\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dy) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'y';\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dx) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'x';\n\t\t\t\tdxy = dx;\n\t\t\t} else {\n\t\t\t\tdxy = (Math.abs(dy) > Math.abs(dx)) ? dy : dx;\n\t\t\t};\n\t\t\tvar dValue = (dxy*getSizeRatio())/(options.diameter)*properties.rangeValue;\n\t\t\tself.ambient_temperature = roundHalf(_drag.startTemperature+dValue);\n\t\t}\n\t\t\n\t\tsvg.addEventListener('mousedown',dragStart);\n\t\tsvg.addEventListener('touchstart',dragStart);\n\t\t\n\t\tsvg.addEventListener('mouseup',dragEnd);\n\t\tsvg.addEventListener('mouseleave',dragEnd);\n\t\tsvg.addEventListener('touchend',dragEnd);\n\t\t\n\t\tsvg.addEventListener('mousemove',dragMove);\n\t\tsvg.addEventListener('touchmove',dragMove);\n\t\t//\n\t\t\n\t\t/*\n\t\t * Helper functions\n\t\t */\n\t\tfunction restrictTargetTemperature(t) {\n\t\t\treturn restrictToRange(roundHalf(t),options.minValue,options.maxValue);\n\t\t}\n\t\t\n\t\tfunction angle(point) {\n\t\t\tvar dx = point[0] - properties.radius;\n\t\t\tvar dy = point[1] - properties.radius;\n\t\t\tvar theta = Math.atan(dx/dy) / (Math.PI/180);\n\t\t\tif (point[0]>=properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta - 90;\n\t\t\t} else if (point[0]>=properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta+270;\n\t\t\t}\n\t\t\treturn theta;\n\t\t};\n\t\t\n\t\tfunction getSizeRatio() {\n\t\t\treturn options.diameter / targetElement.clientWidth;\n\t\t}\n\t\t\n\t};\n})();\n\n/* ==== */\n(function(scope) {\n    \n    var nest = new thermostatDial(document.getElementById('thermostat'),{\n    \tonSetTargetTemperature: function(v) {\n    \t\tscope.send({topic: \"target_temperature\", payload: v});\n    \t}\n    });\n\n\n    scope.$watch('msg', function(data) {\n        //console.log(data.topic+\"  \"+data.payload);\n            nest.ambient_temperature = data.payload.temperature;\n            nest.target_temperature = data.payload.setpoint;\n            nest.hvac_state = data.payload.state;\n            nest.has_leaf = data.payload.leaf;\n            nest.away = data.payload.away;\n    });\n})(scope);\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5110632.f2e218",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "Title",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: #273746;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                font-weight: bold;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #808080;\"\n            ng-style=\"{background: #808080}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f82f9e1.9cfab8",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "ACkWh",
+        "order": 10,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #FFE082;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#FFE082'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73f55b93.59fcc4",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PVkWh",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #C5E1A5;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#C5E1A5'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e52f5dd2.ccc3a",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "ACcost",
+        "order": 12,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #FFE082;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#FFE082'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5e233b.fd7e2d",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PVsave",
+        "order": 13,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #C5E1A5;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#C5E1A5'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a3e523a.4bb81e",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PV%",
+        "order": 14,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca24fd24.0e039",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "CO2",
+        "order": 15,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be70ae9d.1682c",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "Alarms",
+        "order": 16,
+        "width": "6",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? '#E65100' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee973f35.9815d",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "AC I",
+        "order": 17,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed62c97b.1d7e68",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PV I",
+        "order": 18,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bcb46b7e.c68578",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PCB",
+        "order": 19,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? '#E65100' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f3cdbbe.456618",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "AC",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4578b6ee.9ac6d8",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PV",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a271c8d0.c90f98",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "Boost",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fb2a2ed.4b8a1d",
+        "type": "rbe",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 730,
+        "y": 600,
+        "wires": [
+            [
+                "bbed780b.7eda28"
+            ]
+        ]
+    },
+    {
+        "id": "8166bb4.62a0e48",
+        "type": "rbe",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 730,
+        "y": 580,
+        "wires": [
+            [
+                "8be3dbec.3b3dc8"
+            ]
+        ]
+    },
+    {
+        "id": "a8488942.b1e5a8",
+        "type": "comment",
+        "z": "6e2de0a8.936f6",
+        "name": "Settings 1",
+        "info": "",
+        "x": 100,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "999dcc7f.d4ae",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACM",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACM\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.ACM;\n    msg.text = \"AC Control\"    ;\n    node.status({text:msg.payload});\n    msg.topic = \"AC\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "fe269fd9.19428",
+                "6f39e454.4227bc"
+            ]
+        ]
+    },
+    {
+        "id": "4bce2af4.eb1fd4",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACO",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACO\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.ACO;\n    msg.text = \"Boost\"\n    node.status({text:msg.payload});\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1120,
+        "wires": [
+            [
+                "26526e21.edf462",
+                "2eed69ce.46f186"
+            ]
+        ]
+    },
+    {
+        "id": "dc0fb41c.dc6798",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "PVM",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"PVM\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.PVM;\n    msg.text = \"PV Control\"\n    msg.topic = \"PV\";\n    node.status({text:msg.payload});\n    return msg;}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1160,
+        "wires": [
+            [
+                "583cb501.3814dc",
+                "5123c022.9db6f"
+            ]
+        ]
+    },
+    {
+        "id": "f1cb20cc.2420c",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACT",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACT;\n    node.status({text:msg.payload});\n    msg.topic = \"setpoint\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            [
+                "ab43be98.51c94"
+            ]
+        ]
+    },
+    {
+        "id": "da53ebef.547fd8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACOT",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACOT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACOT;\n    node.status({text:msg.payload});\n    msg.topic = \"setpoint\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1240,
+        "wires": [
+            [
+                "e18f7109.55303"
+            ]
+        ]
+    },
+    {
+        "id": "c8fec9c7.032f68",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "PVT",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"PVT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.PVT;\n    node.status({text:msg.payload});\n    flow.set(\"pv1setpoint\", msg.payload);\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "a76e06d2.f8b0b8"
+            ]
+        ]
+    },
+    {
+        "id": "fe269fd9.19428",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fe1ee148.0ce71",
+        "name": "Status",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26526e21.edf462",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fe1ee148.0ce71",
+        "name": "Status",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "583cb501.3814dc",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fe1ee148.0ce71",
+        "name": "Status",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "295f172.00aafe8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1200,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "ab43be98.51c94",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "AC Setpoint",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 670,
+        "y": 1200,
+        "wires": [
+            [
+                "295f172.00aafe8"
+            ]
+        ]
+    },
+    {
+        "id": "4aa503c7.9b8cbc",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACOT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1240,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "2fb11f9d.7ff33",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload;\nvar output\t= [];\nif(msg.payload > 70)    // limit to 70\n{\n    payload = 70;\n}\nelse\n{\n    payload = msg.payload;\n}\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"PVT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1280,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "e18f7109.55303",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "Boost Setpoint",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 660,
+        "y": 1240,
+        "wires": [
+            [
+                "4aa503c7.9b8cbc"
+            ]
+        ]
+    },
+    {
+        "id": "a76e06d2.f8b0b8",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "PV Setpoint",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 670,
+        "y": 1280,
+        "wires": [
+            [
+                "2fb11f9d.7ff33"
+            ]
+        ]
+    },
+    {
+        "id": "6f39e454.4227bc",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "AC Control",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 670,
+        "y": 1080,
+        "wires": [
+            [
+                "90546bdf.a5a718"
+            ]
+        ]
+    },
+    {
+        "id": "2eed69ce.46f186",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "AC Override",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 670,
+        "y": 1120,
+        "wires": [
+            [
+                "a6554ece.9eb6"
+            ]
+        ]
+    },
+    {
+        "id": "5123c022.9db6f",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "PV Control",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 670,
+        "y": 1160,
+        "wires": [
+            [
+                "fe6e2190.dfd13"
+            ]
+        ]
+    },
+    {
+        "id": "90546bdf.a5a718",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nnode.status({text:msg.payload});\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1080,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "a6554ece.9eb6",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACO\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1120,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "fe6e2190.dfd13",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"PVM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1160,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "68a34261.c75eec",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fe1ee148.0ce71",
+        "name": "Title",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: #273746;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                font-weight: bold;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #808080;\"\n            ng-style=\"{background: #808080}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 830,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b8fd21.e4f252c",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "msg.payload=1\nmsg.text = \"Settings\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 1040,
+        "wires": [
+            [
+                "68a34261.c75eec"
+            ]
+        ]
+    },
+    {
+        "id": "74efd036.73c12",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACCT",
+        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACCT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACCT;\n    node.status({text:msg.payload});\n    return msg;\n}\nelse\n{\n    return null\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1320,
+        "wires": [
+            [
+                "fc7f2b1c.53ff48"
+            ]
+        ]
+    },
+    {
+        "id": "fc7f2b1c.53ff48",
+        "type": "ui_text_input",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "Comfort Setpoint",
+        "tooltip": "",
+        "group": "fe1ee148.0ce71",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "x": 650,
+        "y": 1320,
+        "wires": [
+            [
+                "eae16ac4.f8c9c8"
+            ]
+        ]
+    },
+    {
+        "id": "eae16ac4.f8c9c8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload;\nvar unit = flow.get(\"unit\");\nvar output\t= [];\nif(msg.payload > 70)    // limit to 70\n{\n    payload = 70;\n}\nelse\n{\n    payload = msg.payload;\n}\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACCT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 1320,
+        "wires": [
+            [
+                "daeb9e0.2803b6"
+            ]
+        ]
+    },
+    {
+        "id": "8f9d2f8b.fa601",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "fe1ee148.0ce71",
+        "order": 11,
+        "width": "4",
+        "height": "2",
+        "name": "Blank",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 410,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "d3f32d8d.5c11e",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Get Settings",
+        "func": "// GWA/gwCECC50E32854A4/1/SET\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GWA/\"+unit+\"/1/SET\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "874baa5e.769658"
+            ]
+        ]
+    },
+    {
+        "id": "7fe979c3.532ac8",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "d3f32d8d.5c11e"
+            ]
+        ]
+    },
+    {
+        "id": "ceb97731.2742e8",
+        "type": "comment",
+        "z": "6e2de0a8.936f6",
+        "name": "Save data to SQL",
+        "info": "Save data to SQL",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7305cdf4.1c8824",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "b193e821.19e0a8"
+            ]
+        ]
+    },
+    {
+        "id": "b193e821.19e0a8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "// GW/gwCECC50E32854A4/1/SET\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GW/\"+unit+\"/1/SET\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 140,
+        "y": 1080,
+        "wires": [
+            [
+                "bfc51bfa.b51d78"
+            ]
+        ]
+    },
+    {
+        "id": "bfc51bfa.b51d78",
+        "type": "mqtt-in-dynamicsub",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "qos": "2",
+        "datatype": "json",
+        "unsubscribe-after-first-msg-recv": false,
+        "debug-subscribe": false,
+        "broker": "ea070992.9873a8",
+        "x": 270,
+        "y": 1080,
+        "wires": [
+            [
+                "6b8fd21.e4f252c",
+                "4bce2af4.eb1fd4",
+                "dc0fb41c.dc6798",
+                "f1cb20cc.2420c",
+                "da53ebef.547fd8",
+                "c8fec9c7.032f68",
+                "74efd036.73c12"
+            ]
+        ]
+    },
+    {
+        "id": "daeb9e0.2803b6",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 970,
+        "y": 1080,
         "wires": []
     }
 ]
