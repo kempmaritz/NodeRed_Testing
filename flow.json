@@ -47,6 +47,13 @@
         "label": "Irrigation"
     },
     {
+        "id": "e0d6b532.907248",
+        "type": "tab",
+        "label": "FullStack HTML",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "3c1a9880.5362b8",
         "type": "subflow",
         "name": "Set Coords",
@@ -403,6 +410,325 @@
         }
     },
     {
+        "id": "9017b7f1.46d278",
+        "type": "subflow",
+        "name": "Dashboard 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "c45702f0.a74af"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 640,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "2614e99b.79e286",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "ca409155.d21a9",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "e0e86061.56be1",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "4b1000c4.26b93",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "411111d6.91382",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "d8be77a5.a608c8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "1494471b.6246c9",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "7f070581.dbc3ec",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 360,
+                "wires": [
+                    {
+                        "id": "9a766587.30d3c8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 400,
+                "wires": [
+                    {
+                        "id": "4bdf082c.b0a1e8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 440,
+                "wires": [
+                    {
+                        "id": "60cb3fdf.261a6",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 480,
+                "wires": [
+                    {
+                        "id": "59f52ee6.6823d",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 520,
+                "wires": [
+                    {
+                        "id": "613dfab0.a6b004",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 560,
+                "wires": [
+                    {
+                        "id": "7abdc685.6f5f88",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 600,
+                "wires": [
+                    {
+                        "id": "1a334a04.4cc486",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 640,
+                "wires": [
+                    {
+                        "id": "1efcbba6.8edd54",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 680,
+                "wires": [
+                    {
+                        "id": "b5c6cd7f.a6a31",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 720,
+                "wires": [
+                    {
+                        "id": "67463999.90efa8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 760,
+                "wires": [
+                    {
+                        "id": "82a16200.51a76",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 800,
+                "wires": [
+                    {
+                        "id": "2eaee034.ec02f",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 840,
+                "wires": [
+                    {
+                        "id": "53e59b03.7627d4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#87A980",
+        "inputLabels": [
+            "Trigger"
+        ],
+        "outputLabels": [
+            "Heading",
+            "AC On",
+            "PV On",
+            "Boost On",
+            "AC Setpoint",
+            "Boost Setpoint",
+            "PV Setpoint",
+            "Gauge",
+            "G1ACkW",
+            "G1PVkW",
+            "G1ACCost",
+            "G1PVCost",
+            "G1PVUsage",
+            "G1Carbon",
+            "Alarms",
+            "AC Current",
+            "PV Current",
+            "PCB Temperature",
+            "AC Enable",
+            "AC Boost",
+            "PV Enable"
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "dc275690.07356",
+        "type": "subflow",
+        "name": "scheduler",
+        "info": "A scheduler that repeatedly executes\nschedules put in as an array of objects\nas a ```msg.payload``` in the format of:\n```\n[\n  {\n    \"item\": \"test\",\n    \"command\": \"ON\",\n    \"time\": \"08:30\"\n  },\n  {\n    \"item\": \"test\",\n    \"command\": \"OFF\",\n    \"time\": \"19:45\"\n  }\n]\n```\npassing an empty array as a payload will\nreset the node.\nThe second output is a debug.\nSending a msg.payload string of \"debug\"\nwill send an object of the schedule and the\ncorresponding timers that are scheduled\nto this output.\nAt schedule time a msg oject will be send\nfrom the first output. The command will be\npassed as the ```msg.payload```, the item in\n```msg.item``` and the original schedule object\nin ```msg.original```.",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "be194cd9.78b218"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1280,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "8eb795c0.24899",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "6680ab33.f83b5c",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#FFAAAA",
+        "inputLabels": [
+            "schedule input"
+        ],
+        "outputLabels": [
+            "command output",
+            ""
+        ],
+        "icon": "node-red/timer.svg",
+        "status": {
+            "x": 1180,
+            "y": 260,
+            "wires": [
+                {
+                    "id": "a0ba0058.4cf528",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
         "id": "ea070992.9873a8",
         "type": "mqtt-broker",
         "name": "",
@@ -521,18 +847,6 @@
         }
     },
     {
-        "id": "76347d9a.2c0094",
-        "type": "MSSQL-UCGv2-CN",
-        "name": "SQL",
-        "server": "192.168.1.25",
-        "port": "1433",
-        "encyption": false,
-        "database": "30Snipe",
-        "pool": "32",
-        "connectionTimeout": "16000",
-        "requestTimeout": "15000"
-    },
-    {
         "id": "6f4991fa.a7d08",
         "type": "ui_tab",
         "name": "Home",
@@ -558,16 +872,6 @@
         "order": 1,
         "disp": false,
         "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "fe1ee148.0ce71",
-        "type": "ui_group",
-        "name": "Settings",
-        "tab": "e55ad75.a83bc28",
-        "order": 2,
-        "disp": false,
-        "width": "4",
         "collapse": false
     },
     {
@@ -798,6 +1102,16 @@
         "icon": "dashboard"
     },
     {
+        "id": "b03bb86e.990f38",
+        "type": "ui_group",
+        "name": "LED Bargraph",
+        "tab": "6f4991fa.a7d08",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
         "id": "6952e3f6.75037c",
         "type": "debug",
         "z": "6e2de0a8.936f6",
@@ -864,7 +1178,7 @@
         "type": "mqtt-in-dynamicsub",
         "z": "6e2de0a8.936f6",
         "name": "",
-        "qos": "2",
+        "qos": "0",
         "datatype": "json",
         "unsubscribe-after-first-msg-recv": false,
         "debug-subscribe": false,
@@ -1074,135 +1388,13 @@
         "wires": []
     },
     {
-        "id": "774a510d.5fe66",
-        "type": "inject",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "0.3",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 720,
-        "y": 260,
-        "wires": [
-            [
-                "5b9e4899.b61108",
-                "aabff94f.47e538"
-            ]
-        ]
-    },
-    {
-        "id": "5b9e4899.b61108",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "G1 - Analog",
-        "func": "msg.payload = global.get(\"_geyserTestData_gw2E2C3AE83E76C0\");\nvar dateValue = msg.payload.CS.t.Y + msg.payload.CS.t.M + msg.payload.CS.t.D;\nvar timeValue = msg.payload.CS.t.h +\":\"+ msg.payload.CS.t.m +\":\"+ msg.payload.CS.t.s;\nvar connectionServer = msg.payload.CS.S;\nvar connectionWifi = msg.payload.CS.I;\n\nvar G1temperaturePCB = msg.payload.G1.T.PCB;\nvar G1temperatureGeyser = msg.payload.G1.T.G;\n\nvar G1currentAC = msg.payload.G1.I.AC;\nvar G1currentPV = msg.payload.G1.I.PV;\nvar date\t\t\t= new Date();\nvar system_Year\t\t= String( date.getFullYear() );\nvar system_Month\t= String( date.getMonth() + 1 );\nvar system_Day\t\t= String( date.getDate() );\nvar system_Hour\t\t= String( date.getHours() );\nvar system_Minute\t= String( date.getMinutes() );\nvar system_Second\t= String( date.getSeconds() );\n\nsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\nsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\nsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\nsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\nsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\nsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\nvar system_date\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day;\nvar system_time\t\t= system_Hour + \":\" + system_Minute + \":\" + system_Second;\n\nvar ts = msg.timestamp || Date.now();\nvar d = new Date(ts);\ndt = d.toISOString();\ne = d.getTime();\n\nvar a = d.toJSON().split(/\\D+/);\nvar hrs = a[3];\nvar min = a[4];\nvar sec = a[5];\nvar year = a[0];\nvar month = a[1];\nvar day = a[2];\n\nvar logDate = (year+\"-\"+month+\"-\"+day);\nvar logTime = (hrs+\":\"+min+\":\"+sec);\n\nvar insertSelect = \"INSERT INTO [dbo].[geyserWorxData]([GW_Unit],[entrydate],[entrytime],[CS_S],[CS_I],[CS_Date],[CS_Time],[T_PCB],[T_G],[I_AC],[I_PV],[V_AC],[V_PV],[T_PCB_AVG],[T_G_AVG],[I_AC_AVG],[I_PV_AVG],[V_AC_AVG],[V_PV_AVG])\";\nvar values = \"VALUES('G1_gw2E2C3AE83E76C0','\"+system_date+\"','\"+system_time+\"',\"+connectionServer+\",\"+connectionWifi+\",'\"+dateValue+\"','\"+timeValue+\"',\";\nvar G1values = G1temperaturePCB+\",\"+G1temperatureGeyser+\",\"+G1currentAC+\",\"+G1currentPV+\",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0)\";\n\nvar outputs = [];\nvar sql;\nsql = insertSelect + \" \" + values + G1values;\nmsg.payload=sql;\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"Time: \"+system_time});\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 260,
-        "wires": [
-            [
-                "2df30f96.c610f"
-            ]
-        ]
-    },
-    {
-        "id": "aabff94f.47e538",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "G1 - Power",
-        "func": "var date\t\t\t= new Date();\nvar system_Year\t\t= String( date.getFullYear() );\nvar system_Month\t= String( date.getMonth() + 1 );\nvar system_Day\t\t= String( date.getDate() );\nvar system_Hour\t\t= String( date.getHours() );\nvar system_Minute\t= String( date.getMinutes() );\nvar system_Second\t= String( date.getSeconds() );\n\nsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\nsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\nsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\nsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\nsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\nsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\nvar system_date\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day;\nvar system_time\t\t= system_Hour + \":\" + system_Minute + \":\" + system_Second;\n\nvar payload = global.get(\"_geyserTestData_gw2E2C3AE83E76C0\");\n\nvar Raw_AC = payload.G1.Pt.Raw.I2AC;\nvar Raw_PV = payload.G1.Pt.Raw.I2PV;\nvar kWh_AC = payload.G1.Pt.kWh.AC;\nvar kWh_PV = payload.G1.Pt.kWh.PV;\n\nvar ts = msg.timestamp || Date.now();\nvar d = new Date(ts);\ndt = d.toISOString();\ne = d.getTime();\n\nvar a = d.toJSON().split(/\\D+/);\nvar h = a[3];\nvar m = a[4];\nvar s = a[5];\nvar y = a[0];\nvar month = a[1];\nvar day = a[2];\n\nvar logDate = (y+\"-\"+month+\"-\"+day);\nvar logTime = (h+\":\"+m+\":\"+s);\n\nvar insertSelect = \"INSERT INTO [dbo].[geyserWorxPowerData]([GW_Unit],[entryDate],[entryTime],[Pt_Raw_AC],[Pt_Raw_PV],[Pt_kWh_AC],[Pt_kWh_PV])\";\nvar values = \"VALUES ('G1_gw2E2C3AE83E76C0','\"+system_date+\"','\"+system_time+\"',\"+Raw_AC+\",\"+Raw_PV+\",\"+kWh_AC+\",\"+kWh_PV+\")\";\n\nmsg.payload = insertSelect + \" \" + values;\nnode.status({fill:\"green\",shape:\"ring\",text:\"Time: \"+system_time});\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 300,
-        "wires": [
-            [
-                "2df30f96.c610f"
-            ]
-        ]
-    },
-    {
-        "id": "2df30f96.c610f",
-        "type": "MSSQL-UCGv2",
-        "z": "6e2de0a8.936f6",
-        "mssqlCN": "76347d9a.2c0094",
-        "name": "",
-        "query": "",
-        "outField": "payload",
-        "x": 1080,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8be3dbec.3b3dc8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 860,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bbed780b.7eda28",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACOT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 860,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fcbd5599.6b1f48",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"PVT\": payload\n    \t\t\t\t}\n        }\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 860,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "716e686d.0b5e68",
         "type": "comment",
         "z": "6e2de0a8.936f6",
         "name": "Dashboard 1",
         "info": "",
-        "x": 80,
-        "y": 460,
+        "x": 330,
+        "y": 520,
         "wires": []
     },
     {
@@ -1217,367 +1409,13 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
-        "y": 500,
-        "wires": [
-            [
-                "bc34ea3.608a218"
-            ]
-        ]
-    },
-    {
-        "id": "96a180df.a6328",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nvar temperature;    // 0-100\nvar setpoint;       // 0-100\nvar gwState;        // \"heating\", \"cooling\"\nvar leaf;\nvar away = flow.get(\"enabled1\") || 0;\nvar _output = {};\n\n\nif(payload.G1.STS.O_PV===1){gwState = \"cooling\";}\nif(payload.G1.STS.O_AC===1){gwState = \"heating\";}\nif(payload.G1.STS.O_PV===0 && payload.G1.STS.O_AC===0){gwState = \"Off\";}\n\n//if(payload.G1.SET.O.PVM===1 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===0){gwState = \"Off\";}\n\ntemperature = parseInt(payload.G1.T.G);\nglobal.set(\"GW_Temperature\", temperature);\nif (gwState == \"heating\")\n{\n    setpoint = parseInt(payload.G1.SET.S.ACT);\n}\nelse if(gwState == \"cooling\")\n{\n    setpoint = parseInt(payload.G1.SET.S.PVT);\n}\n\nleaf = 0;\n//away = 0;   // holiday mode\n\nvar output\t= [];\n\nvar _output = {\n        \"payload\": {\n\t\t\t\t    \"temperature\":setpoint,\n\t\t\t\t    \"setpoint\":temperature,\n\t\t\t\t    \"state\":gwState,\n\t\t\t\t    \"leaf\":leaf,\n\t\t\t\t    \"away\":away\n        }\n};\noutput = [\n\t\t\t_output\n\t\t];\n\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 660,
-        "wires": [
-            [
-                "4a1d86b9.27b458"
-            ]
-        ]
-    },
-    {
-        "id": "65d64cf6.e6a4a4",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "msg.payload=1\nmsg.text = \"GeyserWorx\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 500,
-        "wires": [
-            [
-                "c5110632.f2e218"
-            ]
-        ]
-    },
-    {
-        "id": "3f230999.6a5516",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1ACkW\")||0;\nmsg.text = \"AC: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
+        "x": 130,
         "y": 700,
         "wires": [
             [
-                "7f82f9e1.9cfab8"
+                "95342c15.3d1b7"
             ]
         ]
-    },
-    {
-        "id": "bc34ea3.608a218",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "msg.payload = \"gw2E2C3AE83E76C0\";\nmsg.unit = 1;\nmsg.desc = \"Test 1\"\nmsg.data = global.get(\"_geyserTestData_\"+msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 120,
-        "y": 540,
-        "wires": [
-            [
-                "65d64cf6.e6a4a4",
-                "96a180df.a6328",
-                "3f230999.6a5516",
-                "7641f2b5.b5b8ac",
-                "824f013.56817",
-                "7a89280a.5da208",
-                "77bb160a.b63398",
-                "ad1a9940.a428e8",
-                "2074ebf6.899e94",
-                "695cc3c8.fc92bc",
-                "5ccfc62c.72c568",
-                "c60215e7.5c1398",
-                "dc153a8d.d532e8",
-                "3f3b3e4b.18fcf2",
-                "4e817d5c.0f8e84",
-                "95c7e7bd.ee80a8",
-                "ca2e3c4.5abf6c",
-                "9fc2f20d.afb29"
-            ]
-        ]
-    },
-    {
-        "id": "c8bd71be.6aa8f",
-        "type": "rbe",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "property": "payload",
-        "x": 730,
-        "y": 620,
-        "wires": [
-            [
-                "fcbd5599.6b1f48"
-            ]
-        ]
-    },
-    {
-        "id": "7641f2b5.b5b8ac",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1PVkW\")||0;\nmsg.text = \"PV: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 720,
-        "wires": [
-            [
-                "73f55b93.59fcc4"
-            ]
-        ]
-    },
-    {
-        "id": "824f013.56817",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1ACCost\")||0;\nmsg.text = \"AC cost: <b>R \"+payload+\"</b>\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 740,
-        "wires": [
-            [
-                "e52f5dd2.ccc3a"
-            ]
-        ]
-    },
-    {
-        "id": "7a89280a.5da208",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1PVCost\")||0;\nmsg.text = \"PV saving: <b>R \"+payload+\"</b>\";\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 760,
-        "wires": [
-            [
-                "b5e233b.fd7e2d"
-            ]
-        ]
-    },
-    {
-        "id": "77bb160a.b63398",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1PVUsage\")||0;\nmsg.text = \"PV usage: <b>\"+payload+\" </b>%\";\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 780,
-        "wires": [
-            [
-                "3a3e523a.4bb81e"
-            ]
-        ]
-    },
-    {
-        "id": "ad1a9940.a428e8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = flow.get(\"G1Carbon\")||0;\nmsg.text = \"CO2: <b>\"+payload+\"</b> tCO2e\";\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 800,
-        "wires": [
-            [
-                "ca24fd24.0e039"
-            ]
-        ]
-    },
-    {
-        "id": "2074ebf6.899e94",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nvar alarms;\n\nif(payload.G1.STS.Tr_Th==1 || payload.G1.STS.Tr_Te==1 || payload.G1.STS.Tr_DR==1 || payload.G1.STS.Tr_CS==1 || payload.G1.STS.Tr_PCB==1 || payload.G1.STS.A_Sc==1 || payload.G1.STS.A_An==1 || payload.G1.STS.A_DT==1)\n{\n    if(payload.G1.STS.Tr_Th==1){alarms=\"Over Temperature\"}\n    if(payload.G1.STS.Tr_Te==1){alarms=\"Low Temperature\"}\n    if(payload.G1.STS.Tr_DR==1){alarms=\"Dry Burn Alarm\"}\n    if(payload.G1.STS.Tr_CS==1){alarms=\"Contactor Fault\"}\n    if(payload.G1.STS.Tr_PCB==1){alarms=\"PCB Temperature Hi\"}\n    if(payload.G1.STS.A_Sc==1){alarms=\"Scale Build-up\"}\n    if(payload.G1.STS.A_An==1){alarms=\"Anode Depletion Alarm\"}\n    if(payload.G1.STS.A_DT==1){alarms=\"Driptray Water Alarm\"}\n}\nelse\n{\n    alarms = \"None\";\n}\n\nmsg.text = \"Alarms: <b>\"+alarms+\"</b>\";\nif(alarms != \"None\")\n{\n    msg.payload = \"1\";\n}\nelse\n{\n    msg.payload = \"0\";\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 820,
-        "wires": [
-            [
-                "be70ae9d.1682c"
-            ]
-        ]
-    },
-    {
-        "id": "695cc3c8.fc92bc",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nif(payload.G1.STS.O_AC===0)\n{\n    msg.topic = \"AC:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"AC:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_AC;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 520,
-        "wires": [
-            [
-                "8f3cdbbe.456618"
-            ]
-        ]
-    },
-    {
-        "id": "5ccfc62c.72c568",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nif(payload.G1.STS.O_PV===0)\n{\n    msg.topic = \"PV:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"PV:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_PV;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 540,
-        "wires": [
-            [
-                "4578b6ee.9ac6d8"
-            ]
-        ]
-    },
-    {
-        "id": "c60215e7.5c1398",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nif(payload.G1.SET.O.ACO===0)\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.SET.O.ACO;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 560,
-        "wires": [
-            [
-                "a271c8d0.c90f98"
-            ]
-        ]
-    },
-    {
-        "id": "dc153a8d.d532e8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nmsg.topic       = \"AC: \"+payload.G1.SET.S.ACT;\nmsg.payload     = payload.G1.SET.S.ACT;\nmsg.background  = payload.G1.SET.O.ACM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 580,
-        "wires": [
-            [
-                "367905e1.8df65a"
-            ]
-        ]
-    },
-    {
-        "id": "3f3b3e4b.18fcf2",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nmsg.topic       = \"Boost: \"+payload.G1.SET.S.ACOT;\nmsg.payload     = payload.G1.SET.S.ACOT;\nmsg.background  = payload.G1.SET.O.ACO == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 600,
-        "wires": [
-            [
-                "d0e644a9.855178"
-            ]
-        ]
-    },
-    {
-        "id": "4e817d5c.0f8e84",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nmsg.topic       = \"PV: \"+payload.G1.SET.S.PVT;\nmsg.payload     = payload.G1.SET.S.PVT;\nmsg.background  = payload.G1.SET.O.PVM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 620,
-        "wires": [
-            [
-                "d96d1a80.0ae378"
-            ]
-        ]
-    },
-    {
-        "id": "95c7e7bd.ee80a8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "//var payload = msg.data;\n//var I = parseFloat(payload.G1.I.AC);\nvar I = parseFloat(flow.get(\"AC_I\"));\n\nmsg.text = \"AC: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 860,
-        "wires": [
-            [
-                "ee973f35.9815d"
-            ]
-        ]
-    },
-    {
-        "id": "ca2e3c4.5abf6c",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nvar I = parseFloat(payload.G1.I.PV);\nmsg.text = \"PV: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 880,
-        "wires": [
-            [
-                "ed62c97b.1d7e68"
-            ]
-        ]
-    },
-    {
-        "id": "9fc2f20d.afb29",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.data;\nvar I = parseInt(payload.G1.T.PCB);\nmsg.text = \"PCB: <b>\"+I+\"</b>\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 420,
-        "y": 900,
-        "wires": [
-            [
-                "bcb46b7e.c68578"
-            ]
-        ]
-    },
-    {
-        "id": "a19a4c14.f0eb7",
-        "type": "mqtt out",
-        "z": "6e2de0a8.936f6",
-        "name": "Reset Alarms",
-        "topic": "",
-        "qos": "0",
-        "retain": "false",
-        "broker": "ea070992.9873a8",
-        "x": 570,
-        "y": 940,
-        "wires": []
     },
     {
         "id": "b0da8ce1.9f192",
@@ -1589,11 +1427,11 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 420,
+        "x": 800,
         "y": 940,
         "wires": [
             [
-                "a19a4c14.f0eb7"
+                "3182e939.4fc106"
             ]
         ]
     },
@@ -1616,7 +1454,7 @@
         "y": 580,
         "wires": [
             [
-                "8166bb4.62a0e48"
+                "573989ff.5996d8"
             ]
         ]
     },
@@ -1628,7 +1466,7 @@
         "label": "Boost Setpoint",
         "tooltip": "",
         "group": "fbbc4141.094d",
-        "order": 7,
+        "order": 6,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -1639,7 +1477,7 @@
         "y": 600,
         "wires": [
             [
-                "1fb2a2ed.4b8a1d"
+                "873ecb22.a0c258"
             ]
         ]
     },
@@ -1651,7 +1489,7 @@
         "label": "PV Setpoint",
         "tooltip": "",
         "group": "fbbc4141.094d",
-        "order": 6,
+        "order": 7,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -1662,7 +1500,7 @@
         "y": 620,
         "wires": [
             [
-                "c8bd71be.6aa8f"
+                "95ada48b.bf6f38"
             ]
         ]
     },
@@ -1672,7 +1510,7 @@
         "z": "6e2de0a8.936f6",
         "name": "",
         "group": "fbbc4141.094d",
-        "order": 20,
+        "order": 24,
         "width": "0",
         "height": "0",
         "passthru": false,
@@ -1684,7 +1522,7 @@
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 270,
+        "x": 550,
         "y": 940,
         "wires": [
             [
@@ -1697,15 +1535,15 @@
         "type": "ui_text",
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
-        "order": 8,
+        "order": 13,
         "width": "1",
-        "height": "1",
+        "height": "4",
         "name": "Blank",
         "label": "",
         "format": "",
         "layout": "row-spread",
-        "x": 700,
-        "y": 700,
+        "x": 710,
+        "y": 680,
         "wires": []
     },
     {
@@ -1714,7 +1552,7 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "Dial",
-        "order": 9,
+        "order": 12,
         "width": "4",
         "height": "4",
         "format": "<div id=\"thermostat\"></div>\n\n<style>\n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);\n#thermostat {\n  margin: 0 auto;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n.dial {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.dial.away .dial__ico__leaf {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--target {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--target--half {\n  visibility: hidden;\n}\n.dial.away .dial__lbl--away {\n  opacity: 1;\n}\n.dial .dial__shape {\n  -webkit-transition: fill 0.5s;\n  transition: fill 0.5s;\n}\n.dial__ico__leaf {\n  fill: #13EB13;\n  opacity: 0;\n  -webkit-transition: opacity 0.5s;\n  transition: opacity 0.5s;\n  pointer-events: none;\n}\n.dial.has-leaf .dial__ico__leaf {\n  display: block;\n  opacity: 1;\n  pointer-events: initial;\n}\n.dial__editableIndicator {\n  fill: white;\n  fill-rule: evenodd;\n  opacity: 0;\n  -webkit-transition: opacity 0.5s;\n  transition: opacity 0.5s;\n}\n.dial--edit .dial__editableIndicator {\n  opacity: 1;\n}\n.dial--state--off .dial__shape {\n  fill: #3d3c3c;\n}\n.dial--state--heating .dial__shape {\n  fill: #E36304;\n}\n.dial--state--cooling .dial__shape {\n  fill: #3c9517;\n}\n.dial__ticks path {\n  fill: rgba(255, 255, 255, 0.3);\n}\n.dial__ticks path.active {\n  fill: rgba(255, 255, 255, 0.8);\n}\n.dial text {\n  fill: white;\n  text-anchor: middle;\n  font-family: Helvetica, sans-serif;\n  alignment-baseline: central;\n}\n.dial__lbl--target {\n  font-size: 120px;\n  font-weight: bold;\n}\n.dial__lbl--target--half {\n  font-size: 40px;\n  font-weight: bold;\n  opacity: 0;\n  -webkit-transition: opacity 0.1s;\n  transition: opacity 0.1s;\n}\n.dial__lbl--target--half.shown {\n  opacity: 1;\n  -webkit-transition: opacity 0s;\n  transition: opacity 0s;\n}\n.dial__lbl--ambient {\n  font-size: 22px;\n  font-weight: bold;\n}\n.dial__lbl--away {\n  font-size: 72px;\n  font-weight: bold;\n  opacity: 0;\n  pointer-events: none;\n}\n#controls {\n  font-family: Open Sans;\n  background-color: rgba(255, 255, 255, 0.25);\n  padding: 20px;\n  border-radius: 5px;\n  position: absolute;\n  left: 50%;\n  -webkit-transform: translatex(-50%);\n          transform: translatex(-50%);\n  margin-top: 20px;\n}\n#controls label {\n  text-align: left;\n  display: block;\n}\n#controls label span {\n  display: inline-block;\n  width: 200px;\n  text-align: right;\n  font-size: 0.8em;\n  text-transform: uppercase;\n}\n#controls p {\n  margin: 0;\n  margin-bottom: 1em;\n  padding-bottom: 1em;\n  border-bottom: 2px solid #ccc;\n}\n</style>\n<script>\n    var thermostatDial = (function() {\n\t\n\t/*\n\t * Utility functions\n\t */\n\t\n\t// Create an element with proper SVG namespace, optionally setting its attributes and appending it to another element\n\tfunction createSVGElement(tag,attributes,appendTo) {\n\t\tvar element = document.createElementNS('http://www.w3.org/2000/svg',tag);\n\t\tattr(element,attributes);\n\t\tif (appendTo) {\n\t\t\tappendTo.appendChild(element);\n\t\t}\n\t\treturn element;\n\t}\n\t\n\t// Set attributes for an element\n\tfunction attr(element,attrs) {\n\t\tfor (var i in attrs) {\n\t\t\telement.setAttribute(i,attrs[i]);\n\t\t}\n\t}\n\t\n\t// Rotate a cartesian point about given origin by X degrees\n\tfunction rotatePoint(point, angle, origin) {\n\t\tvar radians = angle * Math.PI/180;\n\t\tvar x = point[0]-origin[0];\n\t\tvar y = point[1]-origin[1];\n\t\tvar x1 = x*Math.cos(radians) - y*Math.sin(radians) + origin[0];\n\t\tvar y1 = x*Math.sin(radians) + y*Math.cos(radians) + origin[1];\n\t\treturn [x1,y1];\n\t}\n\t\n\t// Rotate an array of cartesian points about a given origin by X degrees\n\tfunction rotatePoints(points, angle, origin) {\n\t\treturn points.map(function(point) {\n\t\t\treturn rotatePoint(point, angle, origin);\n\t\t});\n\t}\n\t\n\t// Given an array of points, return an SVG path string representing the shape they define\n\tfunction pointsToPath(points) {\n\t\treturn points.map(function(point, iPoint) {\n\t\t\treturn (iPoint>0?'L':'M') + point[0] + ' ' + point[1];\n\t\t}).join(' ')+'Z';\n\t}\n\t\n\tfunction circleToPath(cx, cy, r) {\n\t\treturn [\n\t\t\t\"M\",cx,\",\",cy,\n\t\t\t\"m\",0-r,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,r*2,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,0-r*2,\",\",0,\n\t\t\t\"z\"\n\t\t].join(' ').replace(/\\s,\\s/g,\",\");\n\t}\n\t\n\tfunction donutPath(cx,cy,rOuter,rInner) {\n\t\treturn circleToPath(cx,cy,rOuter) + \" \" + circleToPath(cx,cy,rInner);\n\t}\n\t\n\t// Restrict a number to a min + max range\n\tfunction restrictToRange(val,min,max) {\n\t\tif (val < min) return min;\n\t\tif (val > max) return max;\n\t\treturn val;\n\t}\n\t\n\t// Round a number to the nearest 0.5\n\tfunction roundHalf(num) {\n\t\treturn Math.round(num*2)/2;\n\t}\n\t\n\tfunction setClass(el, className, state) {\n\t\tel.classList[state ? 'add' : 'remove'](className);\n\t}\n\t\n\t/*\n\t * The \"MEAT\"\n\t */\n\n\treturn function(targetElement, options) {\n\t\tvar self = this;\n\t\t\n\t\t/*\n\t\t * Options\n\t\t */\n\t\toptions = options || {};\n\t\toptions = {\n\t\t\tdiameter: options.diameter || 400,\n\t\t\tminValue: options.minValue || 00, // Minimum value for target temperature\n\t\t\tmaxValue: options.maxValue || 85, // Maximum value for target temperature\n\t\t\tnumTicks: options.numTicks || 200, // Number of tick lines to display around the dial\n\t\t\tonSetTargetTemperature: options.onSetTargetTemperature || function() {}, // Function called when new target temperature set by the dial\n\t\t};\n\t\t\n\t\t/*\n\t\t * Properties - calculated from options in many cases\n\t\t */\n\t\tvar properties = {\n\t\t\ttickDegrees: 300, //  Degrees of the dial that should be covered in tick lines\n\t\t\trangeValue: options.maxValue - options.minValue,\n\t\t\tradius: options.diameter/2,\n\t\t\tticksOuterRadius: options.diameter / 30,\n\t\t\tticksInnerRadius: options.diameter / 8,\n\t\t\thvac_states: ['off', 'heating', 'cooling'],\n\t\t\tdragLockAxisDistance: 15,\n\t\t}\n\t\tproperties.lblAmbientPosition = [properties.radius, properties.ticksOuterRadius-(properties.ticksOuterRadius-properties.ticksInnerRadius)/2]\n\t\tproperties.offsetDegrees = 180-(360-properties.tickDegrees)/2;\n\t\t\n\t\t/*\n\t\t * Object state\n\t\t */\n\t\tvar state = {\n\t\t\ttarget_temperature: options.minValue,\n\t\t\tambient_temperature: options.minValue,\n\t\t\thvac_state: properties.hvac_states[0],\n\t\t\thas_leaf: false,\n\t\t\taway: false\n\t\t};\n\t\t\n\t\t/*\n\t\t * Property getter / setters\n\t\t */\n\t\tObject.defineProperty(this,'target_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.target_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.target_temperature = restrictTargetTemperature(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'ambient_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.ambient_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.ambient_temperature = roundHalf(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'hvac_state',{\n\t\t\tget: function() {\n\t\t\t\treturn state.hvac_state;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tif (properties.hvac_states.indexOf(val)>=0) {\n\t\t\t\t\tstate.hvac_state = val;\n\t\t\t\t\trender();\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'has_leaf',{\n\t\t\tget: function() {\n\t\t\t\treturn state.has_leaf;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.has_leaf = !!val;\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'away',{\n\t\t\tget: function() {\n\t\t\t\treturn state.away;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.away = !!val;\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\t\n\t\t/*\n\t\t * SVG\n\t\t */\n\t\tvar svg = createSVGElement('svg',{\n\t\t\twidth: '100%', //options.diameter+'px',\n\t\t\theight: '100%', //options.diameter+'px',\n\t\t\tviewBox: '0 0 '+options.diameter+' '+options.diameter,\n\t\t\tclass: 'dial'\n\t\t},targetElement);\n\t\t// CIRCULAR DIAL\n\t\tvar circle = createSVGElement('circle',{\n\t\t\tcx: properties.radius,\n\t\t\tcy: properties.radius,\n\t\t\tr: properties.radius,\n\t\t\tclass: 'dial__shape'\n\t\t},svg);\n\t\t// EDITABLE INDICATOR\n\t\tvar editCircle = createSVGElement('path',{\n\t\t\td: donutPath(properties.radius,properties.radius,properties.radius-4,properties.radius-8),\n\t\t\tclass: 'dial__editableIndicator',\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * Ticks\n\t\t */\n\t\tvar ticks = createSVGElement('g',{\n\t\t\tclass: 'dial__ticks'\t\n\t\t},svg);\n\t\tvar tickPoints = [\n\t\t\t[properties.radius-1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksInnerRadius],\n\t\t\t[properties.radius-1, properties.ticksInnerRadius]\n\t\t];\n\t\tvar tickPointsLarge = [\n\t\t\t[properties.radius-1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksInnerRadius+20],\n\t\t\t[properties.radius-1.5, properties.ticksInnerRadius+20]\n\t\t];\n\t\tvar theta = properties.tickDegrees/options.numTicks;\n\t\tvar tickArray = [];\n\t\tfor (var iTick=0; iTick<options.numTicks; iTick++) {\n\t\t\ttickArray.push(createSVGElement('path',{d:pointsToPath(tickPoints)},ticks));\n\t\t};\n\t\t\n\t\t/*\n\t\t * Labels\n\t\t */\n\t\tvar lblTarget = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--target'\n\t\t},svg);\n\t\tvar lblTarget_text = document.createTextNode('');\n\t\tlblTarget.appendChild(lblTarget_text);\n\t\t//\n\t\tvar lblTargetHalf = createSVGElement('text',{\n\t\t\tx: properties.radius + properties.radius/2.5,\n\t\t\ty: properties.radius - properties.radius/8,\n\t\t\tclass: 'dial__lbl dial__lbl--target--half'\n\t\t},svg);\n\t\tvar lblTargetHalf_text = document.createTextNode('5');\n\t\tlblTargetHalf.appendChild(lblTargetHalf_text);\n\t\t//\n\t\tvar lblAmbient = createSVGElement('text',{\n\t\t\tclass: 'dial__lbl dial__lbl--ambient'\n\t\t},svg);\n\t\tvar lblAmbient_text = document.createTextNode('');\n\t\tlblAmbient.appendChild(lblAmbient_text);\n\t\t//\n\t\tvar lblAway = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--away'\n\t\t},svg);\n\t\tvar lblAway_text = document.createTextNode('AWAY');\n\t\tlblAway.appendChild(lblAway_text);\n\t\t//\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf'\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * LEAF\n\t\t */\n\t\tvar leafScale = properties.radius/5/100;\n\t\tvar leafDef = [\"M\", 3, 84, \"c\", 24, 17, 51, 18, 73, -6, \"C\", 100, 52, 100, 22, 100, 4, \"c\", -13, 15, -37, 9, -70, 19, \"C\", 4, 32, 0, 63, 0, 76, \"c\", 6, -7, 18, -17, 33, -23, 24, -9, 34, -9, 48, -20, -9, 10, -20, 16, -43, 24, \"C\", 22, 63, 8, 78, 3, 84, \"z\"].map(function(x) {\n\t\t\treturn isNaN(x) ? x : x*leafScale;\n\t\t}).join(' ');\n\t\tvar translate = [properties.radius-(leafScale*100*0.5),properties.radius*1.5]\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf',\n\t\t\td: leafDef,\n\t\t\ttransform: 'translate('+translate[0]+','+translate[1]+')'\n\t\t},svg);\n\t\t\t\n\t\t/*\n\t\t * RENDER\n\t\t */\n\t\tfunction render() {\n\t\t\trenderAway();\n\t\t\trenderHvacState();\n\t\t\trenderTicks();\n\t\t\trenderTargetTemperature();\n\t\t\trenderAmbientTemperature();\n\t\t\trenderLeaf();\n\t\t}\n\t\trender();\n\n\t\t/*\n\t\t * RENDER - ticks\n\t\t */\n\t\tfunction renderTicks() {\n\t\t\tvar vMin, vMax;\n\t\t\tif (self.away) {\n\t\t\t\tvMin = self.ambient_temperature;\n\t\t\t\tvMax = vMin;\n\t\t\t} else {\n\t\t\t\tvMin = Math.min(self.ambient_temperature, self.target_temperature);\n\t\t\t\tvMax = Math.max(self.ambient_temperature, self.target_temperature);\n\t\t\t}\n\t\t\tvar min = restrictToRange(Math.round((vMin-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\tvar max = restrictToRange(Math.round((vMax-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\t//\n\t\t\ttickArray.forEach(function(tick,iTick) {\n\t\t\t\tvar isLarge = iTick==min || iTick==max;\n\t\t\t\tvar isActive = iTick >= min && iTick <= max;\n\t\t\t\tattr(tick,{\n\t\t\t\t\td: pointsToPath(rotatePoints(isLarge ? tickPointsLarge: tickPoints,iTick*theta-properties.offsetDegrees,[properties.radius, properties.radius])),\n\t\t\t\t\tclass: isActive ? 'active' : ''\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\t\n\t\t/*\n\t\t * RENDER - ambient temperature\n\t\t */\n\t\tfunction renderAmbientTemperature() {\n\t\t\tlblAmbient_text.nodeValue = Math.floor(self.ambient_temperature);\n\t\t\tif (self.ambient_temperature%1!=0) {\n\t\t\t\tlblAmbient_text.nodeValue += '⁵';\n\t\t\t}\n\t\t\tvar peggedValue = restrictToRange(self.ambient_temperature, options.minValue, options.maxValue);\n\t\t\tdegs = properties.tickDegrees * (peggedValue-options.minValue)/properties.rangeValue - properties.offsetDegrees;\n\t\t\tif (peggedValue > self.target_temperature) {\n\t\t\t\tdegs += 8;\n\t\t\t} else {\n\t\t\t\tdegs -= 8;\n\t\t\t}\n\t\t\tvar pos = rotatePoint(properties.lblAmbientPosition,degs,[properties.radius, properties.radius]);\n\t\t\tattr(lblAmbient,{\n\t\t\t\tx: pos[0],\n\t\t\t\ty: pos[1]\n\t\t\t});\n\t\t}\n\n\t\t/*\n\t\t * RENDER - target temperature\n\t\t */\n\t\tfunction renderTargetTemperature() {\n\t\t\tlblTarget_text.nodeValue = Math.floor(self.target_temperature);\n\t\t\tsetClass(lblTargetHalf,'shown',self.target_temperature%1!=0);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - leaf\n\t\t */\n\t\tfunction renderLeaf() {\n\t\t\tsetClass(svg,'has-leaf',self.has_leaf);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - HVAC state\n\t\t */\n\t\tfunction renderHvacState() {\n\t\t\tArray.prototype.slice.call(svg.classList).forEach(function(c) {\n\t\t\t\tif (c.match(/^dial--state--/)) {\n\t\t\t\t\tsvg.classList.remove(c);\n\t\t\t\t};\n\t\t\t});\n\t\t\tsvg.classList.add('dial--state--'+self.hvac_state);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - away\n\t\t */\n\t\tfunction renderAway() {\n\t\t\tsvg.classList[self.away ? 'add' : 'remove']('away');\n\t\t}\n\t\t\n\t\t/*\n\t\t * Drag to control\n\t\t */\n\t\tvar _drag = {\n\t\t\tinProgress: false,\n\t\t\tstartPoint: null,\n\t\t\tstartTemperature: 0,\n\t\t\tlockAxis: undefined\n\t\t};\n\t\t\n\t\tfunction eventPosition(ev) {\n\t\t\tif (ev.targetTouches && ev.targetTouches.length) {\n\t\t\t\treturn  [ev.targetTouches[0].clientX, ev.targetTouches[0].clientY];\n\t\t\t} else {\n\t\t\t\treturn [ev.x, ev.y];\n\t\t\t};\n\t\t}\n\t\t\n\t\tvar startDelay;\n\t\tfunction dragStart(ev) {\n\t\t\tstartDelay = setTimeout(function() {\n\t\t\t\tsetClass(svg, 'dial--edit', true);\n\t\t\t\t_drag.inProgress = true;\n\t\t\t\t_drag.startPoint = eventPosition(ev);\n\t\t\t\t_drag.startTemperature = self.ambient_temperature || options.minValue;\n\t\t\t\t_drag.lockAxis = undefined;\n\t\t\t},1000);\n\t\t};\n\t\t\n\t\tfunction dragEnd (ev) {\n\t\t\tclearTimeout(startDelay);\n\t\t\tsetClass(svg, 'dial--edit', false);\n\t\t\tif (!_drag.inProgress) return;\n\t\t\t_drag.inProgress = false;\n\t\t\tif (self.ambient_temperature != _drag.startTemperature) {\n\t\t\t\tif (typeof options.onSetTargetTemperature == 'function') {\n\t\t\t\t\toptions.onSetTargetTemperature(self.ambient_temperature);\n\t\t\t\t};\n\t\t\t};\n\t\t};\n\t\t\n\t\tfunction dragMove(ev) {\n\t\t\tev.preventDefault();\n\t\t\tif (!_drag.inProgress) return;\n\t\t\tvar evPos =  eventPosition(ev);\n\t\t\tvar dy = _drag.startPoint[1]-evPos[1];\n\t\t\tvar dx = evPos[0] - _drag.startPoint[0];\n\t\t\tvar dxy;\n\t\t\tif (_drag.lockAxis == 'x') {\n\t\t\t\tdxy  = dx;\n\t\t\t} else if (_drag.lockAxis == 'y') {\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dy) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'y';\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dx) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'x';\n\t\t\t\tdxy = dx;\n\t\t\t} else {\n\t\t\t\tdxy = (Math.abs(dy) > Math.abs(dx)) ? dy : dx;\n\t\t\t};\n\t\t\tvar dValue = (dxy*getSizeRatio())/(options.diameter)*properties.rangeValue;\n\t\t\tself.ambient_temperature = roundHalf(_drag.startTemperature+dValue);\n\t\t}\n\t\t\n\t\tsvg.addEventListener('mousedown',dragStart);\n\t\tsvg.addEventListener('touchstart',dragStart);\n\t\t\n\t\tsvg.addEventListener('mouseup',dragEnd);\n\t\tsvg.addEventListener('mouseleave',dragEnd);\n\t\tsvg.addEventListener('touchend',dragEnd);\n\t\t\n\t\tsvg.addEventListener('mousemove',dragMove);\n\t\tsvg.addEventListener('touchmove',dragMove);\n\t\t//\n\t\t\n\t\t/*\n\t\t * Helper functions\n\t\t */\n\t\tfunction restrictTargetTemperature(t) {\n\t\t\treturn restrictToRange(roundHalf(t),options.minValue,options.maxValue);\n\t\t}\n\t\t\n\t\tfunction angle(point) {\n\t\t\tvar dx = point[0] - properties.radius;\n\t\t\tvar dy = point[1] - properties.radius;\n\t\t\tvar theta = Math.atan(dx/dy) / (Math.PI/180);\n\t\t\tif (point[0]>=properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta - 90;\n\t\t\t} else if (point[0]>=properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta+270;\n\t\t\t}\n\t\t\treturn theta;\n\t\t};\n\t\t\n\t\tfunction getSizeRatio() {\n\t\t\treturn options.diameter / targetElement.clientWidth;\n\t\t}\n\t\t\n\t};\n})();\n\n/* ==== */\n(function(scope) {\n    \n    var nest = new thermostatDial(document.getElementById('thermostat'),{\n    \tonSetTargetTemperature: function(v) {\n    \t\tscope.send({topic: \"target_temperature\", payload: v});\n    \t}\n    });\n\n\n    scope.$watch('msg', function(data) {\n        //console.log(data.topic+\"  \"+data.payload);\n            nest.ambient_temperature = data.payload.temperature;\n            nest.target_temperature = data.payload.setpoint;\n            nest.hvac_state = data.payload.state;\n            nest.has_leaf = data.payload.leaf;\n            nest.away = data.payload.away;\n    });\n})(scope);\n\n</script>",
@@ -1723,7 +1561,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 550,
-        "y": 660,
+        "y": 640,
         "wires": [
             []
         ]
@@ -1754,7 +1592,47 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "ACkWh",
-        "order": 10,
+        "order": 14,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #FFE082;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#FFE082'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73f55b93.59fcc4",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "PVkWh",
+        "order": 15,
+        "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #C5E1A5;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#C5E1A5'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e52f5dd2.ccc3a",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "ACcost",
+        "order": 16,
         "width": "3",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #FFE082;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#FFE082'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1769,12 +1647,12 @@
         ]
     },
     {
-        "id": "73f55b93.59fcc4",
+        "id": "b5e233b.fd7e2d",
         "type": "ui_template",
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
-        "name": "PVkWh",
-        "order": 11,
+        "name": "PVsave",
+        "order": 17,
         "width": "3",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #C5E1A5;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#C5E1A5'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1789,52 +1667,12 @@
         ]
     },
     {
-        "id": "e52f5dd2.ccc3a",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fbbc4141.094d",
-        "name": "ACcost",
-        "order": 12,
-        "width": "3",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #FFE082;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#FFE082'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 560,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b5e233b.fd7e2d",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fbbc4141.094d",
-        "name": "PVsave",
-        "order": 13,
-        "width": "3",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #C5E1A5;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#C5E1A5'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 560,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3a3e523a.4bb81e",
         "type": "ui_template",
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "PV%",
-        "order": 14,
+        "order": 18,
         "width": "3",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1843,7 +1681,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 550,
-        "y": 780,
+        "y": 740,
         "wires": [
             []
         ]
@@ -1854,8 +1692,48 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "CO2",
-        "order": 15,
+        "order": 19,
         "width": "3",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be70ae9d.1682c",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "Alarms",
+        "order": 20,
+        "width": "6",
+        "height": "1",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? '#E65100' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 560,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee973f35.9815d",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "name": "AC I",
+        "order": 21,
+        "width": "2",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
         "storeOutMessages": true,
@@ -1869,52 +1747,12 @@
         ]
     },
     {
-        "id": "be70ae9d.1682c",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fbbc4141.094d",
-        "name": "Alarms",
-        "order": 16,
-        "width": "6",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? '#E65100' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 560,
-        "y": 820,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ee973f35.9815d",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fbbc4141.094d",
-        "name": "AC I",
-        "order": 17,
-        "width": "2",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 550,
-        "y": 860,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ed62c97b.1d7e68",
         "type": "ui_template",
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "PV I",
-        "order": 18,
+        "order": 22,
         "width": "2",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1923,7 +1761,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 550,
-        "y": 880,
+        "y": 820,
         "wires": [
             []
         ]
@@ -1934,7 +1772,7 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "PCB",
-        "order": 19,
+        "order": 23,
         "width": "2",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: black;\n                padding: 5px 5px;\n                text-align: left;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EEEEEE;\"\n            ng-style=\"{background: msg.payload == '1' ? '#E65100' : '#EEEEEE'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1943,7 +1781,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 550,
-        "y": 900,
+        "y": 840,
         "wires": [
             []
         ]
@@ -1974,7 +1812,7 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "PV",
-        "order": 3,
+        "order": 4,
         "width": "2",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -1994,7 +1832,7 @@
         "z": "6e2de0a8.936f6",
         "group": "fbbc4141.094d",
         "name": "Boost",
-        "order": 4,
+        "order": 3,
         "width": "2",
         "height": "1",
         "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'DeepSkyBlue' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
@@ -2007,573 +1845,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "1fb2a2ed.4b8a1d",
-        "type": "rbe",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "property": "payload",
-        "x": 730,
-        "y": 600,
-        "wires": [
-            [
-                "bbed780b.7eda28"
-            ]
-        ]
-    },
-    {
-        "id": "8166bb4.62a0e48",
-        "type": "rbe",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "property": "payload",
-        "x": 730,
-        "y": 580,
-        "wires": [
-            [
-                "8be3dbec.3b3dc8"
-            ]
-        ]
-    },
-    {
-        "id": "a8488942.b1e5a8",
-        "type": "comment",
-        "z": "6e2de0a8.936f6",
-        "name": "Settings 1",
-        "info": "",
-        "x": 100,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "999dcc7f.d4ae",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "ACM",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACM\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.ACM;\n    msg.text = \"AC Control\"    ;\n    node.status({text:msg.payload});\n    msg.topic = \"AC\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1080,
-        "wires": [
-            [
-                "fe269fd9.19428",
-                "6f39e454.4227bc"
-            ]
-        ]
-    },
-    {
-        "id": "4bce2af4.eb1fd4",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "ACO",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACO\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.ACO;\n    msg.text = \"Boost\"\n    node.status({text:msg.payload});\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1120,
-        "wires": [
-            [
-                "26526e21.edf462",
-                "2eed69ce.46f186"
-            ]
-        ]
-    },
-    {
-        "id": "dc0fb41c.dc6798",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "PVM",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"PVM\");\nif(n===true)\n{\n    msg.payload = msg.payload.O.PVM;\n    msg.text = \"PV Control\"\n    msg.topic = \"PV\";\n    node.status({text:msg.payload});\n    return msg;}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1160,
-        "wires": [
-            [
-                "583cb501.3814dc",
-                "5123c022.9db6f"
-            ]
-        ]
-    },
-    {
-        "id": "f1cb20cc.2420c",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "ACT",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACT;\n    node.status({text:msg.payload});\n    msg.topic = \"setpoint\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1200,
-        "wires": [
-            [
-                "ab43be98.51c94"
-            ]
-        ]
-    },
-    {
-        "id": "da53ebef.547fd8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "ACOT",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACOT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACOT;\n    node.status({text:msg.payload});\n    msg.topic = \"setpoint\";\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1240,
-        "wires": [
-            [
-                "e18f7109.55303"
-            ]
-        ]
-    },
-    {
-        "id": "c8fec9c7.032f68",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "PVT",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"PVT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.PVT;\n    node.status({text:msg.payload});\n    flow.set(\"pv1setpoint\", msg.payload);\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1280,
-        "wires": [
-            [
-                "a76e06d2.f8b0b8"
-            ]
-        ]
-    },
-    {
-        "id": "fe269fd9.19428",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fe1ee148.0ce71",
-        "name": "Status",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 530,
-        "y": 1080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "26526e21.edf462",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fe1ee148.0ce71",
-        "name": "Status",
-        "order": 3,
-        "width": "4",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 530,
-        "y": 1120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "583cb501.3814dc",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fe1ee148.0ce71",
-        "name": "Status",
-        "order": 4,
-        "width": "4",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: white;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: grey;\"\n            ng-style=\"{background: msg.payload == '1' ? 'Orange' : 'grey'}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 530,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "295f172.00aafe8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1200,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "ab43be98.51c94",
-        "type": "ui_text_input",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "AC Setpoint",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 8,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "mode": "number",
-        "delay": "0",
-        "topic": "",
-        "x": 670,
-        "y": 1200,
-        "wires": [
-            [
-                "295f172.00aafe8"
-            ]
-        ]
-    },
-    {
-        "id": "4aa503c7.9b8cbc",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACOT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1240,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "2fb11f9d.7ff33",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload;\nvar output\t= [];\nif(msg.payload > 70)    // limit to 70\n{\n    payload = 70;\n}\nelse\n{\n    payload = msg.payload;\n}\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"PVT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1280,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "e18f7109.55303",
-        "type": "ui_text_input",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "Boost Setpoint",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 9,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "mode": "number",
-        "delay": "0",
-        "topic": "",
-        "x": 660,
-        "y": 1240,
-        "wires": [
-            [
-                "4aa503c7.9b8cbc"
-            ]
-        ]
-    },
-    {
-        "id": "a76e06d2.f8b0b8",
-        "type": "ui_text_input",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "PV Setpoint",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 10,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "mode": "number",
-        "delay": "0",
-        "topic": "",
-        "x": 670,
-        "y": 1280,
-        "wires": [
-            [
-                "2fb11f9d.7ff33"
-            ]
-        ]
-    },
-    {
-        "id": "6f39e454.4227bc",
-        "type": "ui_switch",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "AC Control",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 670,
-        "y": 1080,
-        "wires": [
-            [
-                "90546bdf.a5a718"
-            ]
-        ]
-    },
-    {
-        "id": "2eed69ce.46f186",
-        "type": "ui_switch",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "AC Override",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 670,
-        "y": 1120,
-        "wires": [
-            [
-                "a6554ece.9eb6"
-            ]
-        ]
-    },
-    {
-        "id": "5123c022.9db6f",
-        "type": "ui_switch",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "PV Control",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 670,
-        "y": 1160,
-        "wires": [
-            [
-                "fe6e2190.dfd13"
-            ]
-        ]
-    },
-    {
-        "id": "90546bdf.a5a718",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nnode.status({text:msg.payload});\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1080,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "a6554ece.9eb6",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACO\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1120,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "fe6e2190.dfd13",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"PVM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1160,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "68a34261.c75eec",
-        "type": "ui_template",
-        "z": "6e2de0a8.936f6",
-        "group": "fe1ee148.0ce71",
-        "name": "Title",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: #273746;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                font-weight: bold;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #808080;\"\n            ng-style=\"{background: #808080}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 830,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6b8fd21.e4f252c",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "msg.payload=1\nmsg.text = \"Settings\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 680,
-        "y": 1040,
-        "wires": [
-            [
-                "68a34261.c75eec"
-            ]
-        ]
-    },
-    {
-        "id": "74efd036.73c12",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "ACCT",
-        "func": "var str = JSON.stringify(msg.payload);\nvar n = str.includes(\"ACCT\");\nif(n===true)\n{\n    msg.payload = msg.payload.S.ACCT;\n    node.status({text:msg.payload});\n    return msg;\n}\nelse\n{\n    return null\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 1320,
-        "wires": [
-            [
-                "fc7f2b1c.53ff48"
-            ]
-        ]
-    },
-    {
-        "id": "fc7f2b1c.53ff48",
-        "type": "ui_text_input",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "label": "Comfort Setpoint",
-        "tooltip": "",
-        "group": "fe1ee148.0ce71",
-        "order": 11,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "mode": "number",
-        "delay": "0",
-        "topic": "",
-        "x": 650,
-        "y": 1320,
-        "wires": [
-            [
-                "eae16ac4.f8c9c8"
-            ]
-        ]
-    },
-    {
-        "id": "eae16ac4.f8c9c8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "var payload;\nvar unit = flow.get(\"unit\");\nvar output\t= [];\nif(msg.payload > 70)    // limit to 70\n{\n    payload = 70;\n}\nelse\n{\n    payload = msg.payload;\n}\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACCT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 820,
-        "y": 1320,
-        "wires": [
-            [
-                "daeb9e0.2803b6"
-            ]
-        ]
-    },
-    {
-        "id": "8f9d2f8b.fa601",
-        "type": "ui_text",
-        "z": "6e2de0a8.936f6",
-        "group": "fe1ee148.0ce71",
-        "order": 11,
-        "width": "4",
-        "height": "2",
-        "name": "Blank",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 410,
-        "y": 1040,
-        "wires": []
     },
     {
         "id": "d3f32d8d.5c11e",
@@ -2621,71 +1892,6 @@
                 "d3f32d8d.5c11e"
             ]
         ]
-    },
-    {
-        "id": "ceb97731.2742e8",
-        "type": "comment",
-        "z": "6e2de0a8.936f6",
-        "name": "Save data to SQL",
-        "info": "Save data to SQL",
-        "x": 730,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "b193e821.19e0a8",
-        "type": "function",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "func": "// GW/gwCECC50E32854A4/1/SET\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GW/\"+unit+\"/1/SET\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 160,
-        "y": 1080,
-        "wires": [
-            [
-                "bfc51bfa.b51d78"
-            ]
-        ]
-    },
-    {
-        "id": "bfc51bfa.b51d78",
-        "type": "mqtt-in-dynamicsub",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "qos": "2",
-        "datatype": "json",
-        "unsubscribe-after-first-msg-recv": false,
-        "debug-subscribe": false,
-        "broker": "ea070992.9873a8",
-        "x": 290,
-        "y": 1080,
-        "wires": [
-            [
-                "6b8fd21.e4f252c",
-                "4bce2af4.eb1fd4",
-                "dc0fb41c.dc6798",
-                "f1cb20cc.2420c",
-                "da53ebef.547fd8",
-                "c8fec9c7.032f68",
-                "74efd036.73c12"
-            ]
-        ]
-    },
-    {
-        "id": "daeb9e0.2803b6",
-        "type": "mqtt out",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "false",
-        "broker": "ea070992.9873a8",
-        "x": 970,
-        "y": 1080,
-        "wires": []
     },
     {
         "id": "a48dbabf.4f5808",
@@ -4029,22 +3235,6 @@
         "x": 450,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "69567a2e.9bba14",
-        "type": "link in",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "links": [
-            "1f464150.6118ff"
-        ],
-        "x": 75,
-        "y": 1080,
-        "wires": [
-            [
-                "b193e821.19e0a8"
-            ]
-        ]
     },
     {
         "id": "1f464150.6118ff",
@@ -9705,6 +8895,7 @@
         "id": "a3ad21bb.8e08a8",
         "type": "ui_template",
         "z": "3bab7d86.a7d252",
+        "d": true,
         "group": "ada4e0c8.ca2d58",
         "name": "",
         "order": 0,
@@ -9714,12 +8905,10 @@
         "storeOutMessages": false,
         "fwdInMessages": false,
         "templateScope": "local",
-        "x": 260,
+        "x": 320,
         "y": 440,
         "wires": [
-            [
-                "89d9b60a.9b44e8"
-            ]
+            []
         ]
     },
     {
@@ -9742,118 +8931,743 @@
         ]
     },
     {
-        "id": "88c9b5ce.ba0f08",
-        "type": "ui_template",
-        "z": "3bab7d86.a7d252",
-        "group": "357d373a.2d1478",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<h3>Testing template</h3>\n<p>{{msg.payload}}</p>\n<script>\n(function() {\n    var count = 0\n    function testit(msg,scope) {\n        count = count+1;\n        console.log(\"In testit \" + msg.payload + \"  count = \" + count);\n        scope.send({payload: \"from testit \" + msg.payload + \"  count = \" + count});\n    }\n    \n    (function(scope) {\n        scope.send({payload: \"preload\"});   // this gets sent when the view is opened in the browser\n        scope.$watch('msg', function(msg) {\n            if (msg) {\n                testit(msg, scope);\n            }\n        });\n    })(scope);\n})();\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 260,
-        "y": 480,
+        "id": "7f070581.dbc3ec",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "Gauge",
+        "func": "var payload = msg.data;\nvar temperature;    // 0-100\nvar setpoint;       // 0-100\nvar gwState;        // \"heating\", \"cooling\"\nvar leaf;\nvar away = flow.get(\"enabled1\") || 0;\nvar _output = {};\n\n\nif(payload.G1.STS.O_PV===1){gwState = \"cooling\";}\nif(payload.G1.STS.O_AC===1){gwState = \"heating\";}\nif(payload.G1.STS.O_PV===0 && payload.G1.STS.O_AC===0){gwState = \"Off\";}\n\n//if(payload.G1.SET.O.PVM===1 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===1){gwState = \"heating\";}\n//if(payload.G1.SET.O.PVM===0 && payload.G1.SET.O.ACM===0){gwState = \"Off\";}\n\ntemperature = parseInt(payload.G1.T.G);\nglobal.set(\"GW_Temperature\", temperature);\nif (gwState == \"heating\")\n{\n    setpoint = parseInt(payload.G1.SET.S.ACT);\n}\nelse if(gwState == \"cooling\")\n{\n    setpoint = parseInt(payload.G1.SET.S.PVT);\n}\n\nleaf = 0;\n//away = 0;   // holiday mode\n\nvar output\t= [];\n\nvar _output = {\n        \"payload\": {\n\t\t\t\t    \"temperature\":setpoint,\n\t\t\t\t    \"setpoint\":temperature,\n\t\t\t\t    \"state\":gwState,\n\t\t\t\t    \"leaf\":leaf,\n\t\t\t\t    \"away\":away\n        }\n};\noutput = [\n\t\t\t_output\n\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 430,
+        "y": 320,
         "wires": [
-            [
-                "c639a62a.8caef8"
-            ]
-        ],
-        "info": "## Sending and receiving messages to/from javascript in Dashboard Template node\nThis is a simple flow demonstrating how to send messages to javascript in a Dashboard Template node and how to send messages back to the flow from javascript. In addition it shows how to send a message to node-red when the view is opened in a browser, which is useful for preloading data into the view when it is first opened.\n\nAs is shown in the flow exactly the same code can be used in two templates, each picking up messages from node-red and sending responses back."
+            []
+        ]
     },
     {
-        "id": "3f711b15.d883c4",
-        "type": "inject",
-        "z": "3bab7d86.a7d252",
+        "id": "2614e99b.79e286",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "Heading",
+        "func": "msg.payload=1\nmsg.text = \"GeyserWorx\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a766587.30d3c8",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "G1ACkW",
+        "func": "var payload = flow.get(\"G1ACkW\")||0;\nmsg.text = \"AC: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c45702f0.a74af",
+        "type": "function",
+        "z": "9017b7f1.46d278",
         "name": "",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "",
-        "payload": "Two",
-        "payloadType": "str",
-        "x": 110,
+        "func": "//msg.payload = flow.get(\"unit\");\nmsg.payload = \"gw2E2C3AE83E76C0\";\nmsg.unit = 1;\nmsg.desc = \"Test 1\"\nmsg.data = global.get(\"_geyserTestData_\"+msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 220,
+        "y": 40,
+        "wires": [
+            [
+                "2614e99b.79e286",
+                "7f070581.dbc3ec",
+                "9a766587.30d3c8",
+                "4bdf082c.b0a1e8",
+                "60cb3fdf.261a6",
+                "59f52ee6.6823d",
+                "613dfab0.a6b004",
+                "7abdc685.6f5f88",
+                "1a334a04.4cc486",
+                "ca409155.d21a9",
+                "e0e86061.56be1",
+                "4b1000c4.26b93",
+                "411111d6.91382",
+                "d8be77a5.a608c8",
+                "1494471b.6246c9",
+                "1efcbba6.8edd54",
+                "b5c6cd7f.a6a31",
+                "67463999.90efa8",
+                "82a16200.51a76",
+                "53e59b03.7627d4",
+                "2eaee034.ec02f"
+            ]
+        ]
+    },
+    {
+        "id": "4bdf082c.b0a1e8",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "G1PVkW",
+        "func": "var payload = flow.get(\"G1PVkW\")||0;\nmsg.text = \"PV: <b>\"+payload+\"</b> kWh\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60cb3fdf.261a6",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "G1ACCost",
+        "func": "var payload = flow.get(\"G1ACCost\")||0;\nmsg.text = \"AC cost: <b>R \"+payload+\"</b>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59f52ee6.6823d",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "G1PVCost",
+        "func": "var payload = flow.get(\"G1PVCost\")||0;\nmsg.text = \"PV saving: <b>R \"+payload+\"</b>\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
         "y": 480,
         "wires": [
             []
         ]
     },
     {
-        "id": "89d9b60a.9b44e8",
-        "type": "debug",
-        "z": "3bab7d86.a7d252",
-        "name": "",
-        "active": true,
-        "console": "false",
-        "complete": "false",
-        "x": 750,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "aece47ab.d4951",
-        "type": "debug",
-        "z": "3bab7d86.a7d252",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "c639a62a.8caef8",
+        "id": "613dfab0.a6b004",
         "type": "function",
-        "z": "3bab7d86.a7d252",
-        "name": "",
-        "func": "if(msg.payload == \"preload\")\n{\n    msg.payload = 1;\n}\nelse\n{\n    msg.payload = 0;\n}\nreturn msg;",
+        "z": "9017b7f1.46d278",
+        "name": "G1PVUsage",
+        "func": "var payload = flow.get(\"G1PVUsage\")||0;\nmsg.text = \"PV usage: <b>\"+payload+\" </b>%\";\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 420,
-        "y": 480,
-        "wires": [
-            [
-                "aece47ab.d4951"
-            ]
-        ]
-    },
-    {
-        "id": "a41b11e0.b967c",
-        "type": "ui_template",
-        "z": "3bab7d86.a7d252",
-        "group": "357d373a.2d1478",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<p>{{msg.payload}}</p>\n<script>\n    (function(scope) {\n        scope.send({payload: \"refresh\"});   // this gets sent when the view is opened in the browser\n        scope.$watch('msg', function(msg) {\n            if (msg) {\n                testit(msg, scope);\n            }\n        });\n    })(scope);\n})();\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 260,
+        "x": 450,
         "y": 520,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abdc685.6f5f88",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "G1Carbon",
+        "func": "var payload = flow.get(\"G1Carbon\")||0;\nmsg.text = \"CO2: <b>\"+payload+\"</b> tCO2e\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a334a04.4cc486",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "Alarms",
+        "func": "var payload = msg.data;\nvar alarms;\n\nif(payload.G1.STS.Tr_Th==1 || payload.G1.STS.Tr_Te==1 || payload.G1.STS.Tr_DR==1 || payload.G1.STS.Tr_CS==1 || payload.G1.STS.Tr_PCB==1 || payload.G1.STS.A_Sc==1 || payload.G1.STS.A_An==1 || payload.G1.STS.A_DT==1)\n{\n    if(payload.G1.STS.Tr_Th==1){alarms=\"Over Temperature\"}\n    if(payload.G1.STS.Tr_Te==1){alarms=\"Low Temperature\"}\n    if(payload.G1.STS.Tr_DR==1){alarms=\"Dry Burn Alarm\"}\n    if(payload.G1.STS.Tr_CS==1){alarms=\"Contactor Fault\"}\n    if(payload.G1.STS.Tr_PCB==1){alarms=\"PCB Temperature Hi\"}\n    if(payload.G1.STS.A_Sc==1){alarms=\"Scale Build-up\"}\n    if(payload.G1.STS.A_An==1){alarms=\"Anode Depletion Alarm\"}\n    if(payload.G1.STS.A_DT==1){alarms=\"Driptray Water Alarm\"}\n}\nelse\n{\n    alarms = \"None\";\n}\n\nmsg.text = \"Alarms: <b>\"+alarms+\"</b>\";\nif(alarms != \"None\")\n{\n    msg.payload = \"1\";\n}\nelse\n{\n    msg.payload = \"0\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca409155.d21a9",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "AC On",
+        "func": "var payload = msg.data;\nif(payload.G1.STS.O_AC===0)\n{\n    msg.topic = \"AC:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"AC:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_AC;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 430,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0e86061.56be1",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "PV On",
+        "func": "var payload = msg.data;\nif(payload.G1.STS.O_PV===0)\n{\n    msg.topic = \"PV:Off\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"PV:On\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.STS.O_PV;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 430,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b1000c4.26b93",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "Boost On",
+        "func": "var payload = msg.data;\nif(payload.G1.SET.O.ACO===0)\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nelse\n{\n    msg.topic = \"Boost\"\n    msg.text = msg.topic;\n}\nmsg.payload     = payload.G1.SET.O.ACO;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "411111d6.91382",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "AC Setpoint",
+        "func": "var payload = msg.data;\nmsg.topic       = \"AC: \"+payload.G1.SET.S.ACT;\nmsg.payload     = payload.G1.SET.S.ACT;\nmsg.background  = payload.G1.SET.O.ACM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8be77a5.a608c8",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "Boost Setpoint",
+        "func": "var payload = msg.data;\nmsg.topic       = \"Boost: \"+payload.G1.SET.S.ACOT;\nmsg.payload     = payload.G1.SET.S.ACOT;\nmsg.background  = payload.G1.SET.O.ACO == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1494471b.6246c9",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "PV Setpoint",
+        "func": "var payload = msg.data;\nmsg.topic       = \"PV: \"+payload.G1.SET.S.PVT;\nmsg.payload     = payload.G1.SET.S.PVT;\nmsg.background  = payload.G1.SET.O.PVM == 1 ? \"DeepSkyBlue\" : \"grey\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1efcbba6.8edd54",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "AC Current",
+        "func": "var I = parseFloat(flow.get(\"AC_I\"));\n\nmsg.text = \"AC: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5c6cd7f.a6a31",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "PV Current",
+        "func": "var payload = msg.data;\nvar I = parseFloat(payload.G1.I.PV);\nmsg.text = \"PV: <b>\"+I.toFixed(2)+\"</b> A\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67463999.90efa8",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "PCB Temperature",
+        "func": "var payload = msg.data;\nvar I = parseInt(payload.G1.T.PCB);\nmsg.text = \"PCB: <b>\"+I+\"</b>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53e59b03.7627d4",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "PV Enable",
+        "func": "var payload = msg.data;\nmsg.payload = payload.G1.SET.O.PVM;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eaee034.ec02f",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "AC Boost",
+        "func": "var payload = msg.data;\nmsg.payload = payload.G1.SET.O.ACO;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82a16200.51a76",
+        "type": "function",
+        "z": "9017b7f1.46d278",
+        "name": "AC Enable",
+        "func": "var payload = msg.data;\nmsg.payload = payload.G1.SET.O.ACM;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95342c15.3d1b7",
+        "type": "subflow:9017b7f1.46d278",
+        "z": "6e2de0a8.936f6",
+        "name": "Dashboard",
+        "env": [],
+        "x": 340,
+        "y": 700,
+        "wires": [
             [
-                "77df3076.fe1ec"
+                "c5110632.f2e218"
+            ],
+            [
+                "8f3cdbbe.456618"
+            ],
+            [
+                "4578b6ee.9ac6d8"
+            ],
+            [
+                "a271c8d0.c90f98"
+            ],
+            [
+                "367905e1.8df65a"
+            ],
+            [
+                "d0e644a9.855178"
+            ],
+            [
+                "d96d1a80.0ae378"
+            ],
+            [
+                "4a1d86b9.27b458"
+            ],
+            [
+                "7f82f9e1.9cfab8"
+            ],
+            [
+                "73f55b93.59fcc4"
+            ],
+            [
+                "e52f5dd2.ccc3a"
+            ],
+            [
+                "b5e233b.fd7e2d"
+            ],
+            [
+                "3a3e523a.4bb81e"
+            ],
+            [
+                "ca24fd24.0e039"
+            ],
+            [
+                "be70ae9d.1682c"
+            ],
+            [
+                "ee973f35.9815d"
+            ],
+            [
+                "ed62c97b.1d7e68"
+            ],
+            [
+                "bcb46b7e.c68578"
+            ],
+            [
+                "a4c42987.f2aff8"
+            ],
+            [
+                "3d49aeba.b5fdf2"
+            ],
+            [
+                "938e5a14.739568"
             ]
         ]
     },
     {
-        "id": "77df3076.fe1ec",
+        "id": "a4c42987.f2aff8",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "AC",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-check-square",
+        "oncolor": "green",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-square-o",
+        "offcolor": "grey",
+        "x": 550,
+        "y": 860,
+        "wires": [
+            [
+                "fb3b9f3.d66396"
+            ]
+        ]
+    },
+    {
+        "id": "3d49aeba.b5fdf2",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "Boost",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-check-square",
+        "oncolor": "green",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-square-o",
+        "offcolor": "grey",
+        "x": 550,
+        "y": 880,
+        "wires": [
+            [
+                "f28854c0.ffeb68"
+            ]
+        ]
+    },
+    {
+        "id": "938e5a14.739568",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "PV",
+        "tooltip": "",
+        "group": "fbbc4141.094d",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-check-square",
+        "oncolor": "green",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-square-o",
+        "offcolor": "grey",
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [
+                "31688f99.74cf8"
+            ]
+        ]
+    },
+    {
+        "id": "fb3b9f3.d66396",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nnode.status({text:msg.payload});\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 860,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "f28854c0.ffeb68",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"ACO\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 880,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "31688f99.74cf8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"O\":{\n    \t\t\t\t    \"PVM\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 900,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "95ada48b.bf6f38",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "PVT",
+        "func": "var payload;\nvar output\t= [];\nif(msg.payload > 70)    // limit to 70\n{\n    payload = 70;\n}\nelse\n{\n    payload = msg.payload;\n}\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"PVT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 790,
+        "y": 620,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "873ecb22.a0c258",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACOT",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACOT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 790,
+        "y": 600,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "573989ff.5996d8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "ACT",
+        "func": "var payload = msg.payload;\nvar output\t= [];\n\nvar setpoint = {\n        \"payload\": {\n\t\t\t\t    \"S\":{\n    \t\t\t\t    \"ACT\": payload\n    \t\t\t\t}\n        },\n    \t\"topic\": \"GWR/\"+flow.get(\"unit\")+\"/1/SET\"\n};\n\t\t//-----------------------------------------------------------------------------------------\n\noutput\t=\t[\n\t\t\t\tsetpoint\n\t\t\t];\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 790,
+        "y": 580,
+        "wires": [
+            [
+                "3182e939.4fc106"
+            ]
+        ]
+    },
+    {
+        "id": "3182e939.4fc106",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "Settings",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 940,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "87d5723b.32735",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "fbbc4141.094d",
+        "order": 11,
+        "width": "1",
+        "height": "4",
+        "name": "Blank",
+        "label": "",
+        "format": "",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "1dbef96.d502607",
+        "type": "http in",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 80,
+        "y": 40,
+        "wires": [
+            [
+                "b7d0eee.4f0541"
+            ]
+        ]
+    },
+    {
+        "id": "b7d0eee.4f0541",
+        "type": "template",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n    <head>\n        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css\" integrity=\"sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ\" crossorigin=\"anonymous\">\n    </head>\n<body>\n\n<h1>Hello!</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n",
+        "output": "str",
+        "x": 240,
+        "y": 40,
+        "wires": [
+            [
+                "9970bcf8.fc1f7"
+            ]
+        ]
+    },
+    {
+        "id": "9970bcf8.fc1f7",
+        "type": "http response",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bb42ef49.10898",
+        "type": "feedparse",
+        "z": "e0d6b532.907248",
+        "name": "MotoGP1",
+        "url": "https://www.autosport.com/rss/feed/motogp",
+        "interval": "1",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "322a8f31.6d72d"
+            ]
+        ]
+    },
+    {
+        "id": "3334fbb7.f3e904",
         "type": "debug",
-        "z": "3bab7d86.a7d252",
+        "z": "e0d6b532.907248",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -9864,7 +9678,582 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 520,
+        "y": 80,
         "wires": []
+    },
+    {
+        "id": "322a8f31.6d72d",
+        "type": "switch",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "property": "article.description",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "Teruel",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "274883b4.63027c"
+            ]
+        ]
+    },
+    {
+        "id": "274883b4.63027c",
+        "type": "change",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "article.title",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "from",
+                "pt": "msg",
+                "to": "Node-Red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "c74f3364.1f6a1"
+            ]
+        ]
+    },
+    {
+        "id": "c74f3364.1f6a1",
+        "type": "template",
+        "z": "e0d6b532.907248",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n    <head>\n        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css\" integrity=\"sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ\" crossorigin=\"anonymous\">\n    </head>\n<body>\n\n<h1>Hello!</h1>\n\n<p>{{article.description}}</p>\n<p>Read more: {{{article.link}}}</p>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "3334fbb7.f3e904"
+            ]
+        ]
+    },
+    {
+        "id": "50c06583.5345bc",
+        "type": "function",
+        "z": "3bab7d86.a7d252",
+        "name": "Convert_32bits_Foat",
+        "func": "var lowBytes = msg.payload.data[0];\nvar highBytes = msg.payload.data[1];\nvar array = [];\nfor ( i = 0 ; i < 32; i++)\n{\n   if ( i < 16)\n   {\n       if ( highBytes % 2 == 0)\n       {\n           array[i] = 0;\n       } else {\n           array[i] = 1;\n       }\n       highBytes = Math.floor(highBytes / 2);\n   } else {\n       if ( lowBytes % 2 == 0)\n       {\n           array[i] = 0;\n       } else {\n           array[i] = 1;\n       }\n       lowBytes = Math.floor(lowBytes / 2);\n   }\n}\nvar sign = Math.pow((-1),array[31]);\nvar e = 1 * array[23] + 2 * array[24] + 4 * array[25] + 8 * array[26] + 16 * array[27] + 32 * array[28] + 64 * array[29] + 128 * array[30];\nvar matissa = 1 + array[22] * Math.pow(2,-1) + array[21] * Math.pow(2,-2) + array[20] * Math.pow(2,-3) + array[19] * Math.pow(2,-4) + array[18] * Math.pow(2,-5) + array[17] * Math.pow(2,-6) + array[16] * Math.pow(2,-7) + array[15] * Math.pow(2,-8) + array[14] * Math.pow(2,-9) + array[13] * Math.pow(2,-10) + array[12] * Math.pow(2,-11) + array[11] * Math.pow(2,-12) + array[10] * Math.pow(2,-13) + array[9] * Math.pow(2,-14) + array[8] * Math.pow(2,-15) + array[7] * Math.pow(2,-16) + array[6] * Math.pow(2,-17) + array[5] * Math.pow(2,-18) + array[4] * Math.pow(2,-19) + array[3] * Math.pow(2,-20) + array[2] * Math.pow(2,-21) + array[1] * Math.pow(2,-22) + array[0] * Math.pow(2,-23);\nvar value = sign * Math.pow(2,(e-127)) * matissa;\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f476595.aa436a8",
+        "type": "function",
+        "z": "dc275690.07356",
+        "name": "schedule function",
+        "func": "const schedule = msg.payload;\nif(typeof msg.payload === \"undefined\") return null;\nlet scheduled = context.scheduled || [];\nlet todelete = [];\nscheduled.forEach((item,index) => {\n    if(!schedule.some(element => JSON.stringify(element) == JSON.stringify(item.schedule))){\n        clearTimeout(item.timer);\n        todelete.push(index);\n    }\n})\nscheduled = scheduled.filter((item,index) => !todelete.includes(index));\ncontext.scheduled = scheduled;\nschedule.forEach(element => {\n    const execute = element;\n    const time = new Date();\n    const timestamp = time.getTime();\n    const hour = time.getHours();\n    const minute = time.getMinutes();\n    const year = time.getFullYear();\n    const month = time.getMonth();\n    const day = time.getDate();\n    const inputS = execute.time.split(\":\");\n    const hourS = parseInt(inputS[0]);\n    const minuteS = parseInt(inputS[1]);\n    if(typeof hourS != \"number\" || typeof minuteS != \"number\") return null;\n    const timeS = new Date(year, month, day, hourS, minuteS);\n    const timestampS = timeS.getTime();\n    let timestampD = 0;\n    if(timestampS >= timestamp){\n        timestampD = timestampS - timestamp;\n    } else {\n        timestampD = (timestampS + 86400000) - timestamp;\n    }\n    let oldscheduled = context.scheduled;\n    if(!oldscheduled.some(element => JSON.stringify(element.schedule) == JSON.stringify(execute))){\n        const newtimer = setTimeout(()=>{\n            let newscheduled = context.scheduled;\n            const deleteindex = newscheduled.indexOf(newschedule);\n            newscheduled.splice(deleteindex,1);\n            node.send({payload:newschedule.schedule});\n            context.scheduled = newscheduled;\n        },timestampD);\n        const newschedule = {\n            runtime: timestampD,\n            timer: newtimer,\n            schedule: execute\n        };\n        oldscheduled.push(newschedule);\n        context.scheduled = oldscheduled;\n    }\n});\nconst sendscheduled = context.scheduled;\nmsg.topic = \"scheduled\";\nconst newmsg = sendscheduled.map(item => {\n    return {schedule:item.schedule,runtime:item.runtime}\n});\nmsg.payload = newmsg;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 200,
+        "wires": [
+            [
+                "cd6382ee.28d1c8"
+            ]
+        ]
+    },
+    {
+        "id": "a0ba0058.4cf528",
+        "type": "function",
+        "z": "dc275690.07356",
+        "name": "get next schedule item",
+        "func": "const schedule = flow.get(\"schedule\") || [];\nif(schedule.length === 0){\n    msg.payload = \"no schedule yet\";\n    return msg;\n}\nconst time = new Date();\nlet hour = String(time.getHours());\nlet minute = String(time.getMinutes());\nif(hour.length == 1) hour = \"0\" + hour;\nif(minute.length == 1) minute = \"0\" + minute;\nconst hmtime = hour + \":\" + minute;\nlet nextindex = 0;\nfor(i=0;i<schedule.length;i++){\n    if(hmtime < schedule[i].time){\n        nextindex = i;\n        break;\n    } else {\n        continue;\n    }\n}\nmsg.payload = schedule[nextindex].item + \",\" + schedule[nextindex].command + \",\" + schedule[nextindex].time;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f1ec532.7fc8bc",
+        "type": "function",
+        "z": "dc275690.07356",
+        "name": "sort schedule and save to flow",
+        "func": "const oldschedule = msg.payload;\nlet newschedule = [];\noldschedule.forEach(element => {\n    let newindex = null;\n    if(newschedule.length > 0){\n        for(i=0;i<newschedule.length-1;i++){\n            if(element.time >= newschedule[i].time && element.time < newschedule[i+1].time){\n                newindex = i+1;\n            }\n        }\n        if(newindex !== null){\n            newschedule.splice(newindex,0,element);\n        } else if (element.time < newschedule[0].time){\n            newschedule.splice(0,0,element);\n        } else {\n            newschedule.push(element);\n        }\n    } else {\n        newschedule.push(element);\n    }\n});\nflow.set(\"schedule\",newschedule);\nmsg.payload = newschedule;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "a0ba0058.4cf528",
+                "f476595.aa436a8"
+            ]
+        ]
+    },
+    {
+        "id": "694a5ae3.e4714c",
+        "type": "inject",
+        "z": "dc275690.07356",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "a0ba0058.4cf528",
+                "cf9ed7a2.81f21"
+            ]
+        ]
+    },
+    {
+        "id": "be194cd9.78b218",
+        "type": "switch",
+        "z": "dc275690.07356",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "debug",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "6680ab33.f83b5c"
+            ],
+            [
+                "7f1ec532.7fc8bc"
+            ]
+        ]
+    },
+    {
+        "id": "8eb795c0.24899",
+        "type": "change",
+        "z": "dc275690.07356",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "original",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "original.command",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "item",
+                "pt": "msg",
+                "to": "original.item",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd6382ee.28d1c8",
+        "type": "switch",
+        "z": "dc275690.07356",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "scheduled",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 200,
+        "wires": [
+            [
+                "7e108ed9.acbd88"
+            ],
+            [
+                "8eb795c0.24899",
+                "a0ba0058.4cf528",
+                "280402d5.27b2f6"
+            ]
+        ]
+    },
+    {
+        "id": "6680ab33.f83b5c",
+        "type": "change",
+        "z": "dc275690.07356",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.schedule",
+                "pt": "msg",
+                "to": "schedule",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.scheduled",
+                "pt": "msg",
+                "to": "scheduled",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf9ed7a2.81f21",
+        "type": "trigger",
+        "z": "dc275690.07356",
+        "name": "",
+        "op1": "[]",
+        "op2": "schedule",
+        "op1type": "json",
+        "op2type": "flow",
+        "duration": "1",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "f476595.aa436a8"
+            ]
+        ]
+    },
+    {
+        "id": "7e108ed9.acbd88",
+        "type": "change",
+        "z": "dc275690.07356",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "scheduled",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "280402d5.27b2f6",
+        "type": "trigger",
+        "z": "dc275690.07356",
+        "name": "",
+        "op1": "",
+        "op2": "schedule",
+        "op1type": "nul",
+        "op2type": "flow",
+        "duration": "1",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 720,
+        "y": 140,
+        "wires": [
+            [
+                "f476595.aa436a8"
+            ]
+        ]
+    },
+    {
+        "id": "fbb6ac4d.7e54d",
+        "type": "subflow:dc275690.07356",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "env": [],
+        "x": 300,
+        "y": 1700,
+        "wires": [
+            [
+                "82f8ff1c.af6c8"
+            ],
+            [
+                "7c0e7779.9c69f8"
+            ]
+        ]
+    },
+    {
+        "id": "ebafae8f.13e6b",
+        "type": "inject",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"item\":\"test\",\"command\":\"ON\",\"time\":\"08:30\"},{\"item\":\"test\",\"command\":\"OFF\",\"time\":\"19:45\"}]",
+        "payloadType": "json",
+        "x": 150,
+        "y": 1680,
+        "wires": [
+            [
+                "fbb6ac4d.7e54d"
+            ]
+        ]
+    },
+    {
+        "id": "7c0e7779.9c69f8",
+        "type": "debug",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "d6cf9243.296d5",
+        "type": "inject",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "debug",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1720,
+        "wires": [
+            [
+                "fbb6ac4d.7e54d"
+            ]
+        ]
+    },
+    {
+        "id": "82f8ff1c.af6c8",
+        "type": "debug",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "4f9e4d92.50e484",
+        "type": "ui_template",
+        "z": "3bab7d86.a7d252",
+        "group": "b03bb86e.990f38",
+        "name": "LED Bar-graph Display",
+        "order": 13,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n(function($scope) {\n    \nlet amount = 10 //amount of LEDs\nlet label = \"LED bar Graph\"\n \nlet on1 = \"#00FF00\"\nlet off1 = \"#006600\"\nlet on2 = \"#FFFF00\"\nlet off2 = \"#666600\"\nlet on3 = \"#FF0000\"\nlet off3 = \"#660000\"\n\nlet threshold1 = 1/2 // the limit between color 1 and color 2\nlet threshold2 = 4/5 //  the limit between color 2 and color 3\n\nvar bargraph = new Array(amount).fill(\"#000000\")\n\n$scope.$watch('msg', function() {\n    \nif ($scope.msg){\n    if ($scope.msg.hasOwnProperty('payload') && typeof $scope.msg.payload == \"number\"){\n        $scope.msg.label = label\n        $scope.msg.payload = parseInt($scope.msg.payload)\n    \n        if ($scope.msg.payload > amount){\n            $scope.msg.payload = amount\n        }\n        for (var i = 0; i < $scope.msg.payload; i++){\n            if (i < amount*threshold1){\n                bargraph[i] = on1\n            }else if (i < amount*threshold2){\n                bargraph[i] = on2\n            }else{\n                bargraph[i] = on3\n            }\n        }\n        for (var i = $scope.msg.payload; i < amount; i++){\n            if (i < amount*threshold1){\n                bargraph[i] = off1\n            }else if (i < amount*threshold2){\n                bargraph[i] = off2\n            }else{\n                bargraph[i] = off3\n            }\n        }\n        $scope.msg.bargraph = bargraph.reverse()\n    }else if (typeof $scope.msg.payload !== \"number\"){\n        $scope.msg = {\"bargraph\":[...bargraph], \"payload\": 0, \"label\":\"Led Bar Graph\"}\n    }   \n}else{\n    $scope.msg = {\"bargraph\":[...bargraph], \"payload\": 0, \"label\":\"Led Bar Graph\"}\n}\n    });\n})(scope);\n</script>\n\n<style>\n.bargraph {\n    float: right;\n    padding: 3px;\n    width: 3px;\n    height: 10px;\n    margin: 4px 2px 8px 0px;\n    border-radius: 0%;\n}\n</style>\n\n<div>{{msg.label}}\n<span ng-repeat=\"led in msg.bargraph track by $index\">\n    <span class=\"bargraph\" style=\"background-color: {{led}}; box-shadow: black 0 -1px 1px 0px, inset black  0 -1px 4px, {{led}} 0 3px 15px;\"></span>\n</span>\n</div>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 360,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a9d3640.bd7afa",
+        "type": "ui_slider",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "b03bb86e.990f38",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "11",
+        "step": 1,
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "4f9e4d92.50e484"
+            ]
+        ]
+    },
+    {
+        "id": "e7b32ab3.808728",
+        "type": "random",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "low": "1",
+        "high": "10",
+        "inte": "true",
+        "property": "payload",
+        "x": 320,
+        "y": 720,
+        "wires": [
+            [
+                "4f9e4d92.50e484"
+            ]
+        ]
+    },
+    {
+        "id": "87b4c719.494b98",
+        "type": "inject",
+        "z": "3bab7d86.a7d252",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 720,
+        "wires": [
+            [
+                "e7b32ab3.808728"
+            ]
+        ]
     }
 ]
