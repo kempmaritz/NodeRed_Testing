@@ -7,13 +7,6 @@
         "info": ""
     },
     {
-        "id": "6e2de0a8.936f6",
-        "type": "tab",
-        "label": "GeyserWorx Testing",
-        "disabled": false,
-        "info": "gwCECC50E32854A4"
-    },
-    {
         "id": "11c86329.c3b39d",
         "type": "tab",
         "label": "Charts",
@@ -50,6 +43,20 @@
         "id": "e0d6b532.907248",
         "type": "tab",
         "label": "FullStack HTML",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6e2de0a8.936f6",
+        "type": "tab",
+        "label": "GeyserWorx Testing",
+        "disabled": false,
+        "info": "gwCECC50E32854A4"
+    },
+    {
+        "id": "b53c1f70.8e70f",
+        "type": "tab",
+        "label": "NEST",
         "disabled": false,
         "info": ""
     },
@@ -639,7 +646,7 @@
             }
         ],
         "env": [],
-        "color": "#87A980",
+        "color": "#C7E9C0",
         "inputLabels": [
             "Trigger"
         ],
@@ -723,6 +730,125 @@
             "wires": [
                 {
                     "id": "a0ba0058.4cf528",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "c16ea1f5.1aa8",
+        "type": "subflow",
+        "name": "Widgets",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "571e34c1.ef515c"
+                    },
+                    {
+                        "id": "78e1ce4b.81f7a"
+                    },
+                    {
+                        "id": "6a129551.f94bdc"
+                    },
+                    {
+                        "id": "378e1971.ad4ad6"
+                    },
+                    {
+                        "id": "f52d4247.5b87f"
+                    },
+                    {
+                        "id": "7ad17090.03e78"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "571e34c1.ef515c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "7ad17090.03e78",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 400,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "f52d4247.5b87f",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 400,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "378e1971.ad4ad6",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 400,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "6a129551.f94bdc",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 400,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "78e1ce4b.81f7a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#D7D7A0",
+        "inputLabels": [
+            "Trigger"
+        ],
+        "outputLabels": [
+            "Heading",
+            "Total AC",
+            "Total PV",
+            "AC Cost",
+            "PV Cost",
+            "% PV"
+        ],
+        "icon": "node-red/leveldb.png",
+        "status": {
+            "x": 200,
+            "y": 280,
+            "wires": [
+                {
+                    "id": "c16ea1f5.1aa8",
                     "port": 0
                 }
             ]
@@ -1112,6 +1238,83 @@
         "collapse": false
     },
     {
+        "id": "110f893b.a0f1d7",
+        "type": "ui_group",
+        "name": "STYLED",
+        "tab": "7179c13.0628d4",
+        "order": 13,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "855d3e6d.56036",
+        "type": "ui_group",
+        "name": "DEFAULT",
+        "tab": "7179c13.0628d4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7179c13.0628d4",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f7acd887.222628",
+        "type": "ui_group",
+        "name": "Widgets",
+        "tab": "e55ad75.a83bc28",
+        "order": 2,
+        "disp": false,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "317e9d9c.dea8e2",
+        "type": "ui_group",
+        "name": "Nest",
+        "tab": "5d954e3e.9339b",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "5d954e3e.9339b",
+        "type": "ui_tab",
+        "name": "Nest Controller",
+        "icon": "fa-thermometer-half",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "acdb5931.cc2c98",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "5d954e3e.9339b",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "ff6c9818.4a6ed8",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "5d954e3e.9339b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
         "id": "6952e3f6.75037c",
         "type": "debug",
         "z": "6e2de0a8.936f6",
@@ -1402,6 +1605,18 @@
         "type": "inject",
         "z": "6e2de0a8.936f6",
         "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
         "repeat": "10",
         "crontab": "",
         "once": true,
@@ -1901,7 +2116,7 @@
         "func": "var m={};\nm.labels = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\"];\nm.series = ['Series A', 'Series B', 'Series C'];\nm.data = [\n    [65, 59, 80, 81, 56, 55, 40],\n    [28, 48, 40, 19, 86, 27, 90],\n    [38, 28, 20, 49, 45, 60, 20]\n  ];\nreturn {payload:[m]};",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 400,
         "wires": [
             [
@@ -1962,7 +2177,7 @@
         "func": "var chart = [{\n    \"series\":[\"A\",\"B\",\"C\"],\n    \"data\":[[{\"x\":1504029632890,\"y\":5},{\"x\":1504029636001,\"y\":4},{\"x\":1504029638656,\"y\":2}],[{\"x\":1504029633514,\"y\":6},{\"x\":1504029636622,\"y\":7},{\"x\":1504029639539,\"y\":6}],[{\"x\":1504029634400,\"y\":7},{\"x\":1504029637959,\"y\":9},{\"x\":1504029640317,\"y\":7}]],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 240,
         "wires": [
             [
@@ -2070,7 +2285,7 @@
         "low": "1",
         "high": "10000000",
         "inte": "true",
-        "x": 310,
+        "x": 320,
         "y": 600,
         "wires": [
             [
@@ -2105,7 +2320,7 @@
         "func": "var m={};\nm.labels = [10,20,30,40,50,60,70];\nm.series = ['Series A', 'Series B', 'Series C', 'Series D'];\nm.data = [\n    [65, 59, 80, 81, 56, 55, 40],\n    [28, 48, 40, 19, 86, 27, 90],\n    [38, 28, 20, 49, 45, 60, 20],\n    [58, 18, 40, 29, 15, 30, 60]\n  ];\nreturn {payload:[m]};",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 440,
         "wires": [
             [
@@ -2149,7 +2364,7 @@
         "func": "var chart = [{\n    \"series\":[\"A\",\"B\",\"C\"],\n        \"data\":[[{\"x\":1,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":2}],[{\"x\":4,\"y\":6},{\"x\":5,\"y\":7},{\"x\":6,\"y\":6}],[{\"x\":7,\"y\":7},{\"x\":8,\"y\":9},{\"x\":9,\"y\":7}]],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 280,
         "wires": [
             [
@@ -2190,7 +2405,7 @@
         "func": "var m = {};\nm.labels = [\"Download\", \"In-Store\", \"Mail-Order\"];\nm.data = [[300, 500, 100]];\nm.series = [\"Sales\"];\nreturn {payload:[m],topic:msg.topic};",
         "outputs": 1,
         "noerr": 0,
-        "x": 300,
+        "x": 320,
         "y": 640,
         "wires": [
             [
@@ -2279,7 +2494,7 @@
         "func": "var chart = [{\n    \"series\":[\"A\",\"B\",\"C\"],\n        \"data\":[[{\"x\":1000000,\"y\":5},{\"x\":2000000,\"y\":4},{\"x\":3000000,\"y\":2}],[{\"x\":4000000,\"y\":6},{\"x\":5000000,\"y\":7},{\"x\":6000000,\"y\":6}],[{\"x\":7000000,\"y\":7},{\"x\":8000000,\"y\":9},{\"x\":9000000,\"y\":7}]],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 320,
         "wires": [
             [
@@ -2320,7 +2535,7 @@
         "func": "var chart = [{\n    \"series\":[\"A\",\"B\",\"C\"],\n        \"data\":[[{\"x\":1000000000,\"y\":5},{\"x\":2000000000,\"y\":4},{\"x\":3000000000,\"y\":2}],[{\"x\":4000000000,\"y\":6},{\"x\":5000000000,\"y\":7},{\"x\":6000000000,\"y\":6}],[{\"x\":7000000000,\"y\":7},{\"x\":8000000000,\"y\":9},{\"x\":9000000000,\"y\":7}]],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 360,
         "wires": [
             [
@@ -2361,7 +2576,7 @@
         "func": "var m={\n    \"series\":[\"X\",\"Y\",\"Z\"],\n    \"data\":[[5,6,9],[3,8,5],[6,7,2]],\n    \"labels\":[\"Jan\",\"Feb\",\"Mar\"]\n};\nreturn {payload:[m]};",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 560,
         "wires": [
             [
@@ -2432,7 +2647,7 @@
         "func": "var m = {};\nm.labels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];\nm.data = [[28, 48, 40, 19, 86, 27, 90]];\nm.series = ['Series A'];\nreturn {payload:[m],topic:msg.topic};",
         "outputs": 1,
         "noerr": 0,
-        "x": 300,
+        "x": 320,
         "y": 680,
         "wires": [
             [
@@ -2453,7 +2668,7 @@
         "func": "var m = [\n    {topic:\"X\", payload:22},\n    {topic:\"Y\", payload:66},\n    {topic:\"Z\", payload:42}\n    ];\nreturn [m];",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 330,
         "y": 200,
         "wires": [
             [
@@ -2491,7 +2706,7 @@
         "func": "var m = [\n    {label:\"A\", payload:22},\n    {label:\"B\", payload:66},\n    {label:\"C\", payload:42},\n    ];\nreturn [m];",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 330,
         "y": 160,
         "wires": [
             [
@@ -2529,7 +2744,7 @@
         "func": "var m={\n    \"series\":[\"X\",\"Y\",\"Z\"],\n    \"data\":[[5],[3],[6]],\n    \"labels\":[\"Jan\"]\n};\nreturn {payload:[m]};",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 480,
         "wires": [
             [
@@ -2575,7 +2790,7 @@
         "func": "var m={\n    \"series\":[\"X\"],\n    \"data\":[[5,3,6]],\n    \"labels\":[\"Jan\",\"Feb\",\"Mar\"]\n};\nreturn {payload:[m]};",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 320,
         "y": 520,
         "wires": [
             [
@@ -2747,7 +2962,7 @@
         "func": "var m = [\n    {label:\"A\", payload:22, series:\"X\"},\n    {label:\"B\", payload:66, series:\"X\"},\n    {label:\"C\", payload:42, series:\"X\"},\n    {label:\"A\", payload:33, series:\"Y\"},\n    {label:\"B\", payload:72, series:\"Y\"},\n    {label:\"C\", payload:12, series:\"Y\"},\n    {label:\"A\", payload:44, series:\"Z\"},\n    {label:\"B\", payload:32, series:\"Z\"},\n    {label:\"C\", payload:80, series:\"Z\"}\n    ];\nreturn [m];",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 330,
         "y": 120,
         "wires": [
             [
@@ -2794,7 +3009,7 @@
         "payload": "[]",
         "payloadType": "json",
         "topic": "",
-        "x": 270,
+        "x": 320,
         "y": 80,
         "wires": [
             [
@@ -6450,7 +6665,7 @@
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 490,
+        "x": 610,
         "y": 40,
         "wires": [
             []
@@ -6469,7 +6684,7 @@
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "global",
-        "x": 480,
+        "x": 600,
         "y": 80,
         "wires": [
             []
@@ -6499,7 +6714,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
+        "x": 130,
         "y": 40,
         "wires": [
             [
@@ -6519,7 +6734,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
+        "x": 130,
         "y": 80,
         "wires": [
             [
@@ -6546,7 +6761,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
+        "x": 360,
         "y": 40,
         "wires": [
             [
@@ -6573,7 +6788,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
+        "x": 360,
         "y": 80,
         "wires": [
             [
@@ -6738,7 +6953,7 @@
         "topic": "press",
         "payload": "<i class=\"fa fa-warning fa-2x nr-dashboard-warning\"></i>",
         "payloadType": "str",
-        "x": 90,
+        "x": 130,
         "y": 180,
         "wires": [
             [
@@ -6758,7 +6973,7 @@
         "topic": "press",
         "payload": "<i class=\"fa fa-exclamation-circle fa-2x nr-dashboard-error\"></i>",
         "payloadType": "str",
-        "x": 90,
+        "x": 130,
         "y": 220,
         "wires": [
             [
@@ -6778,7 +6993,7 @@
         "topic": "press",
         "payload": "<i class=\"fa fa-lightbulb-o fa-2x nr-dashboard-ok\"></i>",
         "payloadType": "str",
-        "x": 90,
+        "x": 130,
         "y": 140,
         "wires": [
             [
@@ -6798,7 +7013,7 @@
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
-        "x": 240,
+        "x": 320,
         "y": 180,
         "wires": []
     },
@@ -6824,7 +7039,7 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 90,
+        "x": 130,
         "y": 300,
         "wires": [
             [
@@ -6854,7 +7069,7 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 90,
+        "x": 130,
         "y": 340,
         "wires": [
             [
@@ -6874,7 +7089,7 @@
         "label": "",
         "format": "<font color={{(msg.payload?\"yellow\":\"grey\")}}><i class=\"fa fa-lightbulb-o fa-2x\"></i></font><br/><font size=\"-2\">World</font>",
         "layout": "row-center",
-        "x": 270,
+        "x": 310,
         "y": 300,
         "wires": []
     },
@@ -6890,7 +7105,7 @@
         "label": "",
         "format": "<font color={{(msg.payload?\"red\":\"grey\")}}><i class=\"fa fa-lightbulb-o fa-2x\"></i></font><br/><font size=\"-2\">Hello</font>",
         "layout": "row-center",
-        "x": 270,
+        "x": 310,
         "y": 340,
         "wires": []
     },
@@ -8922,7 +9137,7 @@
         "topic": "",
         "payload": "One",
         "payloadType": "str",
-        "x": 110,
+        "x": 130,
         "y": 440,
         "wires": [
             [
@@ -10179,7 +10394,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 360,
-        "y": 760,
+        "y": 600,
         "wires": [
             []
         ]
@@ -10202,7 +10417,7 @@
         "max": "11",
         "step": 1,
         "x": 130,
-        "y": 760,
+        "y": 600,
         "wires": [
             [
                 "4f9e4d92.50e484"
@@ -10219,7 +10434,7 @@
         "inte": "true",
         "property": "payload",
         "x": 320,
-        "y": 720,
+        "y": 560,
         "wires": [
             [
                 "4f9e4d92.50e484"
@@ -10249,10 +10464,1330 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 720,
+        "y": 560,
         "wires": [
             [
                 "e7b32ab3.808728"
+            ]
+        ]
+    },
+    {
+        "id": "fbdc8e1c.ca83b",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "110f893b.a0f1d7",
+        "order": 0,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 450,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c2c3778.2270e9",
+        "type": "inject",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "props": [
+            {
+                "p": "ui_control",
+                "v": "{\"icon\":\"fa-4x fa-home\"}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 800,
+        "wires": [
+            [
+                "fbdc8e1c.ca83b",
+                "40b55faf.c2915",
+                "e73ebe1e.fe05d"
+            ]
+        ]
+    },
+    {
+        "id": "13d9bcd2.5331a3",
+        "type": "ui_template",
+        "z": "3bab7d86.a7d252",
+        "group": "110f893b.a0f1d7",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n    #Dashboard_STYLED_cards > md-card > button {\n        padding-top: 10px !important;\n        position: relative;\n        text-align: center;\n        line-height: 24px;\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n   \n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 440,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40b55faf.c2915",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "110f893b.a0f1d7",
+        "order": 0,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25ff69f5.486456",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "110f893b.a0f1d7",
+        "order": 0,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "{{msg.topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": " {{background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 450,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e5905d5.f93fbc",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "855d3e6d.56036",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 450,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9d6dd00.d865e",
+        "type": "inject",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "props": [
+            {
+                "p": "ui_control",
+                "v": "{\"icon\":\"fa-2x fa-home\"}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 940,
+        "wires": [
+            [
+                "4e5905d5.f93fbc",
+                "d9ed33e8.564e8"
+            ]
+        ]
+    },
+    {
+        "id": "d9ed33e8.564e8",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "855d3e6d.56036",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 450,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e73ebe1e.fe05d",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "#808080",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "HOME",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "25ff69f5.486456"
+            ]
+        ]
+    },
+    {
+        "id": "62168f9e.4b3ff",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "Style",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.huge {\n  font-size: 40px;\n}\n.large {\n  font-size: 32px;\n}\n.medium {\n  font-size: 18px;\n  font-weight: bold;\n}\n.panel {\n    margin-bottom: 5px;\n    background-color: #fff;\n    border: 1px solid transparent;\n    border-radius: 4px;\n    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n}\n.panel-heading {\n    padding: 5px 5px;\n    border-bottom: 1px solid transparent;\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n}\n.panel-heading > .dropdown .dropdown-toggle {\n    color: inherit;\n}\n.panel-title {\n    margin-top: 0;\n    margin-bottom: 0;\n    font-size: 16px;\n    color: inherit;\n}\n.panel-title > a,\n.panel-title > small,\n.panel-title > .small,\n.panel-title > small > a,\n.panel-title > .small > a {\n    color: inherit;\n}\n.panel > .table,\n.panel > .table-responsive > .table,\n.panel > .panel-collapse > .table {\n    margin-bottom: 0;\n}\n.panel > .table caption,\n.panel > .table-responsive > .table caption,\n.panel > .panel-collapse > .table caption {\n    padding-right: 15px;\n    padding-left: 15px;\n}\n.panel > .table:first-child,\n.panel > .table-responsive:first-child > .table:first-child {\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child{\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child{\n    border-top-left-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child{\n    border-top-right-radius: 3px;\n}\n.panel > .table:last-child,\n.panel > .table-responsive:last-child > .table:last-child {\n    border-bottom-right-radius: 3px;\n    border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tr:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tr:last-child {\n    border-bottom-right-radius: 3px;\n    border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tr:last-child td:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tr:last-child td:first-child,\n.panel > .table:last-child > tr:last-child th:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tr:last-child th:first-child {\n    border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tr:last-child td:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tr:last-child td:last-child,\n.panel > .table:last-child > tr:last-child th:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tr:last-child th:last-child {\n    border-bottom-right-radius: 3px;\n}\n.panel > .table-bordered,\n.panel > .table-responsive > .table-bordered {\n    border: 0;\n}\n.panel > .table-bordered > thead > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:first-child,\n.panel > .table-bordered > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > tr > th:first-child,\n.panel > .table-bordered > thead > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:first-child,\n.panel > .table-bordered > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > tr > td:first-child {\n    border-left: 0;\n}\n.panel > .table-bordered > thead > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:last-child,\n.panel > .table-bordered > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > tr > th:last-child,\n.panel > .table-bordered > thead > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:last-child,\n.panel > .table-bordered > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > tr > td:last-child {\n    border-right: 0;\n}\n.panel > .table-bordered > thead > tr:first-child > td,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > td,\n.panel > .table-bordered > thead > tr:first-child > th,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > th\n{\n    border-bottom: 0;\n}\n.panel > .table-bordered > tr:last-child > td,\n.panel > .table-responsive > .table-bordered > tr:last-child > td,\n.panel > .table-bordered > tr:last-child > th,\n.panel > .table-responsive > .table-bordered > tr:last-child > th {\n    border-bottom: 0;\n}\n.panel > .table-responsive {\n    margin-bottom: 0;\n    border: 0;\n}\n.panel-default {\n    border-color: #ddd;\n}\n.panel-default > .panel-heading {\n    color: #333;\n    background-color: #f5f5f5;\n    border-color: #ddd;\n}\n.panel-default > .panel-heading .badge {\n    color: #f5f5f5;\n    background-color: #333;\n}\n.panel-primary {\n    border-color: #337ab7;\n}\n.panel-primary > .panel-heading {\n    color: #fff;\n    background-color: #337ab7;\n    border-color: #337ab7;\n}\n.panel-primary > .panel-heading .badge {\n    color: #337ab7;\n    background-color: #fff;\n}\n.panel-success {\n    border-color: #d6e9c6;\n}\n.panel-success > .panel-heading {\n    color: #3c763d;\n    background-color: #dff0d8;\n    border-color: #d6e9c6;\n}\n.panel-success > .panel-heading .badge {\n  color: #dff0d8;\n  background-color: #3c763d;\n}\n.panel-info {\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading {\n  color: #31708f;\n  background-color: #d9edf7;\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading .badge {\n  color: #d9edf7;\n  background-color: #31708f;\n}\n.panel-warning {\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading .badge {\n  color: #fcf8e3;\n  background-color: #8a6d3b;\n}\n.panel-danger {\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading .badge {\n  color: #f2dede;\n  background-color: #a94442;\n}\nbody { background-color: #f8f8f8; }\n    .btn-outline { color: inherit;\n      background-color: transparent;\n      transition: all .5s;\n    }\n    .btn-primary.btn-outline {\n      color: #428bca;\n    }\n    .btn-success.btn-outline {\n      color: #5cb85c;\n    }\n    .btn-info.btn-outline {\n      color: #5bc0de;\n    }\n    .btn-warning.btn-outline {\n      color: #f0ad4e;\n    }\n    .btn-danger.btn-outline {\n      color: #d9534f;\n    }\n    .btn-primary.btn-outline:hover,\n    .btn-success.btn-outline:hover,\n    .btn-info.btn-outline:hover,\n    .btn-warning.btn-outline:hover,\n    .btn-danger.btn-outline:hover {\n      color: white;\n    }\n    .panel-green {\n      border-color: #5cb85c;\n    }\n    .panel-green > .panel-heading {\n      border-color: #5cb85c;\n      color: white;\n      background-color: #5cb85c;\n    }\n    .panel-green > a {\n      color: #5cb85c;\n    }\n    .panel-green > a:hover {\n      color: #3d8b3d;\n    }\n    .panel-red {\n      border-color: #d9534f;\n    }\n    .panel-red > .panel-heading {\n      border-color: #d9534f;\n      color: white;\n      background-color: #d9534f;\n    }\n    .panel-red > a {\n      color: #d9534f;\n    }\n    .panel-red > a:hover {\n      color: #b52b27;\n    }\n    .panel-yellow {\n      border-color: #F5B041;\n    }\n    .panel-yellow > .panel-heading {\n      border-color: #F5B041;\n      color: white;\n      background-color: #F5B041;\n    }\n    .panel-yellow > a {\n      color: #F5B041;\n    }\n    .panel-yellow > a:hover {\n      color: #df8a13;\n    }\n\n    .panel-blue {\n      border-color: #5DADE2;\n    }\n    .panel-blue > .panel-heading {\n      border-color: #5DADE2;\n      color: white;\n      background-color: #5DADE2;\n    }\n    .panel-blue > a {\n      color: #5DADE2;\n    }\n    .panel-blue > a:hover {\n      color: #5DADE2;\n    }\n\n    .text-left {\n      text-align: left;\n    }\n    .text-right {\n      text-align: right;\n    }\n    .text-center {\n      text-align: center;\n    }\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 290,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c77b315f.e2c63",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "AC Power",
+        "order": 3,
+        "width": "3",
+        "height": "2",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd8350d2.0ff5d",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "PV Power",
+        "order": 4,
+        "width": "3",
+        "height": "2",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52f4a2b0.c6983c",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "AC Cost",
+        "order": 5,
+        "width": "3",
+        "height": "2",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f525a0d4.af149",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "PV Cost",
+        "order": 6,
+        "width": "3",
+        "height": "2",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec2a5298.09dbf",
+        "type": "comment",
+        "z": "6e2de0a8.936f6",
+        "name": "Bootstrap Widgets",
+        "info": "Bootstrap Panels\n    panel-default   - Grey\n    panel-primary   - Blue\n    panel-success   - Green\n    panel-info      - Light Blue\n    panel-warning   - Yellow\n    panel-danger    - Red\n    panel-red\n    panel-green\n    panel-blue\n",
+        "x": 130,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a50d1578.60c9e8",
+        "type": "template",
+        "z": "6e2de0a8.936f6",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"panel panel-yellow\">\n    <div class=\"panel-heading\">\n            <div>\n                <i class=\"fa fa-plug fa-1x\"></i>\n            </div>\n            <div class=\"col-xs-9 text-right\">\n                \n                <div class=\"medium\">{{payload}}kWh</div>\n                <div>AC Power</div>\n            </div>\n    </div>\n</div>",
+        "x": 650,
+        "y": 1080,
+        "wires": [
+            [
+                "c77b315f.e2c63"
+            ]
+        ]
+    },
+    {
+        "id": "44847c1c.01ba14",
+        "type": "template",
+        "z": "6e2de0a8.936f6",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"panel panel-green\">\n    <div class=\"panel-heading\">\n            <div>\n                <i class=\"fa fa-sun-o fa-1x\"></i>\n            </div>\n            <div class=\"col-xs-9 text-right\">\n                <div class=\"medium\">{{payload}}kWh</div>\n                <div>PV Power</div>\n            </div>\n    </div>\n</div>\n",
+        "x": 650,
+        "y": 1120,
+        "wires": [
+            [
+                "cd8350d2.0ff5d"
+            ]
+        ]
+    },
+    {
+        "id": "427d4f48.a6309",
+        "type": "template",
+        "z": "6e2de0a8.936f6",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n        <div>\n            <i class=\"fa fa-usd fa-1x\"></i>\n        </div>\n        <div class=\"col-xs-9 text-right\">\n            <div class=\"medium\">R{{payload}}</div>\n            <div>AC Cost</div>\n        </div>\n    </div>\n</div>\n",
+        "x": 650,
+        "y": 1160,
+        "wires": [
+            [
+                "52f4a2b0.c6983c"
+            ]
+        ]
+    },
+    {
+        "id": "20489c4e.431054",
+        "type": "template",
+        "z": "6e2de0a8.936f6",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n        <div class=\"row\">\n            <div>\n                <i class=\"fa fa-usd fa-1x\"></i>\n            </div>\n            <div class=\"col-xs-9 text-right\">\n                <div class=\"medium\">R{{payload}}</div>\n                <div>PV Savings</div>\n            </div>\n        </div>\n    </div>\n</div>\n",
+        "x": 650,
+        "y": 1200,
+        "wires": [
+            [
+                "f525a0d4.af149"
+            ]
+        ]
+    },
+    {
+        "id": "ca25b9b.7531d48",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1080,
+        "wires": [
+            [
+                "120fd16c.69f46f"
+            ]
+        ]
+    },
+    {
+        "id": "ad6a8f26.2c92",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "Total",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<!DOCTYPE html>\n<html>\n    <body>\n        <div \n            style=\n                \"border: none;\n                color: #273746;\n                padding: 5px 5px;\n                text-align: center;\n                text-decoration: none;\n                display: inline-block;\n                font-size: 14px;\n                font-weight: bold;\n                margin: 0px;\n                border-radius: 6px;\n                background-color: #EAECEE;\"\n            ng-style=\"{background: #EAECEE}\"\n            ng-bind-html=\"msg.text\"\n        >\n        </div>\n    </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 650,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8676f985.905ef8",
+        "type": "ui_template",
+        "z": "6e2de0a8.936f6",
+        "group": "f7acd887.222628",
+        "name": "%PV Usage",
+        "order": 7,
+        "width": "3",
+        "height": "2",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 810,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21c7791d.1c63a6",
+        "type": "template",
+        "z": "6e2de0a8.936f6",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"panel panel-blue\">\n    <div class=\"panel-heading\">\n        <div class=\"row\">\n            <div>\n                <i class=\"fa fa-percent fa-1x\"></i>\n            </div>\n            <div class=\"col-xs-9 text-right\">\n                <div class=\"medium\">{{payload}}%</div>\n                <div>%PV Usage</div>\n            </div>\n        </div>\n    </div>\n</div>\n",
+        "x": 650,
+        "y": 1240,
+        "wires": [
+            [
+                "8676f985.905ef8"
+            ]
+        ]
+    },
+    {
+        "id": "120fd16c.69f46f",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "//var unit    = flow.get(\"unit\");\nvar unit    = \"gw2E2C3AE83E76C0\";\nmsg.payload = global.get(\"_geyserTestData_\"+unit);\n//msg.R_kW    = global.get(\"R_kW\");\nmsg.R_kW    = 1.820;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 1080,
+        "wires": [
+            [
+                "b69539ad.983398"
+            ]
+        ]
+    },
+    {
+        "id": "571e34c1.ef515c",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "msg.payload=1\nmsg.text = \"Efficiencies\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ad17090.03e78",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "var AC = msg.payload.G1.Pt.kWh.AC;\nmsg.payload = AC.toFixed(0);\nnode.status({text:msg.payload});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f52d4247.5b87f",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "var AC = msg.payload.G1.Pt.kWh.PV;\nmsg.payload = AC.toFixed(0);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "378e1971.ad4ad6",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "var AC = msg.payload.G1.Pt.kWh.AC\nvar cost = AC.toFixed(0) * parseFloat(msg.R_kW);\nmsg.payload = cost.toFixed(2);\nnode.status({text:msg.payload});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a129551.f94bdc",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "var AC = msg.payload.G1.Pt.kWh.PV\nvar cost = AC.toFixed(0) * parseFloat(msg.R_kW);\nmsg.payload = cost.toFixed(2);\nnode.status({text:msg.payload});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78e1ce4b.81f7a",
+        "type": "function",
+        "z": "c16ea1f5.1aa8",
+        "name": "",
+        "func": "var AC = msg.payload.G1.Pt.kWh.AC;\nvar PV = msg.payload.G1.Pt.kWh.PV;\nvar EffPV = (PV / (AC+PV)*100);\nmsg.payload = EffPV.toFixed(0);\nnode.status({text:msg.payload});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b69539ad.983398",
+        "type": "subflow:c16ea1f5.1aa8",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "x": 440,
+        "y": 1080,
+        "wires": [
+            [
+                "ad6a8f26.2c92"
+            ],
+            [
+                "a50d1578.60c9e8"
+            ],
+            [
+                "44847c1c.01ba14"
+            ],
+            [
+                "427d4f48.a6309"
+            ],
+            [
+                "20489c4e.431054"
+            ],
+            [
+                "21c7791d.1c63a6"
+            ]
+        ]
+    },
+    {
+        "id": "d69de163.a524e",
+        "type": "debug",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "437f135e.fa4e0c",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Every minute",
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "a5b8ec09.6b02d"
+            ]
+        ]
+    },
+    {
+        "id": "da41cfc9.63748",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Process heat",
+        "func": "\nvar fixed_temperature = timing[(now.getDay()*24)+now.getHours()];\nvar away_temperature = timing[169];\nvar away_mode = flow.get(\"away_mode\");\n\nif (away_mode) {\n    msg.payload = (fixed_temperature > away_temperature ? away_temperature : fixed_temperature);\n    msg.awayMode = true;\n} else {\n    msg.payload = fixed_temperature;\n    msg.awayMode = false;\n}\n\nnode.status({fill:\"blue\",shape:\"dot\",text: \"Actual: \" + flow.get(\"ambient_temperature\") + \" - Set point: \" + msg.payload + \"°C\" + \" [away mode: \" + away_mode + \"]\"});\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d887b2c9.b213",
+        "type": "ui_template",
+        "z": "b53c1f70.8e70f",
+        "group": "317e9d9c.dea8e2",
+        "name": "Nest",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "format": "<div id=\"thermostat\"></div>\n\n<style>\n\n@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);\n\n#thermostat {\n margin: 0 auto;\n -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n\n.dial {\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n.dial.off .dial__ico__leaf {\n    visibility: hidden;\n}\n.dial.off .dial__lbl--target {\n    visibility: hidden;\n}\n.dial.off .dial__lbl--target--half {\n    visibility: hidden;\n}\n.dial.off .dial__lbl--off {\n    opacity: 1;\n}\n.dial .dial__shape {\n    -webkit-transition: fill 0.5s;\n    transition: fill 0.5s;\n}\n.dial path.dial__ico__leaf {\n    fill: #13EB13;\n    opacity: 0;\n    -webkit-transition: opacity 0.5s;\n    transition: opacity 0.5s;\n    pointer-events: none;\n}\n.dial.has-leaf .dial__ico__leaf {\n    display: block;\n    opacity: 1;\n    pointer-events: initial;\n}\n.dial__editableIndicator {\n    fill-rule: evenodd;\n    opacity: 0;\n    -webkit-transition: opacity 0.5s;\n    transition: opacity 0.5s;\n}\n.dial--edit path.dial__editableIndicator {\n    fill: white;\n}\n.dial--edit .dial__editableIndicator {\n    opacity: 1;\n}\n.dial--state--off .dial__shape {\n    fill: #3d3c3c;\n}\n.dial--state--idle .dial__shape {\n    fill: #3d3c3c;\n}\n.dial--state--heating .dial__shape {\n    fill: #E36304;\n}\n.dial--state--cooling .dial__shape {\n    fill: #007AF1;\n}\n.dial .dial__ticks path {\n    fill: rgba(255, 255, 255, 0.3);\n}\n.dial .dial__ticks path.active {\n    fill: rgba(255, 255, 255, 0.8);\n}\n.dial text {\n    fill: white;\n    text-anchor: middle;\n    font-family: Helvetica, sans-serif;\n    alignment-baseline: central;\n}\n.dial__lbl--target {\n    font-size: 120px;\n    font-weight: bold;\n}\n.dial__lbl--target--half {\n    font-size: 40px;\n    font-weight: bold;\n    opacity: 0;\n    -webkit-transition: opacity 0.1s;\n    transition: opacity 0.1s;\n}\n.dial__lbl--target--half.shown {\n    opacity: 1;\n    -webkit-transition: opacity 0s;\n    transition: opacity 0s;\n}\n.dial__lbl--ambient {\n    font-size: 22px;\n    font-weight: bold;\n}\n.dial__lbl--off {\n    font-size: 72px;\n    font-weight: bold;\n    opacity: 0;\n    pointer-events: none;\n}\n#controls {\n    font-family: Open Sans;\n    background-color: rgba(255, 255, 255, 0.25);\n    padding: 20px;\n    border-radius: 5px;\n    position: absolute;\n    left: 50%;\n    -webkit-transform: translatex(-50%);\n    transform: translatex(-50%);\n    margin-top: 20px;\n}\n#controls label {\n    text-align: left;\n    display: block;\n}\n#controls label span {\n    display: inline-block;\n    width: 200px;\n    text-align: right;\n    font-size: 0.8em;\n    text-transform: uppercase;\n}\n#controls p {\n    margin: 0;\n    margin-bottom: 1em;\n    padding-bottom: 1em;\n    border-bottom: 2px solid #ccc;\n}\n</style>\n<script>\n    var thermostatDial = (function() {\n\t\n\t/*\n\t * Utility functions\n\t */\n\t\n\t// Create an element with proper SVG namespace, optionally setting its attributes and appending it to another element\n\tfunction createSVGElement(tag,attributes,appendTo) {\n\t\tvar element = document.createElementNS('http://www.w3.org/2000/svg',tag);\n\t\tattr(element,attributes);\n\t\tif (appendTo) {\n\t\t\tappendTo.appendChild(element);\n\t\t}\n\t\treturn element;\n\t}\n\t\n\t// Set attributes for an element\n\tfunction attr(element,attrs) {\n\t\tfor (var i in attrs) {\n\t\t\telement.setAttribute(i,attrs[i]);\n\t\t}\n\t}\n\t\n\t// Rotate a cartesian point about given origin by X degrees\n\tfunction rotatePoint(point, angle, origin) {\n\t\tvar radians = angle * Math.PI/180;\n\t\tvar x = point[0]-origin[0];\n\t\tvar y = point[1]-origin[1];\n\t\tvar x1 = x*Math.cos(radians) - y*Math.sin(radians) + origin[0];\n\t\tvar y1 = x*Math.sin(radians) + y*Math.cos(radians) + origin[1];\n\t\treturn [x1,y1];\n\t}\n\t\n\t// Rotate an array of cartesian points about a given origin by X degrees\n\tfunction rotatePoints(points, angle, origin) {\n\t\treturn points.map(function(point) {\n\t\t\treturn rotatePoint(point, angle, origin);\n\t\t});\n\t}\n\t\n\t// Given an array of points, return an SVG path string representing the shape they define\n\tfunction pointsToPath(points) {\n\t\treturn points.map(function(point, iPoint) {\n\t\t\treturn (iPoint>0?'L':'M') + point[0] + ' ' + point[1];\n\t\t}).join(' ')+'Z';\n\t}\n\t\n\tfunction circleToPath(cx, cy, r) {\n\t\treturn [\n\t\t\t\"M\",cx,\",\",cy,\n\t\t\t\"m\",0-r,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,r*2,\",\",0,\n\t\t\t\"a\",r,\",\",r,0,1,\",\",0,0-r*2,\",\",0,\n\t\t\t\"z\"\n\t\t].join(' ').replace(/\\s,\\s/g,\",\");\n\t}\n\t\n\tfunction donutPath(cx,cy,rOuter,rInner) {\n\t\treturn circleToPath(cx,cy,rOuter) + \" \" + circleToPath(cx,cy,rInner);\n\t}\n\t\n\t// Restrict a number to a min + max range\n\tfunction restrictToRange(val,min,max) {\n\t\tif (val < min) return min;\n\t\tif (val > max) return max;\n\t\treturn val;\n\t}\n\t\n\t// Round a number to the nearest 0.5\n\tfunction roundHalf(num) {\n\t\treturn Math.round(num*2)/2;\n\t}\n\t\n\tfunction setClass(el, className, state) {\n\t\tel.classList[state ? 'add' : 'remove'](className);\n\t}\n\t\n\t/*\n\t * The \"MEAT\"\n\t */\n\n\treturn function(targetElement, options) {\n\t\tvar self = this;\n\t\t\n\t\t/*\n\t\t * Options\n\t\t */\n\t\toptions = options || {};\n\t\toptions = {\n\t\t\tdiameter: options.diameter || 400,\n\t\t\tminValue: options.minValue || 0, // Minimum value for target temperature\n\t\t\tmaxValue: options.maxValue || 100, // Maximum value for target temperature\n\t\t\tnumTicks: options.numTicks || 200, // Number of tick lines to display around the dial\n\t\t\tonSetTargetTemperature: options.onSetTargetTemperature || function() {}, // Function called when new target temperature set by the dial\n\t\t};\n\t\t\n\t\t/*\n\t\t * Properties - calculated from options in many cases\n\t\t */\n\t\tvar properties = {\n\t\t\ttickDegrees: 300, // Degrees of the dial that should be covered in tick lines\n\t\t\trangeValue: options.maxValue - options.minValue,\n\t\t\tradius: options.diameter/2,\n\t\t\tticksOuterRadius: options.diameter / 30,\n\t\t\tticksInnerRadius: options.diameter / 8,\n\t\t\thvac_states: ['idle', 'off', 'heating', 'cooling'],\n\t\t\tdragLockAxisDistance: 15,\n\t\t}\n\t\tproperties.lblAmbientPosition = [properties.radius, properties.ticksOuterRadius-(properties.ticksOuterRadius-properties.ticksInnerRadius)/2]\n\t\tproperties.offsetDegrees = 180-(360-properties.tickDegrees)/2;\n\t\t\n\t\t/*\n\t\t * Object state\n\t\t */\n\t\tvar state = {\n\t\t\ttarget_temperature: options.minValue,\n\t\t\tambient_temperature: options.minValue,\n\t\t\thvac_state: properties.hvac_states[0],\n\t\t\thas_leaf: false,\n\t\t\toff: false\n\t\t};\n\t\t\n\t\t/*\n\t\t * Property getter / setters\n\t\t */\n\t\tObject.defineProperty(this,'target_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.target_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.target_temperature = restrictTargetTemperature(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'ambient_temperature',{\n\t\t\tget: function() {\n\t\t\t\treturn state.ambient_temperature;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.ambient_temperature = roundHalf(+val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'hvac_state',{\n\t\t\tget: function() {\n\t\t\t\treturn state.hvac_state;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tif (properties.hvac_states.indexOf(val)>=0) {\n\t\t\t\t\tstate.hvac_state = val;\n\t\t\t\t\trender();\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t\tfunction str2bool(strvalue){\n          return (strvalue && typeof strvalue == 'string') ? (strvalue.toLowerCase() == 'true') : (strvalue == true);\n        }\n\t\tObject.defineProperty(this,'has_leaf',{\n\t\t\tget: function() {\n\t\t\t\treturn state.has_leaf;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.has_leaf = !!str2bool(val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(this,'off',{\n\t\t\tget: function() {\n\t\t\t\treturn state.off;\n\t\t\t},\n\t\t\tset: function(val) {\n\t\t\t\tstate.off = !!str2bool(val);\n\t\t\t\trender();\n\t\t\t}\n\t\t});\n\t\t\n\t\t/*\n\t\t * SVG\n\t\t */\n\t\tvar svg = createSVGElement('svg',{\n\t\t\twidth: '95%', //options.diameter+'px',\n\t\t\theight: '95%', //options.diameter+'px',\n\t\t\tviewBox: '0 0 '+options.diameter+' '+options.diameter,\n\t\t\tclass: 'dial'\n\t\t},targetElement);\n\t\t// CIRCULAR DIAL\n\t\tvar circle = createSVGElement('circle',{\n\t\t\tcx: properties.radius,\n\t\t\tcy: properties.radius,\n\t\t\tr: properties.radius,\n\t\t\tclass: 'dial__shape'\n\t\t},svg);\n\t\t// EDITABLE INDICATOR\n\t\tvar editCircle = createSVGElement('path',{\n\t\t\td: donutPath(properties.radius,properties.radius,properties.radius-4,properties.radius-8),\n\t\t\tclass: 'dial__editableIndicator',\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * Ticks\n\t\t */\n\t\tvar ticks = createSVGElement('g',{\n\t\t\tclass: 'dial__ticks'\t\n\t\t},svg);\n\t\tvar tickPoints = [\n\t\t\t[properties.radius-1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1, properties.ticksInnerRadius],\n\t\t\t[properties.radius-1, properties.ticksInnerRadius]\n\t\t];\n\t\tvar tickPointsLarge = [\n\t\t\t[properties.radius-1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksOuterRadius],\n\t\t\t[properties.radius+1.5, properties.ticksInnerRadius+20],\n\t\t\t[properties.radius-1.5, properties.ticksInnerRadius+20]\n\t\t];\n\t\tvar theta = properties.tickDegrees/options.numTicks;\n\t\tvar tickArray = [];\n\t\tfor (var iTick=0; iTick<options.numTicks; iTick++) {\n\t\t\ttickArray.push(createSVGElement('path',{d:pointsToPath(tickPoints)},ticks));\n\t\t};\n\t\t\n\t\t/*\n\t\t * Labels\n\t\t */\n\t\tvar lblTarget = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--target'\n\t\t},svg);\n\t\tvar lblTarget_text = document.createTextNode('');\n\t\tlblTarget.appendChild(lblTarget_text);\n\t\t//\n\t\tvar lblTargetHalf = createSVGElement('text',{\n\t\t\tx: properties.radius + properties.radius/2.5,\n\t\t\ty: properties.radius - properties.radius/8,\n\t\t\tclass: 'dial__lbl dial__lbl--target--half'\n\t\t},svg);\n\t\tvar lblTargetHalf_text = document.createTextNode('5');\n\t\tlblTargetHalf.appendChild(lblTargetHalf_text);\n\t\t//\n\t\tvar lblAmbient = createSVGElement('text',{\n\t\t\tclass: 'dial__lbl dial__lbl--ambient'\n\t\t},svg);\n\t\tvar lblAmbient_text = document.createTextNode('');\n\t\tlblAmbient.appendChild(lblAmbient_text);\n\t\t//\n\t\tvar lbloff = createSVGElement('text',{\n\t\t\tx: properties.radius,\n\t\t\ty: properties.radius,\n\t\t\tclass: 'dial__lbl dial__lbl--off'\n\t\t},svg);\n\t\tvar lbloff_text = document.createTextNode('OFF');\n\t\tlbloff.appendChild(lbloff_text);\n\t\t//\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf'\n\t\t},svg);\n\t\t\n\t\t/*\n\t\t * LEAF\n\t\t */\n\t\tvar leafScale = properties.radius/5/100;\n\t\tvar leafDef = [\"M\", 3, 84, \"c\", 24, 17, 51, 18, 73, -6, \"C\", 100, 52, 100, 22, 100, 4, \"c\", -13, 15, -37, 9, -70, 19, \"C\", 4, 32, 0, 63, 0, 76, \"c\", 6, -7, 18, -17, 33, -23, 24, -9, 34, -9, 48, -20, -9, 10, -20, 16, -43, 24, \"C\", 22, 63, 8, 78, 3, 84, \"z\"].map(function(x) {\n\t\t\treturn isNaN(x) ? x : x*leafScale;\n\t\t}).join(' ');\n\t\tvar translate = [properties.radius-(leafScale*100*0.5),properties.radius*1.5]\n\t\tvar icoLeaf = createSVGElement('path',{\n\t\t\tclass: 'dial__ico__leaf',\n\t\t\td: leafDef,\n\t\t\ttransform: 'translate('+translate[0]+','+translate[1]+')'\n\t\t},svg);\n\t\t\t\n\t\t/*\n\t\t * RENDER\n\t\t */\n\t\tfunction render() {\n\t\t\trenderOff();\n\t\t\trenderHvacState();\n\t\t\trenderTicks();\n\t\t\trenderTargetTemperature();\n\t\t\trenderAmbientTemperature();\n\t\t\trenderLeaf();\n\t\t}\n\t\trender();\n\n\t\t/*\n\t\t * RENDER - ticks\n\t\t */\n\t\tfunction renderTicks() {\n\t\t\tvar vMin, vMax;\n\t\t\tif (self.off) {\n\t\t\t\tvMin = self.ambient_temperature;\n\t\t\t\tvMax = vMin;\n\t\t\t} else {\n\t\t\t\tvMin = Math.min(self.ambient_temperature, self.target_temperature);\n\t\t\t\tvMax = Math.max(self.ambient_temperature, self.target_temperature);\n\t\t\t}\n\t\t\tvar min = restrictToRange(Math.round((vMin-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\tvar max = restrictToRange(Math.round((vMax-options.minValue)/properties.rangeValue * options.numTicks),0,options.numTicks-1);\n\t\t\t//\n\t\t\ttickArray.forEach(function(tick,iTick) {\n\t\t\t\tvar isLarge = iTick==min || iTick==max;\n\t\t\t\tvar isActive = iTick >= min && iTick <= max;\n\t\t\t\tattr(tick,{\n\t\t\t\t\td: pointsToPath(rotatePoints(isLarge ? tickPointsLarge: tickPoints,iTick*theta-properties.offsetDegrees,[properties.radius, properties.radius])),\n\t\t\t\t\tclass: isActive ? 'active' : ''\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\t\n\t\t/*\n\t\t * RENDER - ambient temperature\n\t\t */\n\t\tfunction renderAmbientTemperature() {\n\t\t\tlblAmbient_text.nodeValue = Math.floor(self.ambient_temperature);\n\t\t\tif (self.ambient_temperature%1!=0) {\n\t\t\t\tlblAmbient_text.nodeValue += '⁵';\n\t\t\t}\n\t\t\tvar peggedValue = restrictToRange(self.ambient_temperature, options.minValue, options.maxValue);\n\t\t\tdegs = properties.tickDegrees * (peggedValue-options.minValue)/properties.rangeValue - properties.offsetDegrees;\n\t\t\tif (peggedValue > self.target_temperature) {\n\t\t\t\tdegs += 8;\n\t\t\t} else {\n\t\t\t\tdegs -= 8;\n\t\t\t}\n\t\t\tvar pos = rotatePoint(properties.lblAmbientPosition,degs,[properties.radius, properties.radius]);\n\t\t\tattr(lblAmbient,{\n\t\t\t\tx: pos[0],\n\t\t\t\ty: pos[1]\n\t\t\t});\n\t\t}\n\n\t\t/*\n\t\t * RENDER - target temperature\n\t\t */\n\t\tfunction renderTargetTemperature() {\n\t\t\tlblTarget_text.nodeValue = Math.floor(self.target_temperature);\n\t\t\tsetClass(lblTargetHalf,'shown',self.target_temperature%1!=0);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - leaf\n\t\t */\n\t\tfunction renderLeaf() {\n\t\t\tsetClass(svg,'has-leaf',self.has_leaf);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - HVAC state\n\t\t */\n\t\tfunction renderHvacState() {\n\t\t\tArray.prototype.slice.call(svg.classList).forEach(function(c) {\n\t\t\t\tif (c.match(/^dial--state--/)) {\n\t\t\t\t\tsvg.classList.remove(c);\n\t\t\t\t};\n\t\t\t});\n\t\t\tsvg.classList.add('dial--state--'+self.hvac_state);\n\t\t}\n\t\t\n\t\t/*\n\t\t * RENDER - off\n\t\t */\n\t\tfunction renderOff() {\n\t\t\tsvg.classList[self.off ? 'add' : 'remove']('off');\n\t\t}\n\t\t\n\t\t/*\n\t\t * Drag to control\n\t\t */\n\t\tvar _drag = {\n\t\t\tinProgress: false,\n\t\t\tstartPoint: null,\n\t\t\tstartTemperature: 0,\n\t\t\tlockAxis: undefined\n\t\t};\n\t\t\n\t\tfunction eventPosition(ev) {\n\t\t\tif (ev.targetTouches && ev.targetTouches.length) {\n\t\t\t\treturn [ev.targetTouches[0].clientX, ev.targetTouches[0].clientY];\n\t\t\t} else {\n\t\t\t\treturn [ev.x, ev.y];\n\t\t\t};\n\t\t}\n\t\t\n\t\tvar startDelay;\n\t\tfunction dragStart(ev) {\n\t\t\tstartDelay = setTimeout(function() {\n\t\t\t\tsetClass(svg, 'dial--edit', true);\n\t\t\t\t_drag.inProgress = true;\n\t\t\t\t_drag.startPoint = eventPosition(ev);\n\t\t\t\t_drag.startTemperature = self.target_temperature || options.minValue;\n\t\t\t\t_drag.lockAxis = undefined;\n\t\t\t},1000);\n\t\t};\n\t\t\n\t\tfunction dragEnd (ev) {\n\t\t\tclearTimeout(startDelay);\n\t\t\tsetClass(svg, 'dial--edit', false);\n\t\t\tif (!_drag.inProgress) return;\n\t\t\t_drag.inProgress = false;\n\t\t\tif (self.target_temperature != _drag.startTemperature) {\n\t\t\t\tif (typeof options.onSetTargetTemperature == 'function') {\n\t\t\t\t\toptions.onSetTargetTemperature(self.target_temperature);\n\t\t\t\t};\n\t\t\t};\n\t\t};\n\t\t\n\t\tfunction dragMove(ev) {\n\t\t\tev.preventDefault();\n\t\t\tif (!_drag.inProgress) return;\n\t\t\tvar evPos = eventPosition(ev);\n\t\t\tvar dy = _drag.startPoint[1]-evPos[1];\n\t\t\tvar dx = evPos[0] - _drag.startPoint[0];\n\t\t\tvar dxy;\n\t\t\tif (_drag.lockAxis == 'x') {\n\t\t\t\tdxy = dx;\n\t\t\t} else if (_drag.lockAxis == 'y') {\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dy) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'y';\n\t\t\t\tdxy = dy;\n\t\t\t} else if (Math.abs(dx) > properties.dragLockAxisDistance) {\n\t\t\t\t_drag.lockAxis = 'x';\n\t\t\t\tdxy = dx;\n\t\t\t} else {\n\t\t\t\tdxy = (Math.abs(dy) > Math.abs(dx)) ? dy : dx;\n\t\t\t};\n\t\t\tvar dValue = (dxy*getSizeRatio())/(options.diameter)*properties.rangeValue;\n\t\t\tself.target_temperature = roundHalf(_drag.startTemperature+dValue);\n\t\t}\n\t\t\n\t\tsvg.addEventListener('mousedown',dragStart);\n\t\tsvg.addEventListener('touchstart',dragStart);\n\t\t\n\t\tsvg.addEventListener('mouseup',dragEnd);\n\t\tsvg.addEventListener('mouseleave',dragEnd);\n\t\tsvg.addEventListener('touchend',dragEnd);\n\t\t\n\t\tsvg.addEventListener('mousemove',dragMove);\n\t\tsvg.addEventListener('touchmove',dragMove);\n\t\t//\n\t\t\n\t\t/*\n\t\t * Helper functions\n\t\t */\n\t\tfunction restrictTargetTemperature(t) {\n\t\t\treturn restrictToRange(roundHalf(t),options.minValue,options.maxValue);\n\t\t}\n\t\t\n\t\tfunction angle(point) {\n\t\t\tvar dx = point[0] - properties.radius;\n\t\t\tvar dy = point[1] - properties.radius;\n\t\t\tvar theta = Math.atan(dx/dy) / (Math.PI/180);\n\t\t\tif (point[0]>=properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta - 90;\n\t\t\t} else if (point[0]>=properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] >= properties.radius) {\n\t\t\t\ttheta = 90-theta + 90;\n\t\t\t} else if (point[0]<properties.radius && point[1] < properties.radius) {\n\t\t\t\ttheta = 90-theta+270;\n\t\t\t}\n\t\t\treturn theta;\n\t\t};\n\t\t\n\t\tfunction getSizeRatio() {\n\t\t\treturn options.diameter / targetElement.clientWidth;\n\t\t}\n\t\t\n\t};\n})();\n\n/* ==== */\nvar initializing = true;\n\n(function(scope) {\n    var nest = new thermostatDial(document.getElementById('thermostat'),{\n    \tonSetTargetTemperature: function(v) {\n    \t    var p = {\n    \t        \"ambient_temperature\":nest.ambient_temperature,\n    \t        \"target_temperature\":v,\n    \t        \"hvac_state\":nest.hvac_state,\n    \t        \"has_leaf\": nest.has_leaf,\n    \t        \"off_view\":nest.off\n    \t    };\n    \t\tscope.send({topic: \"target_temperature\", payload: p});\n    \t}\n    });\n    \n    scope.$watch('msg', function(data) {\n        if (initializing) {\n            initializing = false;\n            } else {\n            nest.ambient_temperature = data.payload.ambient_temperature || 0;\n            nest.target_temperature = data.payload.target_temperature || 0;\n            nest.hvac_state = data.payload.hvac_state || \"off\";\n            nest.has_leaf = data.payload.has_leaf || false;\n            nest.off = data.payload.off_view || false;\n        }\n        \n    });\n})(scope);\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 510,
+        "y": 440,
+        "wires": [
+            [
+                "dfdda42e.7dcc58"
+            ]
+        ]
+    },
+    {
+        "id": "d47f4ead.40532",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Data",
+        "func": "msg.topic = \"update\";\nvar data = {\n    'ambient_temperature': flow.get(\"ambient_temperature\") || 20,\n    'target_temperature': flow.get(\"target_temperature\") || 14,\n//    'hvac_state': flow.get(\"hvac_action\") || 'off',\n    'hvac_state': msg.action,\n    'has_leaf': msg.leaf, //flow.get(\"away_mode\") || 'false',\n    'off_view': msg.control\n//    'off_view': flow.get(\"off_view\") || 'false'\n}\nmsg.payload = data;\nnode.status({fill:\"red\",shape:\"dot\",text: \"temperature: \" + data.ambient_temperature + \" / target: \" + data.target_temperature + \" / away_mode: \" + data.has_leaf + \" / climate_state: \" + flow.get(\"climate_state\") + \" / hvac_state: \" + data.hvac_state});  \n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "d887b2c9.b213"
+            ]
+        ]
+    },
+    {
+        "id": "dfdda42e.7dcc58",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "New setpoint from UI",
+        "func": "if (msg.topic == \"target_temperature\") {\n    msg.payload = msg.payload.target_temperature;\n    flow.set(\"target_temperature\", msg.payload);\n    node.status({fill:\"red\",shape:\"dot\",text:\"target_temperature: \" + msg.payload}); \n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8000f986.101618",
+        "type": "debug",
+        "z": "b53c1f70.8e70f",
+        "name": "climate_debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a5b8ec09.6b02d",
+        "type": "moment",
+        "z": "b53c1f70.8e70f",
+        "name": "time",
+        "topic": "",
+        "input": "",
+        "inputType": "date",
+        "inTz": "Africa/Johannesburg",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "en-US",
+        "output": "time",
+        "outputType": "msg",
+        "outTz": "Africa/Johannesburg",
+        "x": 290,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7635e3f2.2af4ac",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cooling",
+        "payloadType": "str",
+        "x": 90,
+        "y": 560,
+        "wires": [
+            [
+                "fd26da0.fb05528"
+            ]
+        ]
+    },
+    {
+        "id": "29a3e9e.3006416",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "heating",
+        "payloadType": "str",
+        "x": 90,
+        "y": 600,
+        "wires": [
+            [
+                "fd26da0.fb05528"
+            ]
+        ]
+    },
+    {
+        "id": "a42cd6b4.cd0208",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 90,
+        "y": 640,
+        "wires": [
+            [
+                "fd26da0.fb05528"
+            ]
+        ]
+    },
+    {
+        "id": "5b841fff.a5c66",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "idle",
+        "payloadType": "str",
+        "x": 90,
+        "y": 680,
+        "wires": [
+            [
+                "fd26da0.fb05528"
+            ]
+        ]
+    },
+    {
+        "id": "fd26da0.fb05528",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Mode",
+        "func": "flow.set(\"hvac_action\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f427e78b.16b528",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Leaf Off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "1af00191.7c0b4e"
+            ]
+        ]
+    },
+    {
+        "id": "269cf2e4.57e7ce",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Leaf On",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "1af00191.7c0b4e"
+            ]
+        ]
+    },
+    {
+        "id": "1af00191.7c0b4e",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Away",
+        "func": "flow.set(\"away_mode\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c121c89.dfb5e4",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Nest On",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "c8e007d.e79ebf8"
+            ]
+        ]
+    },
+    {
+        "id": "1ee613ed.05065c",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Nest Off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "c8e007d.e79ebf8"
+            ]
+        ]
+    },
+    {
+        "id": "c8e007d.e79ebf8",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Nest On/Off",
+        "func": "flow.set(\"off_view\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90d486e6.81fd98",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Target Temp",
+        "func": "flow.set(\"target_temperature\", msg.payload);\nmsg.topic = \"Setpoint\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "d47f4ead.40532",
+                "a716e86c.00f3e8"
+            ]
+        ]
+    },
+    {
+        "id": "9bef6f52.45b67",
+        "type": "ui_slider",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "label": "Target",
+        "tooltip": "",
+        "group": "317e9d9c.dea8e2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 70,
+        "y": 440,
+        "wires": [
+            [
+                "90d486e6.81fd98"
+            ]
+        ]
+    },
+    {
+        "id": "ac41776b.5d0c28",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "Ambient Temp",
+        "func": "flow.set(\"ambient_temperature\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "d47f4ead.40532"
+            ]
+        ]
+    },
+    {
+        "id": "f1c527e6.b11758",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "func": "    msg.payload  = flow.get(\"ambient_temperature\");\n    msg.setpoint = flow.get(\"target_temperature\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "cec7fa0e.e395c8"
+            ]
+        ]
+    },
+    {
+        "id": "950a3c47.3ea72",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 520,
+        "wires": [
+            [
+                "f1c527e6.b11758"
+            ]
+        ]
+    },
+    {
+        "id": "ba80978f.99b878",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "func": "var heatMin = 0.5;          // the value of input corresponding to 0 heat o/p\nvar coolMin = 0.5;          // the value of input corresponding to 0 cool o/p\n    \nvar power = msg.payload;\nmsg.heat = (power - heatMin)/(1 - heatMin);\nvar setp = flow.get(\"ambient_temperature\");\nflow.set(\"ambient_temperature\",setp + msg.heat);\nmsg.payload = setp + msg.heat;\nif(msg.heat > 0)\n{\n    msg.action = \"heating\";\n}\nelse if(msg.heat < 0)\n{\n    msg.action = \"cooling\";\n}\nelse\n{\n    msg.action = \"idle\";\n}\nmsg.topic = \"Temperature\";\nmsg.control = flow.get(\"off_view\");\nmsg.leaf = flow.get(\"away_mode\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "8000f986.101618",
+                "a716e86c.00f3e8",
+                "ac41776b.5d0c28"
+            ]
+        ]
+    },
+    {
+        "id": "cec7fa0e.e395c8",
+        "type": "PID",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "setpoint": 21,
+        "pb": 1,
+        "ti": 9999,
+        "td": 0,
+        "integral_default": 0.5,
+        "smooth_factor": 3,
+        "max_interval": 600,
+        "enable": 1,
+        "disabled_op": 0,
+        "x": 370,
+        "y": 520,
+        "wires": [
+            [
+                "ba80978f.99b878"
+            ]
+        ]
+    },
+    {
+        "id": "a716e86c.00f3e8",
+        "type": "ui_chart",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "group": "acdb5931.cc2c98",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#42a32e",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95b84a6.a7fd4b8",
+        "type": "ui_switch",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "label": "Control On/Off",
+        "tooltip": "",
+        "group": "ff6c9818.4a6ed8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "c8e007d.e79ebf8"
+            ]
+        ]
+    },
+    {
+        "id": "2cb22ff7.0a878",
+        "type": "ui_switch",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "label": "Away On/Off",
+        "tooltip": "",
+        "group": "ff6c9818.4a6ed8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "1af00191.7c0b4e"
             ]
         ]
     }
