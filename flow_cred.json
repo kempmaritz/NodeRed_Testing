@@ -1,4 +1,10 @@
 {
     "ea070992.9873a8": {},
-    "ca8fc61a.4edfc8": {}
+    "ca8fc61a.4edfc8": {},
+    "d6f8402b.a9d72": {
+        "host": "192.168.1.200",
+        "port": "81",
+        "username": "admin",
+        "password": "freddie1leg"
+    }
 }

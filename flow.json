@@ -100,54 +100,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "20f5b48f.283ffc",
-        "type": "subflow",
-        "name": "Timer Settings",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 500,
-                "y": 320,
-                "wires": [
-                    {
-                        "id": "dd09ea56.667bf8"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 740,
-                "y": 320,
-                "wires": [
-                    {
-                        "id": "dd09ea56.667bf8",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "TimerNumber",
-                "type": "num",
-                "value": ""
-            },
-            {
-                "name": "PayloadON",
-                "type": "str",
-                "value": ""
-            },
-            {
-                "name": "PayloadOFF",
-                "type": "str",
-                "value": ""
-            }
-        ],
-        "color": "#DDAA99"
-    },
-    {
         "id": "ff42fe15.c67d18",
         "type": "subflow",
         "name": "FIFO",
@@ -267,42 +219,6 @@
                 "wires": [
                     {
                         "id": "5547a768.68c208",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "color": "#DDAA99"
-    },
-    {
-        "id": "ad85cd.dcf08a3",
-        "type": "subflow",
-        "name": "Evacuation Timer",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 120,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "45fe8683.ede378"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1160,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "265192c1.e0226e",
-                        "port": 0
-                    },
-                    {
-                        "id": "c2d9f840.72ff68",
                         "port": 0
                     }
                 ]
@@ -1068,16 +984,6 @@
         "willPayload": ""
     },
     {
-        "id": "b662ff46.2c09c",
-        "type": "ui_group",
-        "name": "Entry Light - Evening",
-        "tab": "6ebdd0fe.aa309",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "70fb931.dfc146c",
         "type": "ui_group",
         "name": "MainGroup",
@@ -1093,25 +999,6 @@
         "name": "Weather",
         "icon": "fa-thermometer-half",
         "order": 5,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "7475a065.6e5cf8",
-        "type": "ui_group",
-        "name": "Paddenstoel timer",
-        "tab": "6ebdd0fe.aa309",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false
-    },
-    {
-        "id": "6ebdd0fe.aa309",
-        "type": "ui_tab",
-        "name": "Timers",
-        "icon": "dashboard",
-        "order": 6,
         "disabled": false,
         "hidden": false
     },
@@ -1138,7 +1025,7 @@
     {
         "id": "48a8fbeb.e660d4",
         "type": "ui_group",
-        "z": "96ef6e52.4b57d",
+        "z": "3bab7d86.a7d252",
         "name": "Second",
         "tab": "6f4991fa.a7d08",
         "order": 3,
@@ -1148,31 +1035,12 @@
     {
         "id": "226cb3a1.d25c9c",
         "type": "ui_group",
-        "z": "96ef6e52.4b57d",
+        "z": "3bab7d86.a7d252",
         "name": "Click",
         "tab": "6f4991fa.a7d08",
         "order": 2,
         "disp": true,
         "width": "5"
-    },
-    {
-        "id": "9d152790.9d9de8",
-        "type": "ui_group",
-        "name": "Uptime",
-        "tab": "2926be0.7270bc2",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "2926be0.7270bc2",
-        "type": "ui_tab",
-        "name": "System",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "905671d0.3a2cf",
@@ -1220,7 +1088,7 @@
     {
         "id": "ada4e0c8.ca2d58",
         "type": "ui_group",
-        "z": "ef05418d.df1618",
+        "z": "3bab7d86.a7d252",
         "name": "Default",
         "tab": "e4c8df5a.bc9048",
         "order": 1,
@@ -1230,7 +1098,7 @@
     {
         "id": "e4c8df5a.bc9048",
         "type": "ui_tab",
-        "z": "ef05418d.df1618",
+        "z": "3bab7d86.a7d252",
         "name": "tab2",
         "icon": "dashboard"
     },
@@ -1278,7 +1146,7 @@
         "type": "ui_group",
         "name": "Widgets",
         "tab": "e55ad75.a83bc28",
-        "order": 2,
+        "order": 3,
         "disp": false,
         "width": "15",
         "collapse": false
@@ -1341,6 +1209,116 @@
         "hidden": false
     },
     {
+        "id": "60c7705.396ef1",
+        "type": "ui_group",
+        "name": "Scheduler",
+        "tab": "b7237e1.8d991",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b7237e1.8d991",
+        "type": "ui_tab",
+        "name": "Scheduler",
+        "icon": "autorenew",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c05003ad.d00de",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "b7237e1.8d991",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d6f8402b.a9d72",
+        "type": "hikvision-credentials",
+        "screen_name": "Camera"
+    },
+    {
+        "id": "fe6eec95.32266",
+        "type": "ui_group",
+        "name": "Camera",
+        "tab": "3c9d693a.5ca736",
+        "order": 2,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "9e0f3462.276f88",
+        "type": "ui_group",
+        "name": "Outputs1",
+        "tab": "e55ad75.a83bc28",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "206bc5d7.f8269a",
+        "type": "ui_group",
+        "name": "Outputs2",
+        "tab": "e55ad75.a83bc28",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "358f0320.ddd13c",
+        "type": "ui_group",
+        "name": "Outputs3",
+        "tab": "e55ad75.a83bc28",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "18e51aee.f9cc95",
+        "type": "ui_group",
+        "name": "Analogues",
+        "tab": "e55ad75.a83bc28",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c19cfac9.702a88",
+        "type": "ui_group",
+        "name": "Digital In",
+        "tab": "e55ad75.a83bc28",
+        "order": 5,
+        "disp": false,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "20f830e.02813d",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "e55ad75.a83bc28",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "fbd536a.22bf9c8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
         "id": "6952e3f6.75037c",
         "type": "debug",
         "z": "6e2de0a8.936f6",
@@ -1391,7 +1369,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "",
-        "func": "flow.set(\"unit\", msg.payload);\nreturn msg;",
+        "func": "flow.set(\"unit\", \"gwCECC50E32854A4\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1445,8 +1423,7 @@
         "y": 80,
         "wires": [
             [
-                "2acf6900.9a4388",
-                "1f464150.6118ff"
+                "2acf6900.9a4388"
             ]
         ]
     },
@@ -1455,7 +1432,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Compile Topic",
-        "func": "// GW/gwCECC50E32854A4/#\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GW/\"+unit+\"/#\";\nreturn msg;",
+        "func": "// GW/gwCECC50E32854A4/#\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GW/gwCECC50E32854A4/#\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1473,7 +1450,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Process JSON",
-        "func": "/*#################################################################################################################################################################################################\n\tGLOBAL VARIABLES\n#################################################################################################################################################################################################*/\n\t// Message Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topic\t\t\t= msg.topic;\n\t\tvar payload\t\t\t= msg.payload;\t//\n\t\tvar unitID          = flow.get(\"unit\");\n\t\tmsg.payload         = null;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Topic Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar systemType\t\t= \"\";\t\t\t// GW\n\t\tvar systemID\t\t= \"\";\t\t\t// gw2E2C3AE83E76C0\n\t\tvar subID_1\t\t\t= \"\";\t\t\t// 1\n\t\tvar subID_2\t\t\t= \"\";\t\t\t// A\n\t\tvar subID_3\t\t\t= \"\";\t\t\t//\n\t\tvar subID_4\t\t\t= \"\";\t\t\t//\n\t\tvar subID_5\t\t\t= \"\";\t\t\t//\n\t\tvar subID_6\t\t\t= \"\";\t\t\t//\n\t\tvar subID_7\t\t\t= \"\";\t\t\t//\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Index Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topicLength\t\t= topic.length;\n\t\tvar topicSeperator\t= topic.indexOf(\"/\");\n\t\tvar indexGW_ID\t\t= -1;\n\t\tvar indexGW_Unit\t= -1;\n\t\tvar indexGW_Func\t= -1;\n\t\tvar index_5\t\t\t= -1;\n\t\tvar index_6\t\t\t= -1;\n\t\tvar index_7\t\t\t= -1;\n\t\tvar index_8\t\t\t= -1;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Memory Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar\t_unitID;\n\t\tvar\t_geyserDataSN;\n\t\tvar\t_geyserData;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Time & Date variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar date\t\t\t= new Date();\n\n\t\tvar system_Year\t\t= String( date.getFullYear() );\n\t\tvar system_Month\t= String( date.getMonth() + 1 );\n\t\tvar system_Day\t\t= String( date.getDate() );\n\t\tvar system_Hour\t\t= String( date.getHours() );\n\t\tvar system_Minute\t= String( date.getMinutes() );\n\t\tvar system_Second\t= String( date.getSeconds() );\n\n\t\tsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\n\t\tsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\n\t\tsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\n\t\tsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\n\t\tsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\n\t\tsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\n\t\tvar system_time\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day + \" \" + system_Hour + \":\" + system_Minute;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Output Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t// Output array\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output\t\t= [];\n\t\t//-----------------------------------------------------------------------------------------\n\n\t\t// Output array components\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output_sys_t;\n\t\t\tvar output_unitUpdate_CS\t= null;\n\t\t\tvar output_debug\t        = null;\n\t\t//-----------------------------------------------------------------------------------------\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n/*#################################################################################################################################################################################################\n\tFUNCTIONS\n#################################################################################################################################################################################################*/\n\t// Topic Breakdown\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tsystemType\t= topic;\n\n\t\tif (topicSeperator >= 0)\n\t\t{\n\t\t\tsystemType\t= topic.slice(0, topicSeperator);\n\t\t\tsystemID\t= topic.slice(topicSeperator + 1);\n\n\t\t\tindexGW_ID\t\t= topic.indexOf(\"/\", topicSeperator + 1);\n\t\t\tif (indexGW_ID >= 0)\n\t\t\t{\n\t\t\t\tsystemID\t= topic.slice(topicSeperator + 1, indexGW_ID);\n\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1);\n\n\t\t\t\tindexGW_Unit\t= topic.indexOf(\"/\", indexGW_ID + 1);\n\t\t\t\tif (indexGW_Unit >= 0)\n\t\t\t\t{\n\t\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1, indexGW_Unit);\n\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1);\n\n\t\t\t\t\tindexGW_Func\t= topic.indexOf(\"/\", indexGW_Unit + 1);\n\t\t\t\t\tif (indexGW_Func >= 0)\n\t\t\t\t\t{\n\t\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1, indexGW_Func);\n\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1);\n\n\t\t\t\t\t\tindex_5\t\t= topic.indexOf(\"/\", indexGW_Func + 1);\n\t\t\t\t\t\tif (index_5 >= 0)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1, index_5);\n\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1);\n\n\t\t\t\t\t\t\tindex_6\t\t= topic.indexOf(\"/\", index_5 + 1);\n\t\t\t\t\t\t\tif (index_6 >= 0)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1, index_6);\n\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1);\n\n\t\t\t\t\t\t\t\tindex_7\t\t= topic.indexOf(\"/\", index_6 + 1);\n\t\t\t\t\t\t\t\tif (index_7 >= 0)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1, index_7);\n\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1);\n\n\t\t\t\t\t\t\t\t\tindex_8\t\t= topic.indexOf(\"/\", index_7 + 1);\n\t\t\t\t\t\t\t\t\tif (index_8 >= 0)\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1, index_8);\n\t\t\t\t\t\t\t\t\t\tsubID_7\t\t= topic.slice(index_8 + 1);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Contents Generation\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tif( topicSeperator > -1 )\n\t\t{\n\t\t\tif( systemType === \"GW\" )\n\t\t\t{\n\t\t\t\tif( (indexGW_ID > -1)&&( indexGW_Unit > -1 )&&(systemID === unitID) )\n\t\t\t\t{\n\t\t\t\t    output_debug    = msg;\n\t\t\t\t\t_unitID\t\t\t= systemID;\n\t\t\t\t\t_geyserDataSN\t= \"_geyserTestData_gw2E2C3AE83E76C0\";\n\n\t\t\t\t\t_geyserData\t\t= global.get(_geyserDataSN)||{\n\t\t\t\t\t\t\t\t\t\t\"SN\":\t_unitID,\n\t\t\t\t\t\t\t\t\t\t\"CS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"S\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"I\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"t\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t    \t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"A\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"AVG\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"G1\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"G2\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t    }\n\t\t\t\t\t\n\t\t\t\t\tif( (subID_1 === \"S\")&&( subID_2 === \"CW\" ) )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( ( _geyserData.CS.S !== payload.S )||( _geyserData.CS.I !== payload.I ) )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t_geyserData.CS.S\t=\tpayload.S;\n\t\t\t\t\t\t\t_geyserData.CS.I\t=\tpayload.I;\n\t\t\t\t\t\t\t_geyserData.CS.t\t=\t{\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n                    else if( subID_1 === \"1\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.G\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t}   // end if unit 1\n                    else if( subID_1 === \"2\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.G\t\t\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\n\t\t\t\t\t}   // end if unit 2\n\n                    // Reset Variables to 0 if Comms is lost\n    \t\t\t    if(_geyserData.CS.S === 0)\n    \t\t\t    {\n    \t\t\t\t\t_geyserData.G1.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G1.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G1.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G1.I.PV\t    = 0;\n    \t\t\t\t\t_geyserData.G2.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G2.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G2.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G2.I.PV\t    = 0;\n    \t\t\t    }\n    \n    \t\t\t\tglobal.set(\"_geyserTestData_gw2E2C3AE83E76C0\", _geyserData);\n    \t\t\t\tflow.set(\"unit\", unitID)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\nmsg.payload = _geyserData; // _geyserData\nreturn msg;",
+        "func": "/*#################################################################################################################################################################################################\n\tGLOBAL VARIABLES\n#################################################################################################################################################################################################*/\n\t// Message Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topic\t\t\t= msg.topic;\n\t\tvar payload\t\t\t= msg.payload;\t//\n\t\tvar unitID          = \"gwCECC50E32854A4\";//flow.get(\"unit\");\n\t\tmsg.payload         = null;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Topic Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar systemType\t\t= \"\";\t\t\t// GW\n\t\tvar systemID\t\t= \"\";\t\t\t// gw2E2C3AE83E76C0\n\t\tvar subID_1\t\t\t= \"\";\t\t\t// 1\n\t\tvar subID_2\t\t\t= \"\";\t\t\t// A\n\t\tvar subID_3\t\t\t= \"\";\t\t\t//\n\t\tvar subID_4\t\t\t= \"\";\t\t\t//\n\t\tvar subID_5\t\t\t= \"\";\t\t\t//\n\t\tvar subID_6\t\t\t= \"\";\t\t\t//\n\t\tvar subID_7\t\t\t= \"\";\t\t\t//\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Index Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar topicLength\t\t= topic.length;\n\t\tvar topicSeperator\t= topic.indexOf(\"/\");\n\t\tvar indexGW_ID\t\t= -1;\n\t\tvar indexGW_Unit\t= -1;\n\t\tvar indexGW_Func\t= -1;\n\t\tvar index_5\t\t\t= -1;\n\t\tvar index_6\t\t\t= -1;\n\t\tvar index_7\t\t\t= -1;\n\t\tvar index_8\t\t\t= -1;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Memory Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar\t_unitID;\n\t\tvar\t_geyserDataSN;\n\t\tvar\t_geyserData;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Time & Date variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tvar date\t\t\t= new Date();\n\n\t\tvar system_Year\t\t= String( date.getFullYear() );\n\t\tvar system_Month\t= String( date.getMonth() + 1 );\n\t\tvar system_Day\t\t= String( date.getDate() );\n\t\tvar system_Hour\t\t= String( date.getHours() );\n\t\tvar system_Minute\t= String( date.getMinutes() );\n\t\tvar system_Second\t= String( date.getSeconds() );\n\n\t\tsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\n\t\tsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\n\t\tsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\n\t\tsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\n\t\tsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\n\t\tsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\n\t\tvar system_time\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day + \" \" + system_Hour + \":\" + system_Minute;\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Output Variables\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t// Output array\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output\t\t= [];\n\t\t//-----------------------------------------------------------------------------------------\n\n\t\t// Output array components\n\t\t//-----------------------------------------------------------------------------------------\n\t\t\tvar output_sys_t;\n\t\t\tvar output_unitUpdate_CS\t= null;\n\t\t\tvar output_debug\t        = null;\n\t\t//-----------------------------------------------------------------------------------------\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n/*#################################################################################################################################################################################################\n\tFUNCTIONS\n#################################################################################################################################################################################################*/\n\t// Topic Breakdown\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tsystemType\t= topic;\n\n\t\tif (topicSeperator >= 0)\n\t\t{\n\t\t\tsystemType\t= topic.slice(0, topicSeperator);\n\t\t\tsystemID\t= topic.slice(topicSeperator + 1);\n\n\t\t\tindexGW_ID\t\t= topic.indexOf(\"/\", topicSeperator + 1);\n\t\t\tif (indexGW_ID >= 0)\n\t\t\t{\n\t\t\t\tsystemID\t= topic.slice(topicSeperator + 1, indexGW_ID);\n\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1);\n\n\t\t\t\tindexGW_Unit\t= topic.indexOf(\"/\", indexGW_ID + 1);\n\t\t\t\tif (indexGW_Unit >= 0)\n\t\t\t\t{\n\t\t\t\t\tsubID_1\t\t= topic.slice(indexGW_ID + 1, indexGW_Unit);\n\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1);\n\n\t\t\t\t\tindexGW_Func\t= topic.indexOf(\"/\", indexGW_Unit + 1);\n\t\t\t\t\tif (indexGW_Func >= 0)\n\t\t\t\t\t{\n\t\t\t\t\t\tsubID_2\t\t= topic.slice(indexGW_Unit + 1, indexGW_Func);\n\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1);\n\n\t\t\t\t\t\tindex_5\t\t= topic.indexOf(\"/\", indexGW_Func + 1);\n\t\t\t\t\t\tif (index_5 >= 0)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1, index_5);\n\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1);\n\n\t\t\t\t\t\t\tindex_6\t\t= topic.indexOf(\"/\", index_5 + 1);\n\t\t\t\t\t\t\tif (index_6 >= 0)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tsubID_4\t\t= topic.slice(index_5 + 1, index_6);\n\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1);\n\n\t\t\t\t\t\t\t\tindex_7\t\t= topic.indexOf(\"/\", index_6 + 1);\n\t\t\t\t\t\t\t\tif (index_7 >= 0)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\tsubID_5\t\t= topic.slice(index_6 + 1, index_7);\n\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1);\n\n\t\t\t\t\t\t\t\t\tindex_8\t\t= topic.indexOf(\"/\", index_7 + 1);\n\t\t\t\t\t\t\t\t\tif (index_8 >= 0)\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\tsubID_6\t\t= topic.slice(index_7 + 1, index_8);\n\t\t\t\t\t\t\t\t\t\tsubID_7\t\t= topic.slice(index_8 + 1);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\t// Contents Generation\n\t//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\tif( topicSeperator > -1 )\n\t\t{\n\t\t\tif( systemType === \"GW\" )\n\t\t\t{\n\t\t\t\tif( (indexGW_ID > -1)&&( indexGW_Unit > -1 )&&(systemID === unitID) )\n\t\t\t\t{\n\t\t\t\t    output_debug    = msg;\n\t\t\t\t\t_unitID\t\t\t= systemID;\n\t\t\t\t\t_geyserDataSN\t= \"_geyserTestData_gw2E2C3AE83E76C0\";\n\n\t\t\t\t\t_geyserData\t\t= global.get(_geyserDataSN)||{\n\t\t\t\t\t\t\t\t\t\t\"SN\":\t_unitID,\n\t\t\t\t\t\t\t\t\t\t\"CS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"S\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"I\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\"t\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t    \t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"A\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"AVG\":\tfalse,\n\t\t\t\t\t\t\t\t\t\t\t\"G1\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"G2\":{\n\t\t\t\t\t\t\t\t\t\t\t        \"T\":{\n        \t\t\t\t\t\t\t\t\t\t\t\t\"PCB\":\t\t\t0.0,\n        \t\t\t\t\t\t\t\t\t\t\t\t\"G\":\t\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t    },\n        \t\t\t\t\t\t\t\t\t\t\t\"I\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"V\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Pt\":\t{\n\t\t\t\t\t\t\t\t\t\t\t\t            \"Raw\":  {\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"I2PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t                    },\n\t\t\t\t\t\t\t\t\t\t\t\t            \"kWh\":  {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AC\":\t0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"PV\":\t0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t            }\n\t\t\t\t\t\t\t\t\t\t\t\t\t        },\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"STS\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Th\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_Te\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_DR\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_CS\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Tr_PCB\":\t0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_Sc\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_An\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A_DT\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_AC\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O_PV\":\t    0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"T\":        0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"H\":        0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SET\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"O\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACM\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACO\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVM\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"S\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACOT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"PVT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"ACCT\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"A\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"DRT\": 0.0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \"SCB\": 0.0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t    }\n\t\t\t\t\t\n\t\t\t\t\tif( (subID_1 === \"S\")&&( subID_2 === \"CW\" ) )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( ( _geyserData.CS.S !== payload.S )||( _geyserData.CS.I !== payload.I ) )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t_geyserData.CS.S\t=\tpayload.S;\n\t\t\t\t\t\t\t_geyserData.CS.I\t=\tpayload.I;\n\t\t\t\t\t\t\t_geyserData.CS.t\t=\t{\n\t\t\t\t\t\t\t\t\t\t\t    \t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n                    else if( subID_1 === \"1\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.G\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G1.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G1.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G1.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G1.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G1.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t}   // end if unit 1\n                    else if( subID_1 === \"2\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"T\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"G\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.G\t\t\t= payload.T.G;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PCB\" in payload.T  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.T.PCB\t\t= payload.T.PCB;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.AC\t\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.I.PV\t\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.A\t\t= true;\n\t\t\t\t\t\t\t\t\t_geyserData.AVG\t\t= true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"a\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"I\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tif( \"AC\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2AC\t= payload.I.AC;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.AC\t= (payload.I.AC)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif( \"PV\" in payload.I  )\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.Raw.I2PV\t= payload.I.PV;\n\t\t\t\t\t\t\t\t\t_geyserData.G2.Pt.kWh.PV\t= (payload.I.PV)*(230*230/3000)/1000;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"STS\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Th        = payload.A.Tr_Th;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_Te        = payload.A.Tr_Te;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_DR        = payload.A.Tr_DR;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_CS        = payload.A.Tr_CS;\n\t\t\t\t\t\t        _geyserData.G2.STS.Tr_PCB       = payload.A.Tr_PCB;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_Sc         = payload.A.A_Sc;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_An         = payload.A.A_An;\n\t\t\t\t\t\t        _geyserData.G2.STS.A_DT         = payload.A.A_DT;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if( \"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"AC\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_AC     = payload.O.AC;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PV\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.STS.O_PV     = payload.O.PV;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"T\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.T            = payload.T;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"H\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        _geyserData.G2.STS.H            = payload.H;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if (subID_2 === \"SET\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if(\"O\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACM    = payload.O.ACM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACO\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.ACO    = payload.O.ACO;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVM\" in payload.O)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.O.PVM    = payload.O.PVM;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"S\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"ACT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACT        = payload.S.ACT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACOT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACOT        = payload.S.ACOT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"PVT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.PVT        = payload.S.PVT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"ACCT\" in payload.S)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.S.ACCT       = payload.S.ACCT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t    if(\"A\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t        if(\"DRT\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.DRT        = payload.A.DRT;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t        if(\"SCB\" in payload.A)\n\t\t\t\t\t\t        {\n\t\t\t\t\t\t            _geyserData.G2.SET.A.SCB        = payload.A.SCB;\n\t\t\t\t\t\t        }\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\n\t\t\t\t\t}   // end if unit 2\n\n                    // Reset Variables to 0 if Comms is lost\n    \t\t\t    if(_geyserData.CS.S === 0)\n    \t\t\t    {\n    \t\t\t\t\t_geyserData.G1.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G1.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G1.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G1.I.PV\t    = 0;\n    \t\t\t\t\t_geyserData.G2.T.G\t\t= 0;\n    \t\t\t\t\t_geyserData.G2.T.PCB\t= 0;\n    \t\t\t\t\t_geyserData.G2.I.AC\t    = 0;\n    \t\t\t\t\t_geyserData.G2.I.PV\t    = 0;\n    \t\t\t    }\n    \n    \t\t\t\tglobal.set(\"_geyserTestData_gw2E2C3AE83E76C0\", _geyserData);\n    \t\t\t\tflow.set(\"unit\", unitID)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\nmsg.payload = _geyserData; // _geyserData\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1554,7 +1531,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Get Analogues",
-        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/1/A\";\nreturn msg;",
+        "func": "msg.topic = \"GWA/gwCECC50E32854A4/1/A\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1572,7 +1549,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Get Update",
-        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/U\";\nreturn msg;",
+        "func": "msg.topic = \"GWA/gwCECC50E32854A4/U\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1590,7 +1567,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Get Connection Status",
-        "func": "msg.topic = \"GWA/\"+flow.get(\"unit\")+\"/S/CW\";\nreturn msg;",
+        "func": "msg.topic = \"GWA/gwCECC50E32854A4/S/CW\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2092,7 +2069,7 @@
         "type": "function",
         "z": "6e2de0a8.936f6",
         "name": "Get Settings",
-        "func": "// GWA/gwCECC50E32854A4/1/SET\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GWA/\"+unit+\"/1/SET\";\nreturn msg;",
+        "func": "// GWA/gwCECC50E32854A4/1/SET\nvar unit = flow.get(\"unit\");\nmsg.topic = \"GWA/gwCECC50E32854A4/1/SET\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2187,7 +2164,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 1,
         "x": 580,
         "y": 140,
@@ -2269,7 +2245,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 580,
         "y": 200,
@@ -2478,7 +2453,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 580,
         "y": 380,
@@ -2887,7 +2861,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 600,
         "y": 260,
@@ -2929,7 +2902,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 590,
         "y": 500,
@@ -2971,7 +2943,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 590,
         "y": 580,
@@ -3303,18 +3274,6 @@
         "wires": []
     },
     {
-        "id": "1f464150.6118ff",
-        "type": "link out",
-        "z": "6e2de0a8.936f6",
-        "name": "",
-        "links": [
-            "69567a2e.9bba14"
-        ],
-        "x": 175,
-        "y": 120,
-        "wires": []
-    },
-    {
         "id": "a6e66e24.246eb",
         "type": "ui_chart",
         "z": "9a41cfce.1af98",
@@ -3347,7 +3306,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 1030,
         "y": 400,
@@ -3424,7 +3382,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 1020,
         "y": 360,
@@ -3730,7 +3687,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 2,
         "x": 1010,
         "y": 480,
@@ -3738,812 +3694,6 @@
             [],
             []
         ]
-    },
-    {
-        "id": "dd09ea56.667bf8",
-        "type": "function",
-        "z": "20f5b48f.283ffc",
-        "name": "",
-        "func": "var x = env.get(\"TimerNumber\"); \nvar y = env.get(\"PayloadON\"); \nvar z = env.get(\"PayloadOFF\"); \n\nflow.set(\"$parent.Timer\"+x, x);\nflow.set(\"$parent.Payload\"+x+\"_on\", y);\nflow.set(\"$parent.Payload\"+x+\"_off\", z);\n\n\n\nmsg.payload = \"Your timer \" + x + \" has been set\";\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 600,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ea0173e6.c072d",
-        "type": "schedex",
-        "z": "f66f1d13.6d699",
-        "name": "Timer",
-        "passthroughunhandled": false,
-        "suspended": false,
-        "lat": "-26",
-        "lon": "28",
-        "ontime": "",
-        "ontopic": "",
-        "onpayload": "",
-        "onoffset": "",
-        "onrandomoffset": 0,
-        "offtime": "",
-        "offtopic": "",
-        "offpayload": "",
-        "offoffset": "",
-        "offrandomoffset": 0,
-        "mon": false,
-        "tue": false,
-        "wed": false,
-        "thu": false,
-        "fri": false,
-        "sat": false,
-        "sun": false,
-        "x": 1070,
-        "y": 640,
-        "wires": [
-            [
-                "edf8b357.e5e4"
-            ]
-        ]
-    },
-    {
-        "id": "5d7c309e.4be8c",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "T2 On",
-        "label": "",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "passthru": false,
-        "mode": "time",
-        "delay": "0",
-        "topic": "Ton",
-        "x": 610,
-        "y": 340,
-        "wires": [
-            [
-                "7da4df41.d2c03"
-            ]
-        ]
-    },
-    {
-        "id": "a121622d.17d49",
-        "type": "ui_button",
-        "z": "f66f1d13.6d699",
-        "name": "Set ON",
-        "group": "b662ff46.2c09c",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "{{msg.topic}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.color}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "buttonON",
-        "x": 940,
-        "y": 340,
-        "wires": [
-            [
-                "b574e50.3de2c18"
-            ]
-        ]
-    },
-    {
-        "id": "3e002585.7c123a",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "T2 Off",
-        "label": "",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 4,
-        "width": "4",
-        "height": "1",
-        "passthru": false,
-        "mode": "time",
-        "delay": "0",
-        "topic": "Toff",
-        "x": 610,
-        "y": 380,
-        "wires": [
-            [
-                "7da4df41.d2c03"
-            ]
-        ]
-    },
-    {
-        "id": "dab9f28b.573b8",
-        "type": "ui_button",
-        "z": "f66f1d13.6d699",
-        "name": "Set OFF",
-        "group": "b662ff46.2c09c",
-        "order": 5,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "{{msg.topic}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{msg.color}}",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "buttonOFF",
-        "x": 940,
-        "y": 460,
-        "wires": [
-            [
-                "b574e50.3de2c18"
-            ]
-        ]
-    },
-    {
-        "id": "7b571c7.11f3ce4",
-        "type": "ui_button",
-        "z": "f66f1d13.6d699",
-        "name": "Reset Button",
-        "group": "b662ff46.2c09c",
-        "order": 6,
-        "width": "6",
-        "height": "1",
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 170,
-        "y": 380,
-        "wires": [
-            [
-                "4f50ca6b.336324"
-            ]
-        ]
-    },
-    {
-        "id": "7da4df41.d2c03",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Set T2 On",
-        "func": "var z = flow.get(\"Timer1\");\n\n//if timer on is set\nif(msg.topic === \"Ton\"){\n    flow.set(\"timer\"+z+\"_on\", msg.payload);\n    msg.color = \"red\";\n    msg.topic = \"Press\";\n    return [msg, null];\n    \n    \n}\n\n//if timer off is set\nif(msg.topic === \"Toff\"){\n    flow.set(\"timer\"+z+\"_off\", msg.payload);\n    msg.color = \"red\";\n    msg.topic = \"Press\";\n    return [null, msg];\n    \n}\n\n// reboot detected\nif(msg.topic === \"reboot\"){\n    msg.color = \"grey\";\n    msg.topic = \"Select Time\";\n    return [msg, msg];\n    \n}",
-        "outputs": 2,
-        "noerr": 0,
-        "x": 770,
-        "y": 380,
-        "wires": [
-            [
-                "a121622d.17d49"
-            ],
-            [
-                "dab9f28b.573b8"
-            ]
-        ]
-    },
-    {
-        "id": "4f50ca6b.336324",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Reset",
-        "func": "var z = flow.get(\"Timer1\");\n\nvar timerlabel = \"Timer \"+ z;\n\n\nflow.set(\"timer\"+z+\"_on\", 0);\nflow.set(\"timer\"+z+\"_off\", 0);\nflow.set(\"T\"+z+\"on\", null);\nflow.set(\"T\"+z+\"off\", null);\n\n\n\nvar msg1 = {payload: \"Timer\"+z+\" reset\", topic: timerlabel,};\nvar msg2 = {payload: 0};\n\nvar msg3 = {color: \"grey\",\n            topic: \"Select Time\",\n};\n\nvar msg4 = {payload:{suspended: true}};\nvar msg5 = {payload: true};\n\nreturn [msg1, msg2, msg3, msg4, msg5];",
-        "outputs": 5,
-        "noerr": 0,
-        "x": 330,
-        "y": 380,
-        "wires": [
-            [
-                "5dafcdce.ad68b4"
-            ],
-            [
-                "3e002585.7c123a",
-                "5d7c309e.4be8c"
-            ],
-            [
-                "a121622d.17d49",
-                "dab9f28b.573b8"
-            ],
-            [
-                "ea0173e6.c072d"
-            ],
-            [
-                "4d80eeff.9c448",
-                "5ac478b0.cdf638",
-                "d766d380.6d362",
-                "550d91b2.09eb3",
-                "2570474f.111868",
-                "65a66c2c.515f54",
-                "6308a9cf.3de3d8"
-            ]
-        ]
-    },
-    {
-        "id": "4d80eeff.9c448",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Mon",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 7,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 520,
-        "wires": [
-            [
-                "aa6505d5.bbb878"
-            ]
-        ]
-    },
-    {
-        "id": "5ac478b0.cdf638",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Tue",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 8,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "tue",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 560,
-        "wires": [
-            [
-                "21656fde.2b5e6"
-            ]
-        ]
-    },
-    {
-        "id": "d766d380.6d362",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Wed",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 9,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 600,
-        "wires": [
-            [
-                "2f6a4d49.a55b42"
-            ]
-        ]
-    },
-    {
-        "id": "550d91b2.09eb3",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Thu",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 10,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 640,
-        "wires": [
-            [
-                "bc78c965.336128"
-            ]
-        ]
-    },
-    {
-        "id": "2570474f.111868",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Fri",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 11,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 680,
-        "wires": [
-            [
-                "92c73804.1923d8"
-            ]
-        ]
-    },
-    {
-        "id": "65a66c2c.515f54",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Sat",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 12,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 720,
-        "wires": [
-            [
-                "9a339f69.7ebf4"
-            ]
-        ]
-    },
-    {
-        "id": "aa6505d5.bbb878",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Mon",
-        "func": "var z = flow.get(\"Timer1\");\n\nif(z !== undefined){\n    var x = msg.payload;\n    flow.set(\"Monday\"+z, x);\n    msg.payload = {mon: x};\n\n    return msg;\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 520,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "21656fde.2b5e6",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Tue",
-        "func": "var z = flow.get(\"Timer1\");\n\n\nif(z !== undefined){\n    var x = msg.payload;\n    flow.set(\"Tuesday\"+z, x);\n    msg.payload = {tue: x};\n    \n    return msg;\n\n}\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 560,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "2f6a4d49.a55b42",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Wed",
-        "func": "var z = flow.get(\"Timer1\");\nif(z !== undefined){\n\n\nvar x = msg.payload;\nflow.set(\"Wednesday\"+z, x);\nmsg.payload = {wed: x};\n\nreturn msg;\n\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 600,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "bc78c965.336128",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Thu",
-        "func": "var z = flow.get(\"Timer1\");\nif(z !== undefined){\nvar x = msg.payload;\nflow.set(\"Thursday\"+z, x);\nmsg.payload = {thu: x};\n\nreturn msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 640,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "92c73804.1923d8",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Fri",
-        "func": "var z = flow.get(\"Timer1\");\n\nif(z !== undefined){\nvar x = msg.payload;\nflow.set(\"Friday\"+z, x);\nmsg.payload = {fri: x};\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 680,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "9a339f69.7ebf4",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Sat",
-        "func": "var z = flow.get(\"Timer1\");\nif(z !== undefined){\n\nvar x = msg.payload;\nflow.set(\"Saturday\"+z, x);\nmsg.payload = {sat: x};\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 720,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "d6e591bc.4b7f8",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Sun",
-        "func": "var z = flow.get(\"Timer1\");\n\nif(z !== undefined){\nvar x = msg.payload;\nflow.set(\"Sunday\"+z, x);\nmsg.payload = {sun: x};\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 760,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "9f8033a7.0cb62",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Started!",
-        "payloadType": "str",
-        "x": 520,
-        "y": 820,
-        "wires": [
-            [
-                "12c10ab8.365765"
-            ]
-        ]
-    },
-    {
-        "id": "12c10ab8.365765",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Apply stored values ",
-        "func": "var z = flow.get(\"Timer1\");\nvar pon = flow.get(\"Payload\"+z+\"_on\");\nvar poff = flow.get(\"Payload\"+z+\"_off\");\n\n\n// restore days\nvar mon = flow.get(\"Monday\"+z);\nvar tue = flow.get(\"Tuesday\"+z);\nvar wed = flow.get(\"Wednesday\"+z);\nvar thu = flow.get(\"Thursday\"+z);\nvar fri = flow.get(\"Friday\"+z);\nvar sat = flow.get(\"Saturday\"+z);\nvar sun = flow.get(\"Sunday\"+z);\n\n//restore timers\nvar timeON = flow.get(\"T\"+z+\"on\");\nvar timeOFF = flow.get(\"T\"+z+\"off\");\nvar timerlabel = \"Timer \"+ z;\n\n\nmsg.payload = { \"ontime\": \"ontime \" + timeON, \"onpayload\": pon,\n                \"offtime\": \"offtime \" + timeOFF, \"offpayload\": poff,\n                \"mon\": mon,\n                \"tue\": tue,\n                \"wed\": wed,\n                \"thu\": thu,\n                \"fri\": fri,\n                \"sat\": sat,\n                \"sun\": sun\n}\n\n    \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 730,
-        "y": 820,
-        "wires": [
-            [
-                "ea0173e6.c072d"
-            ]
-        ]
-    },
-    {
-        "id": "cb79a48c.a63cc8",
-        "type": "comment",
-        "z": "f66f1d13.6d699",
-        "name": "Reboot Fix",
-        "info": "",
-        "x": 500,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "cbf61424.d1b7c8",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "reboot",
-        "payload": "Started!",
-        "payloadType": "str",
-        "x": 140,
-        "y": 540,
-        "wires": [
-            [
-                "1d08e528.d4690b"
-            ]
-        ]
-    },
-    {
-        "id": "715c08e4.361468",
-        "type": "comment",
-        "z": "f66f1d13.6d699",
-        "name": "Set Button",
-        "info": "",
-        "x": 940,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "5dafcdce.ad68b4",
-        "type": "ui_toast",
-        "z": "f66f1d13.6d699",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "topic": "",
-        "name": "",
-        "x": 650,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "b574e50.3de2c18",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "On button press",
-        "func": "var z = flow.get(\"Timer1\");\nvar pon = flow.get(\"Payload\"+z+\"_on\");\nvar poff = flow.get(\"Payload\"+z+\"_off\");\n\nfunction calcTime(hh){\n    var hours = (\"0\"+Math.floor((hh%86400)/3600)).slice(-2);\n    var minutes = (\"0\"+Math.floor((hh%3600)/60)).slice(-2);\n    return hours + \":\" + minutes;\n}\n\nvar time = null;\nvar timerlabel = \"Timer \"+ z;\n\n\n// when button on is pressed\nif(msg.topic === \"buttonON\"){\n    var t1  = flow.get(\"timer\"+z+\"_on\")/1000;\n    time = calcTime(t1);\n    flow.set(\"T\"+z+\"on\", time);\n    //send to text element\n    //var msg1 = {payload: \"SET\", topic: timerlabel, color: \"green\"};\n    //send to schedex\n    var msg1 = {payload: {ontime: \"ontime \" + time,\n                          onpayload: pon,\n                          suspended: false},\n                topic: \"SET\",\n                color:   \"green\"};\n    return [msg1,null];\n}\n// when button off is pressed\nif(msg.topic === \"buttonOFF\"){\n    var t2 = flow.get(\"timer\"+z+\"_off\")/1000;\n    time = calcTime(t2);\n    flow.set(\"T\"+z+\"off\", time);\n    //send to text element\n    //var msg3 = {payload: \"SET\", topic: timerlabel, color: \"green\"};\n    //send to schedex\n    var msg2 = {payload: {offtime: \"offtime \" + time,\n                          offpayload: poff,\n                          suspended: false},\n                topic: \"SET\",\n                color:   \"green\"};\n    return [null,msg2];\n    \n}\n\nreturn msg;",
-        "outputs": 2,
-        "noerr": 0,
-        "x": 1120,
-        "y": 400,
-        "wires": [
-            [
-                "ea0173e6.c072d",
-                "a121622d.17d49"
-            ],
-            [
-                "ea0173e6.c072d",
-                "dab9f28b.573b8"
-            ]
-        ]
-    },
-    {
-        "id": "6d13359f.11ec6c",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "Set after deployment",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 300,
-        "wires": [
-            [
-                "2519d7d3.728288"
-            ]
-        ]
-    },
-    {
-        "id": "a1414a7d.a0ff18",
-        "type": "debug",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 350,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "2519d7d3.728288",
-        "type": "subflow:20f5b48f.283ffc",
-        "z": "f66f1d13.6d699",
-        "name": "Settings",
-        "env": [
-            {
-                "name": "TimerNumber",
-                "value": "1",
-                "type": "num"
-            },
-            {
-                "name": "PayloadON",
-                "value": "true",
-                "type": "bool"
-            },
-            {
-                "name": "PayloadOFF",
-                "value": "false",
-                "type": "bool"
-            }
-        ],
-        "x": 340,
-        "y": 300,
-        "wires": [
-            [
-                "a1414a7d.a0ff18"
-            ]
-        ],
-        "icon": "node-red/cog.svg"
-    },
-    {
-        "id": "6308a9cf.3de3d8",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "label": "Sun",
-        "tooltip": "",
-        "group": "b662ff46.2c09c",
-        "order": 13,
-        "width": "2",
-        "height": "1",
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 630,
-        "y": 760,
-        "wires": [
-            [
-                "d6e591bc.4b7f8"
-            ]
-        ]
-    },
-    {
-        "id": "edf8b357.e5e4",
-        "type": "debug",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 1290,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "1d08e528.d4690b",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Restore Dashboard",
-        "func": "var z = flow.get(\"Timer1\");\n\nif(z !== undefined){\n    var mon = flow.get(\"Monday\"+z);\n    var tue = flow.get(\"Tuesday\"+z);\n    var wed = flow.get(\"Wednesday\"+z);\n    var thu = flow.get(\"Thursday\"+z);\n    var fri = flow.get(\"Friday\"+z);\n    var sat = flow.get(\"Saturday\"+z);\n    var sun = flow.get(\"Sunday\"+z);  \n\n    // update dashboard days\n    var msg5 = {payload: mon};\n    var msg6 = {payload: tue};\n    var msg7 = {payload: wed};\n    var msg8 = {payload: thu};\n    var msg9 = {payload: fri};\n    var msg10 = {payload: sat};\n    var msg11 = {payload: sun};\n    \n    \n    // update dashboard times\n    var timeON = flow.get(\"T\"+z+\"on\");\n    var timeOFF = flow.get(\"T\"+z+\"off\");\n    var msg1 = {payload: timeON};\n    var msg2 = {payload: timeOFF};\n    \n    \n    // update dash buttons\n    var msg3 = {payload: {color: \"green\"}, topic: \"SET\"};\n    var msg4 = {payload: {color: \"green\"}, topic: \"SET\"};\n    \n    \nreturn[msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9, msg10, msg11];    \n    \n}\n\n",
-        "outputs": 11,
-        "noerr": 0,
-        "x": 370,
-        "y": 540,
-        "wires": [
-            [
-                "5d7c309e.4be8c"
-            ],
-            [
-                "3e002585.7c123a"
-            ],
-            [
-                "a121622d.17d49"
-            ],
-            [
-                "dab9f28b.573b8"
-            ],
-            [
-                "4d80eeff.9c448"
-            ],
-            [
-                "5ac478b0.cdf638"
-            ],
-            [
-                "d766d380.6d362"
-            ],
-            [
-                "550d91b2.09eb3"
-            ],
-            [
-                "2570474f.111868"
-            ],
-            [
-                "65a66c2c.515f54"
-            ],
-            [
-                "6308a9cf.3de3d8"
-            ]
-        ]
-    },
-    {
-        "id": "18ebe7d1.1ea7c8",
-        "type": "comment",
-        "z": "f66f1d13.6d699",
-        "name": "Timer in Dashboard",
-        "info": "A neat online timer made in Dashboard.  You can link it with any automation setup in NodeRED, deploy multiple timers and add schedules to your devices. \nYou can customise the payload to suit your needs.\n![enter image description here](https://notenoughtech.com/wp-content/uploads/2019/11/YouTube-Thumb.jpg)\n\n**Instructions:**\nYou can read all [set up instructions here](https://notenoughtech.com/home-automation/nodered-home-automation/a-timer-in-nodered/)\n\n---\n\n**Features**:\n\n -   **Modular (as a subflow)**\n -   **Unlimited timers per device**\n -   **Supports “days of the week”**\n -   **works offline**\n -   **Dashboard interface**\n -   **One button reset**   \n\n**You will need the following nodes:**\n\n - node-red-dashboard\n - node-red-contrib-schedex\n---\n# Settings\n - **PayloadON** payload message sent on ON action\n - **PayloadOFF** payload message sent on OFF action\n - **TimerNumber** timer ID (unique for each timer)\n",
-        "x": 130,
-        "y": 260,
-        "wires": []
     },
     {
         "id": "befb8618.f20408",
@@ -5324,519 +4474,6 @@
         ]
     },
     {
-        "id": "fe7e607d.0721c",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "weekday (on)",
-        "label": "aan",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "time",
-        "delay": 300,
-        "topic": "ontime",
-        "x": 500,
-        "y": 1160,
-        "wires": [
-            [
-                "960dbfb3.7ef61"
-            ]
-        ]
-    },
-    {
-        "id": "9ed22420.d3c1b",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "weekday (off)",
-        "label": "uit",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "time",
-        "delay": 300,
-        "topic": "offtime",
-        "x": 500,
-        "y": 1200,
-        "wires": [
-            [
-                "960dbfb3.7ef61"
-            ]
-        ]
-    },
-    {
-        "id": "e67143dd.138ba8",
-        "type": "ui_text",
-        "z": "f66f1d13.6d699",
-        "group": "7475a065.6e5cf8",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "name": "weekday",
-        "label": "",
-        "format": "{{msg.payload.name}}",
-        "layout": "row-left",
-        "x": 480,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "4ccad8c1.25ccc",
-        "type": "schedex",
-        "z": "f66f1d13.6d699",
-        "name": "weekday",
-        "passthroughunhandled": false,
-        "suspended": false,
-        "lat": "52.1",
-        "lon": "5.1",
-        "ontime": "07:00",
-        "ontopic": "server/cmnd/paddenstoel/POWER",
-        "onpayload": "on",
-        "onoffset": 0,
-        "onrandomoffset": 0,
-        "offtime": "08:00",
-        "offtopic": "server/cmnd/paddenstoel/POWER",
-        "offpayload": "off",
-        "offoffset": 0,
-        "offrandomoffset": 0,
-        "mon": true,
-        "tue": true,
-        "wed": true,
-        "thu": true,
-        "fri": true,
-        "sat": false,
-        "sun": false,
-        "x": 850,
-        "y": 1080,
-        "wires": [
-            [
-                "6c43860a.203fc",
-                "a65bcdd5.9278"
-            ]
-        ]
-    },
-    {
-        "id": "960dbfb3.7ef61",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "on/off + info",
-        "func": "// input milliseconds since 00:00 in milliseconds\n// convert the milliseconds timestamp to hours:minutes\n\n// prefix numbers with 0\nNumber.prototype.pad = function(size) {\n    var s = String(this);\n    while (s.length < (size || 2)) {s = \"0\" + s;}\n    return s;\n}\n\nlet millisecondsSinceMidnight = msg.payload;\nlet secondsSinceMidnight =  Math.floor(millisecondsSinceMidnight/1000)\nlet minutesSinceMidnight =  Math.floor(millisecondsSinceMidnight/1000/60)\nlet hoursSinceMidnight =    Math.floor(millisecondsSinceMidnight/1000/60/60)\nlet hhString = hoursSinceMidnight.pad();\nlet mmString = Math.floor(minutesSinceMidnight%60).pad();\n// format timestamp\nlet timeStamp = hhString + \":\" + mmString\n\n// set msg\nif(msg.topic == \"ontime\"){\n    msg.payload = {\n        \"ontime\" : timeStamp\n    }\n}else if(msg.topic == \"offtime\"){\n    msg.payload = {\n        \"offtime\" : timeStamp\n    }\n}\n\n// set other message for getting info on Schedex\nmsgInfo={payload:\"info\", delay:100}; \n\nreturn [[msg,msgInfo]];",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 690,
-        "y": 1180,
-        "wires": [
-            [
-                "4ccad8c1.25ccc"
-            ]
-        ]
-    },
-    {
-        "id": "6c43860a.203fc",
-        "type": "mqtt out",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "broker": "171132c7.ece67d",
-        "x": 1130,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "e5becc73.80ce6",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "payload": "info",
-        "payloadType": "str",
-        "x": 850,
-        "y": 1040,
-        "wires": [
-            [
-                "4ccad8c1.25ccc"
-            ]
-        ]
-    },
-    {
-        "id": "a65bcdd5.9278",
-        "type": "link out",
-        "z": "f66f1d13.6d699",
-        "name": "Paddenstoek weekdayschema (schedex)",
-        "links": [
-            "9829062d.6fc64"
-        ],
-        "x": 1095,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "9829062d.6fc64",
-        "type": "link in",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "links": [
-            "a65bcdd5.9278"
-        ],
-        "x": 95,
-        "y": 1120,
-        "wires": [
-            [
-                "e67143dd.138ba8",
-                "10fe9d9f.a3f452",
-                "cc68aebf.c083d8"
-            ]
-        ]
-    },
-    {
-        "id": "539c4b33.a80944",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "weekday",
-        "label": "",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 2,
-        "width": 2,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "{\"suspended\":false}",
-        "onvalueType": "json",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "{\"suspended\":true}",
-        "offvalueType": "json",
-        "officon": "",
-        "offcolor": "",
-        "x": 480,
-        "y": 1080,
-        "wires": [
-            [
-                "4ccad8c1.25ccc"
-            ]
-        ]
-    },
-    {
-        "id": "10fe9d9f.a3f452",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "prep switch",
-        "func": "// prep switch\nmsg.payload = { \"suspended\":msg.payload.suspended};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 250,
-        "y": 1080,
-        "wires": [
-            [
-                "539c4b33.a80944"
-            ]
-        ]
-    },
-    {
-        "id": "8a175883.f32298",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "weekend (on)",
-        "label": "aan",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 7,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "time",
-        "delay": 300,
-        "topic": "ontime",
-        "x": 500,
-        "y": 1360,
-        "wires": [
-            [
-                "526b913b.604c3"
-            ]
-        ]
-    },
-    {
-        "id": "763e22db.e06ea4",
-        "type": "ui_text_input",
-        "z": "f66f1d13.6d699",
-        "name": "weekend (off)",
-        "label": "uit",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 8,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "time",
-        "delay": 300,
-        "topic": "offtime",
-        "x": 500,
-        "y": 1400,
-        "wires": [
-            [
-                "526b913b.604c3"
-            ]
-        ]
-    },
-    {
-        "id": "2e51c34f.dadfe4",
-        "type": "ui_text",
-        "z": "f66f1d13.6d699",
-        "group": "7475a065.6e5cf8",
-        "order": 5,
-        "width": 4,
-        "height": 1,
-        "name": "weekend",
-        "label": "",
-        "format": "{{msg.payload.name}}",
-        "layout": "row-left",
-        "x": 480,
-        "y": 1320,
-        "wires": []
-    },
-    {
-        "id": "cf25e4ed.18f62",
-        "type": "schedex",
-        "z": "f66f1d13.6d699",
-        "name": "weekend",
-        "passthroughunhandled": false,
-        "suspended": false,
-        "lat": "52.1",
-        "lon": "5.1",
-        "ontime": "07:35",
-        "ontopic": "server/cmnd/paddenstoel/POWER",
-        "onpayload": "on",
-        "onoffset": 0,
-        "onrandomoffset": 0,
-        "offtime": "08:35",
-        "offtopic": "server/cmnd/paddenstoel/POWER",
-        "offpayload": "off",
-        "offoffset": 0,
-        "offrandomoffset": 0,
-        "mon": false,
-        "tue": false,
-        "wed": false,
-        "thu": false,
-        "fri": false,
-        "sat": true,
-        "sun": true,
-        "x": 860,
-        "y": 1280,
-        "wires": [
-            [
-                "8135ebe2.b97568",
-                "627e5766.bc30f8"
-            ]
-        ]
-    },
-    {
-        "id": "526b913b.604c3",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "on/off + info",
-        "func": "// input milliseconds since 00:00 in milliseconds\n// convert the milliseconds timestamp to hours:minutes\n\n// prefix numbers with 0\nNumber.prototype.pad = function(size) {\n    var s = String(this);\n    while (s.length < (size || 2)) {s = \"0\" + s;}\n    return s;\n}\n\nlet millisecondsSinceMidnight = msg.payload;\nlet secondsSinceMidnight =  Math.floor(millisecondsSinceMidnight/1000)\nlet minutesSinceMidnight =  Math.floor(millisecondsSinceMidnight/1000/60)\nlet hoursSinceMidnight =    Math.floor(millisecondsSinceMidnight/1000/60/60)\nlet hhString = hoursSinceMidnight.pad();\nlet mmString = Math.floor(minutesSinceMidnight%60).pad();\n// format timestamp\nlet timeStamp = hhString + \":\" + mmString\n\n// set msg\nif(msg.topic == \"ontime\"){\n    msg.payload = {\n        \"ontime\" : timeStamp\n    }\n}else if(msg.topic == \"offtime\"){\n    msg.payload = {\n        \"offtime\" : timeStamp\n    }\n}\n\n// set other message for getting info on Schedex\nmsgInfo={payload:\"info\", delay:100}; \n\nreturn [[msg,msgInfo]];",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 690,
-        "y": 1380,
-        "wires": [
-            [
-                "cf25e4ed.18f62"
-            ]
-        ]
-    },
-    {
-        "id": "8135ebe2.b97568",
-        "type": "mqtt out",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "broker": "171132c7.ece67d",
-        "x": 1130,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "9060a3de.d2549",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "payload": "info",
-        "payloadType": "str",
-        "x": 850,
-        "y": 1240,
-        "wires": [
-            [
-                "cf25e4ed.18f62"
-            ]
-        ]
-    },
-    {
-        "id": "627e5766.bc30f8",
-        "type": "link out",
-        "z": "f66f1d13.6d699",
-        "name": "Paddenstoek weekdayschema (schedex)",
-        "links": [
-            "c3a834f8.18e27"
-        ],
-        "x": 1095,
-        "y": 1320,
-        "wires": []
-    },
-    {
-        "id": "c3a834f8.18e27",
-        "type": "link in",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "links": [
-            "627e5766.bc30f8"
-        ],
-        "x": 95,
-        "y": 1320,
-        "wires": [
-            [
-                "2e51c34f.dadfe4",
-                "6bf2d35f.fd8dfc",
-                "2954bd3e.614dba"
-            ]
-        ]
-    },
-    {
-        "id": "a81526a1.17e21",
-        "type": "ui_switch",
-        "z": "f66f1d13.6d699",
-        "name": "weekend",
-        "label": "",
-        "tooltip": "",
-        "group": "7475a065.6e5cf8",
-        "order": 6,
-        "width": 2,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "{\"suspended\":false}",
-        "onvalueType": "json",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "{\"suspended\":true}",
-        "offvalueType": "json",
-        "officon": "",
-        "offcolor": "",
-        "x": 480,
-        "y": 1280,
-        "wires": [
-            [
-                "cf25e4ed.18f62"
-            ]
-        ]
-    },
-    {
-        "id": "6bf2d35f.fd8dfc",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "prep switch",
-        "func": "// prep switch\nmsg.payload = { \"suspended\":msg.payload.suspended};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 250,
-        "y": 1280,
-        "wires": [
-            [
-                "a81526a1.17e21"
-            ]
-        ]
-    },
-    {
-        "id": "d7e46070.799bf",
-        "type": "ui_template",
-        "z": "f66f1d13.6d699",
-        "group": "7475a065.6e5cf8",
-        "name": "refresh",
-        "order": 9,
-        "width": 2,
-        "height": 1,
-        "format": "<md-button class=\"button save\" onClick=\"window.location.reload();\">refresh ⟳</md-button>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 480,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2954bd3e.614dba",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "hh:mm -> ms",
-        "func": "// get timestamps in ms\nlet hhmmOntime = msg.payload.ontime;\nlet hhmmOfftime = msg.payload.offtime;\n\n// get hh and mm\nlet timesplitOntime = hhmmOntime.split(':');\nlet hhOntime = parseInt(timesplitOntime[0]);\nlet mmOntime = parseInt(timesplitOntime[1]);\n\nlet timesplitOfftime = hhmmOfftime.split(':');\nlet hhOfftime = parseInt(timesplitOfftime[0]);\nlet mmOfftime = parseInt(timesplitOfftime[1]);\n\n// convert hh and mm to ms and put it in the payload\nvar msgOntime =  {\"payload\": (hhOntime*60*60*1000)+(mmOntime*60*1000)};\nvar msgOfftime = {\"payload\": (hhOfftime*60*60*1000)+(mmOfftime*60*1000)};\n\n// return both values\nreturn [msgOntime, msgOfftime];",
-        "outputs": 2,
-        "noerr": 0,
-        "x": 250,
-        "y": 1380,
-        "wires": [
-            [
-                "8a175883.f32298"
-            ],
-            [
-                "763e22db.e06ea4"
-            ]
-        ]
-    },
-    {
-        "id": "cc68aebf.c083d8",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "hh:mm -> ms",
-        "func": "// get timestamps in ms\nlet hhmmOntime = msg.payload.ontime;\nlet hhmmOfftime = msg.payload.offtime;\n\n// get hh and mm\nlet timesplitOntime = hhmmOntime.split(':');\nlet hhOntime = parseInt(timesplitOntime[0]);\nlet mmOntime = parseInt(timesplitOntime[1]);\n\nlet timesplitOfftime = hhmmOfftime.split(':');\nlet hhOfftime = parseInt(timesplitOfftime[0]);\nlet mmOfftime = parseInt(timesplitOfftime[1]);\n\n// convert hh and mm to ms and put it in the payload\nvar msgOntime =  {\"payload\": (hhOntime*60*60*1000)+(mmOntime*60*1000)};\nvar msgOfftime = {\"payload\": (hhOfftime*60*60*1000)+(mmOfftime*60*1000)};\n\n// return both values\nreturn [msgOntime, msgOfftime];",
-        "outputs": 2,
-        "noerr": 0,
-        "x": 250,
-        "y": 1180,
-        "wires": [
-            [
-                "fe7e607d.0721c"
-            ],
-            [
-                "9ed22420.d3c1b"
-            ]
-        ]
-    },
-    {
-        "id": "ff1c1b18.43f098",
-        "type": "comment",
-        "z": "f66f1d13.6d699",
-        "name": "Set schedex using dashboard ui",
-        "info": "This flow can sets the schedex module using the dashboard ui. This was much harder than I should be.\n\nI use this flow to turn 'on' the 'Paddenstoel' (kids light) during the weekdays at 07:00 and in the weekends at 07:30.\n\nSometimes the values of the imput fields are empty on load. Because I do not quite get the way how the dashboard handles new values I made a 'refresh' button on my interface which works.\n\nI use javascript to convert between time formats.\n\nThe device in this example is called Paddenstoel (which is Dutch for mushroom). Personally I use a text editor to rename the device in the JSON file to give it a new name. I guess using an inject node could also work.",
-        "x": 220,
-        "y": 980,
-        "wires": []
-    },
-    {
         "id": "a967c088.36e93",
         "type": "mosca in",
         "z": "ce755ade.782f08",
@@ -6034,326 +4671,6 @@
             [],
             [],
             []
-        ]
-    },
-    {
-        "id": "265192c1.e0226e",
-        "type": "trigger",
-        "z": "ad85cd.dcf08a3",
-        "name": "",
-        "op1": "on",
-        "op2": "off",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "10",
-        "extend": false,
-        "units": "s",
-        "reset": "reset",
-        "bytopic": "all",
-        "outputs": 1,
-        "x": 910,
-        "y": 160,
-        "wires": [
-            [
-                "6865d93.1256a28"
-            ]
-        ]
-    },
-    {
-        "id": "6865d93.1256a28",
-        "type": "delay",
-        "z": "ad85cd.dcf08a3",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 920,
-        "y": 200,
-        "wires": [
-            [
-                "d7bce5c.4aa6f18"
-            ]
-        ]
-    },
-    {
-        "id": "d7bce5c.4aa6f18",
-        "type": "change",
-        "z": "ad85cd.dcf08a3",
-        "name": "off/on",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "off",
-                "fromt": "str",
-                "to": "on",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 550,
-        "y": 160,
-        "wires": [
-            [
-                "9d975d2d.37fed"
-            ]
-        ]
-    },
-    {
-        "id": "9d975d2d.37fed",
-        "type": "switch",
-        "z": "ad85cd.dcf08a3",
-        "name": "on/off",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 730,
-        "y": 160,
-        "wires": [
-            [
-                "265192c1.e0226e"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "3cd96359.2e978c",
-        "type": "trigger",
-        "z": "ad85cd.dcf08a3",
-        "name": "",
-        "op1": "on",
-        "op2": "off",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "1",
-        "extend": false,
-        "units": "min",
-        "reset": "reset",
-        "bytopic": "all",
-        "outputs": 1,
-        "x": 570,
-        "y": 120,
-        "wires": [
-            [
-                "975f3c13.db982",
-                "2f92b679.bbdb8a",
-                "265192c1.e0226e"
-            ]
-        ]
-    },
-    {
-        "id": "c2d9f840.72ff68",
-        "type": "change",
-        "z": "ad85cd.dcf08a3",
-        "name": "reset/off",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "reset",
-                "fromt": "str",
-                "to": "off",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "975f3c13.db982",
-        "type": "switch",
-        "z": "ad85cd.dcf08a3",
-        "name": "off/on",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 550,
-        "y": 80,
-        "wires": [
-            [
-                "84b834a0.2c82f8"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "84b834a0.2c82f8",
-        "type": "change",
-        "z": "ad85cd.dcf08a3",
-        "name": "off/reset",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "off",
-                "fromt": "str",
-                "to": "reset",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 80,
-        "wires": [
-            [
-                "265192c1.e0226e",
-                "6865d93.1256a28",
-                "3cd96359.2e978c"
-            ]
-        ]
-    },
-    {
-        "id": "2f92b679.bbdb8a",
-        "type": "change",
-        "z": "ad85cd.dcf08a3",
-        "name": "off/reset",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "off",
-                "fromt": "str",
-                "to": "reset",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 560,
-        "y": 200,
-        "wires": [
-            [
-                "15f9357e.91cacb",
-                "265192c1.e0226e",
-                "6865d93.1256a28",
-                "c2d9f840.72ff68"
-            ]
-        ]
-    },
-    {
-        "id": "15f9357e.91cacb",
-        "type": "delay",
-        "z": "ad85cd.dcf08a3",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 720,
-        "y": 200,
-        "wires": [
-            [
-                "265192c1.e0226e",
-                "6865d93.1256a28"
-            ]
-        ]
-    },
-    {
-        "id": "45fe8683.ede378",
-        "type": "switch",
-        "z": "ad85cd.dcf08a3",
-        "name": "off/on/reset",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "reset",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 310,
-        "y": 140,
-        "wires": [
-            [
-                "975f3c13.db982"
-            ],
-            [
-                "3cd96359.2e978c"
-            ],
-            [
-                "3cd96359.2e978c",
-                "c2d9f840.72ff68",
-                "265192c1.e0226e",
-                "6865d93.1256a28"
-            ]
         ]
     },
     {
@@ -6959,76 +5276,6 @@
         "x": 310,
         "y": 340,
         "wires": []
-    },
-    {
-        "id": "177ae28f.b66a45",
-        "type": "inject",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 110,
-        "y": 1500,
-        "wires": [
-            [
-                "d2b43b13.c01ea8"
-            ]
-        ]
-    },
-    {
-        "id": "50f9790b.49c718",
-        "type": "function",
-        "z": "f66f1d13.6d699",
-        "name": "Seconds to DD:HH:MM:SS",
-        "func": " var totalNumberOfSeconds = msg.count;\n var days = parseInt( totalNumberOfSeconds / 86400 );\n var hours = parseInt (( totalNumberOfSeconds - ( days * 86400 )) / 3600  );\n var minutes = parseInt ((totalNumberOfSeconds - ((hours * 3600)+( days * 86400 ))) / 60 );\n var seconds = parseInt(totalNumberOfSeconds - ((hours * 3600) + (minutes * 60)+( days * 86400 )));\n var result = (days < 10 ? \"0\" + days : days) + \":\" + (hours < 10 ? \"0\" + hours : hours) + \":\" + (minutes < 10 ? \"0\" + minutes : minutes) + \":\" + (seconds  < 10 ? \"0\" + seconds : seconds);\n msg.payload=result;\n return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 480,
-        "y": 1500,
-        "wires": [
-            [
-                "4f6abcf.71f1a44"
-            ]
-        ]
-    },
-    {
-        "id": "4f6abcf.71f1a44",
-        "type": "ui_text",
-        "z": "f66f1d13.6d699",
-        "group": "9d152790.9d9de8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Up-Time Node Red",
-        "label": "UpTime",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "x": 730,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "d2b43b13.c01ea8",
-        "type": "counter",
-        "z": "f66f1d13.6d699",
-        "name": "",
-        "init": "0",
-        "step": "1",
-        "lower": "",
-        "upper": "",
-        "mode": "increment",
-        "outputs": "1",
-        "x": 260,
-        "y": 1500,
-        "wires": [
-            [
-                "50f9790b.49c718"
-            ]
-        ]
     },
     {
         "id": "af4b553a.5c5098",
@@ -10127,8 +8374,8 @@
         "z": "f66f1d13.6d699",
         "name": "",
         "env": [],
-        "x": 300,
-        "y": 1700,
+        "x": 360,
+        "y": 240,
         "wires": [
             [
                 "82f8ff1c.af6c8"
@@ -10160,7 +8407,7 @@
         "payload": "[{\"item\":\"test\",\"command\":\"ON\",\"time\":\"08:30\"},{\"item\":\"test\",\"command\":\"OFF\",\"time\":\"19:45\"}]",
         "payloadType": "json",
         "x": 150,
-        "y": 1680,
+        "y": 220,
         "wires": [
             [
                 "fbb6ac4d.7e54d"
@@ -10180,8 +8427,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 1720,
+        "x": 550,
+        "y": 260,
         "wires": []
     },
     {
@@ -10206,7 +8453,7 @@
         "payload": "debug",
         "payloadType": "str",
         "x": 150,
-        "y": 1720,
+        "y": 260,
         "wires": [
             [
                 "fbb6ac4d.7e54d"
@@ -10226,8 +8473,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 1680,
+        "x": 550,
+        "y": 220,
         "wires": []
     },
     {
@@ -10843,6 +9090,8 @@
         "func": "msg.payload=1\nmsg.text = \"Efficiencies\";\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 240,
         "y": 40,
         "wires": [
@@ -11572,7 +9821,6 @@
             "#9467bd",
             "#c5b0d5"
         ],
-        "useOldStyle": false,
         "outputs": 1,
         "x": 510,
         "y": 560,
@@ -12224,5 +10472,2537 @@
         "x": 450,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "871730ad.fb9938",
+        "type": "ui_form",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "label": "add item to schedule",
+        "group": "60c7705.396ef1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Item",
+                "value": "item",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Command",
+                "value": "command",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Time",
+                "value": "time",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "item": "",
+            "command": "",
+            "time": ""
+        },
+        "payload": "",
+        "submit": "Add",
+        "cancel": "",
+        "topic": "",
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "6a720e7a.6e2a4",
+                "81db4f5a.8a3928"
+            ]
+        ]
+    },
+    {
+        "id": "6a720e7a.6e2a4",
+        "type": "change",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.time",
+                "pt": "msg",
+                "to": "enter a time in the hh:mm format",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.command",
+                "pt": "msg",
+                "to": "enter a command",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.item",
+                "pt": "msg",
+                "to": "enter the item to switch",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "871730ad.fb9938"
+            ]
+        ]
+    },
+    {
+        "id": "581b49e7.e6f32",
+        "type": "ui_table",
+        "z": "f66f1d13.6d699",
+        "group": "60c7705.396ef1",
+        "name": "",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 730,
+        "y": 500,
+        "wires": [
+            [
+                "ceb6d7f2.a52738"
+            ]
+        ]
+    },
+    {
+        "id": "81db4f5a.8a3928",
+        "type": "function",
+        "z": "f66f1d13.6d699",
+        "name": "add to schedule",
+        "func": "let schedule = flow.get(\"schedule\") || [];\nlet command = msg.payload;\nlet newindex = null;\nif(schedule.length > 0){\n    for(i=0;i<schedule.length-1;i++){\n        if(command.time >= schedule[i].time && command.time < schedule[i+1].time){\n            newindex = i+1;\n        }\n    }\n    if(newindex !== null){\n        schedule.splice(newindex,0,command);\n    } else if (command.time < schedule[0].time){\n        schedule.splice(0,0,command);\n    } else {\n        schedule.push(command);\n    }\n} else {\n    schedule.push(command);\n}\nflow.set(\"schedule\", schedule);\nmsg.payload = schedule;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 560,
+        "y": 500,
+        "wires": [
+            [
+                "581b49e7.e6f32",
+                "5c8aa95c.467b18",
+                "94aee9bb.c90c5"
+            ]
+        ]
+    },
+    {
+        "id": "3630f498.db0044",
+        "type": "function",
+        "z": "f66f1d13.6d699",
+        "name": "remove from schedule",
+        "func": "if (msg.payload == \"Cancel\") return null;\nlet schedule = flow.get(\"schedule\");\nschedule.splice(msg.row, 1);\nflow.set(\"schedule\", schedule);\nmsg.payload = schedule;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1240,
+        "y": 500,
+        "wires": [
+            [
+                "581b49e7.e6f32",
+                "5c8aa95c.467b18",
+                "94aee9bb.c90c5"
+            ]
+        ]
+    },
+    {
+        "id": "ff571fa2.7edd18",
+        "type": "ui_toast",
+        "z": "f66f1d13.6d699",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 1050,
+        "y": 500,
+        "wires": [
+            [
+                "3630f498.db0044"
+            ]
+        ]
+    },
+    {
+        "id": "ceb6d7f2.a52738",
+        "type": "change",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Delete this schedule?",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Delete",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 500,
+        "wires": [
+            [
+                "ff571fa2.7edd18"
+            ]
+        ]
+    },
+    {
+        "id": "5c8aa95c.467b18",
+        "type": "delay",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 750,
+        "y": 460,
+        "wires": [
+            [
+                "23bf20db.964f98"
+            ]
+        ]
+    },
+    {
+        "id": "980b8f97.d56ac",
+        "type": "ui_ui_control",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "events": "all",
+        "x": 1080,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23bf20db.964f98",
+        "type": "change",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 460,
+        "wires": [
+            [
+                "980b8f97.d56ac"
+            ]
+        ]
+    },
+    {
+        "id": "80c05009.f852c8",
+        "type": "inject",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "6a720e7a.6e2a4"
+            ]
+        ]
+    },
+    {
+        "id": "f9a69a7f.a1dc58",
+        "type": "inject",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "schedule",
+        "payloadType": "flow",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "94aee9bb.c90c5"
+            ]
+        ]
+    },
+    {
+        "id": "94aee9bb.c90c5",
+        "type": "subflow:dc275690.07356",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "env": [],
+        "x": 740,
+        "y": 580,
+        "wires": [
+            [
+                "9b6a17c5.8a7ba8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dbbba4d6.d8ce7",
+        "type": "function",
+        "z": "f66f1d13.6d699",
+        "name": "format",
+        "func": "const days = msg.payload.days.split(\",\").map(item=>parseInt(item));\nconst schedule = {\n    start: \"00:00\",\n    stop: \"00:00\",\n    days: days\n}\nmsg.topic = \"override\";\nmsg.payload = schedule;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "9b6a17c5.8a7ba8"
+            ]
+        ]
+    },
+    {
+        "id": "7344979a.6fe778",
+        "type": "ui_form",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "label": "change active days",
+        "group": "60c7705.396ef1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Weekdays",
+                "value": "days",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "days": ""
+        },
+        "payload": "",
+        "submit": "change",
+        "cancel": "",
+        "topic": "",
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "dbbba4d6.d8ce7",
+                "92c6a919.059158",
+                "8518b153.c1f3d"
+            ]
+        ]
+    },
+    {
+        "id": "9b6a17c5.8a7ba8",
+        "type": "subflow:7cc13ada.b6712c",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "x": 920,
+        "y": 580,
+        "wires": [
+            [
+                "4f89467b.9f7d48"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1056323f.824e8e",
+        "type": "ui_text",
+        "z": "f66f1d13.6d699",
+        "group": "60c7705.396ef1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "active on:",
+        "format": "{{msg.payload.days}}",
+        "layout": "row-spread",
+        "x": 940,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "92c6a919.059158",
+        "type": "change",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.days",
+                "pt": "msg",
+                "to": "comma separated day numbers",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "7344979a.6fe778"
+            ]
+        ]
+    },
+    {
+        "id": "63e4763e.475348",
+        "type": "inject",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "92c6a919.059158"
+            ]
+        ]
+    },
+    {
+        "id": "8518b153.c1f3d",
+        "type": "change",
+        "z": "f66f1d13.6d699",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "str",
+                "to": "Mo",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "2",
+                "fromt": "str",
+                "to": "Tu",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "3",
+                "fromt": "str",
+                "to": "We",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "4",
+                "fromt": "str",
+                "to": "Th",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "5",
+                "fromt": "str",
+                "to": "Fr",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "6",
+                "fromt": "str",
+                "to": "Sa",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.days",
+                "pt": "msg",
+                "from": "7",
+                "fromt": "str",
+                "to": "Su",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [
+                "1056323f.824e8e"
+            ]
+        ]
+    },
+    {
+        "id": "4f89467b.9f7d48",
+        "type": "debug",
+        "z": "f66f1d13.6d699",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "430f0506.ed373c",
+        "type": "ui_time_scheduler",
+        "z": "f66f1d13.6d699",
+        "group": "c05003ad.d00de",
+        "name": "",
+        "refresh": 60,
+        "devices": [
+            "Device 1"
+        ],
+        "outputs": 2,
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "x": 380,
+        "y": 780,
+        "wires": [
+            [],
+            [
+                "af3271b.b6b399"
+            ]
+        ]
+    },
+    {
+        "id": "af3271b.b6b399",
+        "type": "ui_text",
+        "z": "f66f1d13.6d699",
+        "group": "c05003ad.d00de",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 570,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8ad35a00.ce3c98",
+        "type": "hikvision-image-in",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "hikvision": "d6f8402b.a9d72",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "e7f06c8d.c0a3b"
+            ]
+        ]
+    },
+    {
+        "id": "114325c5.bb1f9a",
+        "type": "inject",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "8ad35a00.ce3c98"
+            ]
+        ]
+    },
+    {
+        "id": "e1be9ab8.bff3f8",
+        "type": "debug",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1adc90ff.17089f",
+        "type": "mqtt in",
+        "z": "6e2de0a8.936f6",
+        "name": "2c:3a:e8:3e:79:7c",
+        "topic": "GW/gw2E2C3AE83E797C/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "ea070992.9873a8",
+        "x": 150,
+        "y": 1400,
+        "wires": [
+            [
+                "f3d7c84d.0627c8"
+            ]
+        ]
+    },
+    {
+        "id": "c6eb66c8.c70a78",
+        "type": "debug",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "13403b9f.dc06c4",
+        "type": "json",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 1400,
+        "wires": [
+            [
+                "d0bf3152.3813"
+            ]
+        ]
+    },
+    {
+        "id": "f3d7c84d.0627c8",
+        "type": "deduplicate",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "keyproperty": "",
+        "expiry": "5",
+        "x": 390,
+        "y": 1400,
+        "wires": [
+            [
+                "13403b9f.dc06c4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3660cfae.b8374",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "topic": "GWR/gw2E2C3AE83E797C/1/DO1",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 400,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "a2c0c2cf.4c8f3",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DO1\":{\"Q0\":false,\"Q1\":false,\"Q2\":false,\"Q3\":false,\"Q4\":false,\"Q5\":false,\"Q6\":false,\"Q7\":false,\"Q8\":false}}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 1700,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "bf45b258.0ca4e",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "topic": "GWR/gw2E2C3AE83E797C/1/DO2",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 600,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "d1474799.b32c88",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DO2\":{\"Q0\":false,\"Q1\":false,\"Q2\":false,\"Q3\":false,\"Q4\":false,\"Q5\":false}}",
+        "payloadType": "json",
+        "x": 330,
+        "y": 1820,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "55081876.c0acf8",
+        "type": "mqtt out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "topic": "GWR/gw2E2C3AE83E797C/1/DO3",
+        "qos": "0",
+        "retain": "false",
+        "broker": "ea070992.9873a8",
+        "x": 1140,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "f6770ae4.79b768",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"DO3\":{\"Q0\":false,\"Q1\":false,\"Q2\":false,\"Q3\":false,\"Q4\":false,\"Q5\":false,\"Q6\":false,\"Q7\":false}}",
+        "payloadType": "json",
+        "x": 930,
+        "y": 1880,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "fd87a2ac.d4c45",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "Clear",
+        "props": [
+            {
+                "p": "payload",
+                "v": "[]",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1010,
+        "y": 1400,
+        "wires": [
+            [
+                "a6f33278.1e244"
+            ]
+        ]
+    },
+    {
+        "id": "8e08d19d.4ac06",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "Set Default",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SN\":\"gw2E2C3AE83E797C\",\"CS\":{\"S\":0,\"I\":0,\"t\":{\"Y\":2020,\"M\":11,\"D\":26,\"h\":9,\"m\":10,\"s\":11}},\"U1\":{\"AI\":{\"AI0\":0,\"AI1\":0,\"AI2\":0,\"AI3\":0,\"AI4\":0,\"AI8\":0,\"AI9\":0,\"AI10\":0,\"AI11\":0,\"AI12\":0,\"AI13\":0,\"AI14\":0},\"DI\":{\"I0\":false,\"I1\":false},\"DO1\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0,\"Q8\":0},\"DO2\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0},\"DO3\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0}}}",
+        "payloadType": "json",
+        "x": 1160,
+        "y": 1400,
+        "wires": [
+            [
+                "a6f33278.1e244"
+            ]
+        ]
+    },
+    {
+        "id": "a6f33278.1e244",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Global Var",
+        "func": "global.set(\"_unitData_gw2E2C3AE83E797C\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0bf3152.3813",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "Data Processing",
+        "func": "var topic\t\t\t= msg.topic;\nvar payload\t\t\t= msg.payload;\t//\nvar unitID          = \"gw2E2C3AE83E797C\";\nmsg.payload         = null;\n\nvar systemType\t\t= \"\";\t\t\t// GW\nvar systemID\t\t= \"\";\t\t\t// gw2E2C3AE83E8294\nvar subID_1\t\t\t= \"\";\t\t\t// 1\nvar subID_2\t\t\t= \"\";\t\t\t// A\nvar subID_3\t\t\t= \"\";\t\t\t//\n\nvar topicLength\t\t= topic.length;\nvar topicSeperator\t= topic.indexOf(\"/\");\nvar index_ID\t\t= -1;\nvar index_Unit\t    = -1;\nvar indexGW_Func\t= -1;\nvar index_5\t\t\t= -1;\nvar index_6\t\t\t= -1;\nvar index_7\t\t\t= -1;\nvar index_8\t\t\t= -1;\n\nvar\t_unitID;\nvar\t_unitSN;\nvar\t_unitData;\n\nvar date\t\t\t= new Date();\nvar system_Year\t\t= String( date.getFullYear() );\nvar system_Month\t= String( date.getMonth() + 1 );\nvar system_Day\t\t= String( date.getDate() );\nvar system_Hour\t\t= String( date.getHours() );\nvar system_Minute\t= String( date.getMinutes() );\nvar system_Second\t= String( date.getSeconds() );\n\nsystem_Year\t\t\t= \"00\".substr(system_Year.length)\t\t+ system_Year;\nsystem_Month\t\t= \"00\".substr(system_Month.length)\t\t+ system_Month;\nsystem_Day\t\t\t= \"00\".substr(system_Day.length)\t\t+ system_Day;\nsystem_Hour\t\t\t= \"00\".substr(system_Hour.length)\t\t+ system_Hour;\nsystem_Minute\t\t= \"00\".substr(system_Minute.length)\t\t+ system_Minute;\nsystem_Second\t\t= \"00\".substr(system_Second.length)\t\t+ system_Second;\n\nvar system_time\t\t= system_Year + \"/\" + system_Month + \"/\" + system_Day + \" \" + system_Hour + \":\" + system_Minute;\n\nvar output\t\t= [];\nvar output_sys_t;\nvar output_unitUpdate_CS\t= null;\nvar output_debug\t        = null;\n\n\tsystemType\t= topic;\n\tif (topicSeperator >= 0)\n\t{\n\t\tsystemType\t= topic.slice(0, topicSeperator);\n\t\tsystemID\t= topic.slice(topicSeperator + 1);\n\t\tindex_ID\t= topic.indexOf(\"/\", topicSeperator + 1);\n\t\tif (index_ID >= 0)\n\t\t{\n\t\t\tsystemID\t    = topic.slice(topicSeperator + 1, index_ID);\n\t\t\tsubID_1\t\t    = topic.slice(index_ID + 1);\n\t\t\tindex_Unit\t    = topic.indexOf(\"/\", index_ID + 1);\n\t\t\tif (index_Unit >= 0)\n\t\t\t{\n\t\t\t\tsubID_1\t\t    = topic.slice(index_ID + 1, index_Unit);\n\t\t\t\tsubID_2\t\t    = topic.slice(index_Unit + 1);\n\t\t\t\tindexGW_Func\t= topic.indexOf(\"/\", index_Unit + 1);\n\t\t\t\tif (indexGW_Func >= 0)\n\t\t\t\t{\n\t\t\t\t\tsubID_2\t\t= topic.slice(index_Unit + 1, indexGW_Func);\n\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1);\n\t\t\t\t\tindex_5\t\t= topic.indexOf(\"/\", indexGW_Func + 1);\n\t\t\t\t\tif (index_5 >= 0)\n\t\t\t\t\t{\n\t\t\t\t\t\tsubID_3\t\t= topic.slice(indexGW_Func + 1, index_5);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\tif( topicSeperator > -1 )\n\t{\n\t\tif( systemType === \"GW\" )\n\t\t{\n\t\t\tif( (index_ID > -1)&&( index_Unit > -1 )&&(systemID === unitID) )\n\t\t\t{\n\t\t\t    output_debug    = msg;\n\t\t\t\t_unitID\t\t\t= systemID;\n\t\t\t\t_unitSN\t        = \"_unitData_\" + _unitID;\n\t\t\t\t_unitData\t    = global.get(_unitSN)||\n\t\t\t\t{\n\t\t\t\t    \"SN\":_unitID,\n\t\t\t\t    \"CS\":{\n\t\t\t\t        \"S\":0,\n\t\t\t\t        \"I\":0,\n\t\t\t\t        \"t\":{\n\t\t\t\t            \"Y\":system_Year,\n\t\t\t\t            \"M\":system_Month,\n\t\t\t\t            \"D\":system_Day,\n\t\t\t\t            \"h\":system_Hour,\n\t\t\t\t            \"m\":system_Minute,\n\t\t\t\t            \"s\":system_Second\n\t\t\t\t        }\n\t\t\t\t    },\n\t\t\t\t    \"U1\":{\n\t\t\t\t        \"AI\":{\n\t\t\t\t            \"AI0\":0.0,\"AI1\":0.0,\"AI2\":0.0,\"AI3\":0.0,\"AI4\":0.0,\"AI8\":0.0,\"AI9\":0.0,\"AI10\":0.0,\"AI11\":0.0,\"AI12\":0.0,\"AI13\":0.0,\"AI14\":0.0},\n\t\t\t\t            \"DI\":{\"I0\":false,\"I1\":false},\n\t\t\t\t            \"DO1\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0,\"Q8\":0},\n\t\t\t\t            \"DO2\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0},\n\t\t\t\t            \"DO3\":{\"Q0\":0,\"Q1\":0,\"Q2\":0,\"Q3\":0,\"Q4\":0,\"Q5\":0,\"Q6\":0,\"Q7\":0}\n\t\t\t\t    }\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tif( (subID_1 === \"S\")&&( subID_2 === \"CW\" ) )\n\t\t\t\t{\n\t\t\t\t\tif( ( _unitData.CS.S !== payload.S )||( _unitData.CS.I !== payload.I ) )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t_unitData.CS.S\t=\tpayload.S;\n\t\t\t\t\t\t\t_unitData.CS.I\t=\tpayload.I;\n\t\t\t\t\t\t\t_unitData.CS.t\t=\t{\n\t\t\t\t\t\t\t\t\t\t    \t\t\"Y\":\tsystem_Year,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"M\":\tsystem_Month,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"D\":\tsystem_Day,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"h\":\tsystem_Hour,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"m\":\tsystem_Minute,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"s\":\tsystem_Second\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n                    else if( subID_1 === \"1\" )\n\t\t\t\t\t{\n\t\t\t\t\t\tif( subID_2 === \"A\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"AI\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI0\t    = payload.AI.AI0;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI1\t    = payload.AI.AI1;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI2\t    = payload.AI.AI2;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI3\t    = payload.AI.AI3;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI4\t    = payload.AI.AI4;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI8\t    = payload.AI.AI8;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI9\t    = payload.AI.AI9;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI10\t= payload.AI.AI10;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI11\t= payload.AI.AI11;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI12\t= payload.AI.AI12;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI13\t= payload.AI.AI13;\n\t\t\t\t\t\t\t\t_unitData.U1.AI.AI14\t= payload.AI.AI14;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"DI\" )\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif( \"DI\" in payload )\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t_unitData.U1.DI.I0\t    = payload.DI.I0;\n\t\t\t\t\t\t\t\t_unitData.U1.DI.I1\t    = payload.DI.I1;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"DO1\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"DO1\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q0\t    = payload.DO1.Q0;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q1\t    = payload.DO1.Q1;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q2\t    = payload.DO1.Q2;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q3\t    = payload.DO1.Q3;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q4\t    = payload.DO1.Q4;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q5\t    = payload.DO1.Q5;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q6\t    = payload.DO1.Q6;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q7\t    = payload.DO1.Q7;\n\t\t\t\t\t\t\t\t_unitData.U1.DO1.Q8\t    = payload.DO1.Q8;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"DO2\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"DO2\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q0\t    = payload.DO2.Q0;\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q1\t    = payload.DO2.Q1;\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q2\t    = payload.DO2.Q2;\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q3\t    = payload.DO2.Q3;\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q4\t    = payload.DO2.Q4;\n\t\t\t\t\t\t\t\t_unitData.U1.DO2.Q5\t    = payload.DO2.Q5;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse if( subID_2 === \"DO3\")\n\t\t\t\t\t\t{\n\t\t\t\t\t\t    if( \"DO3\" in payload)\n\t\t\t\t\t\t    {\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q0\t    = payload.DO3.Q0;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q1\t    = payload.DO3.Q1;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q2\t    = payload.DO3.Q2;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q3\t    = payload.DO3.Q3;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q4\t    = payload.DO3.Q4;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q5\t    = payload.DO3.Q5;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q6\t    = payload.DO3.Q6;\n\t\t\t\t\t\t\t\t_unitData.U1.DO3.Q7\t    = payload.DO3.Q7;\n\t\t\t\t\t\t    }\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n                    // Reset Variables to 0 if Comms is lost\n    // \t\t\t    if(_unitData.CS.S === 0)\n    // \t\t\t    {\n    // \t\t\t\t\t_unitData.U1.AI.AI0\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI1\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI2\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI3\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI4\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI8\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI9\t    = 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI10\t= 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI11\t= 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI12\t= 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI13\t= 0.0;\n\t\t\t\t// \t\t_unitData.U1.AI.AI14\t= 0.0;\n    // \t\t\t    }\n    \n    \t\t\t\tglobal.set(_unitSN, _unitData);\n    \t\t\t\tflow.set(\"unit\", unitID)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\nmsg.payload = _unitData;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 1400,
+        "wires": [
+            [
+                "c6eb66c8.c70a78",
+                "b4d10b2e.fdccc8",
+                "6491d948.801578",
+                "dd5e473d.71a1b8",
+                "7fc026bd.3929b8",
+                "f7275fa9.b2bbc",
+                "67e1732d.e6468c",
+                "d3529087.56966",
+                "8c573a72.3cb028",
+                "e0e7eb04.7bd078",
+                "4297c7ee.e7ed08",
+                "4d5f2bdf.114d04",
+                "80682b1f.c11988",
+                "31c90a4f.c389c6",
+                "6b080045.c40e4",
+                "cb729b11.c4ae08"
+            ]
+        ]
+    },
+    {
+        "id": "1d66405e.e2e7b",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q0",
+        "tooltip": "Blue LED",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q0\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-circle fa-2x",
+        "oncolor": "blue",
+        "offvalue": "{\"DO1\":{\"Q0\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-circle-o fa-2x",
+        "offcolor": "blue",
+        "x": 120,
+        "y": 1740,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "97cbba01.8da378",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q1",
+        "tooltip": "Yellow LED",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q1\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-circle fa-2x",
+        "oncolor": "orange",
+        "offvalue": "{\"DO1\":{\"Q1\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-circle-o fa-2x",
+        "offcolor": "orange",
+        "x": 120,
+        "y": 1780,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "25472f63.fd66a",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q2",
+        "tooltip": "Red LED",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q2\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-circle fa-2x",
+        "oncolor": "red",
+        "offvalue": "{\"DO1\":{\"Q2\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-circle-o fa-2x",
+        "offcolor": "red",
+        "x": 120,
+        "y": 1820,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "96fcb4fa.ed14d8",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q3",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q3\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q3\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 1860,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "cab4ebd6.deb908",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q4",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q4\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q4\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 1900,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "2a266435.1a551c",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q5",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q5\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q5\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 1940,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "ce78d05e.05e72",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q6",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q6\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q6\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 1980,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "6aa5131e.8d05bc",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q7",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q7\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q7\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 2020,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "c3a9d580.f4fb88",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO1: Q8",
+        "tooltip": "",
+        "group": "9e0f3462.276f88",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO1\":{\"Q8\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-toggle-on fa-2x",
+        "oncolor": "green",
+        "offvalue": "{\"DO1\":{\"Q8\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-toggle-off fa-2x",
+        "offcolor": "grey",
+        "x": 120,
+        "y": 2060,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "bed713a4.3e482",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q0",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q0\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q0\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 1860,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "6ec6beab.17d9b",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q1",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q1\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q1\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 1900,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "20328be1.266b64",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q2",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q2\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q2\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 1940,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "966253b1.9620c",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q3",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q3\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q3\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 1980,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "cbcd176.cbe77e8",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q4",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q4\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q4\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 2020,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "9e04ac0a.16c29",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO2: Q5",
+        "tooltip": "",
+        "group": "206bc5d7.f8269a",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO2\":{\"Q5\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO2\":{\"Q5\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 320,
+        "y": 2060,
+        "wires": [
+            [
+                "bf45b258.0ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "e12563ef.e4ee3",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q0",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q0\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q0\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 1980,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "696e4853.8d2f78",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q1",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q1\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q1\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 2020,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "1074113.9755def",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q2",
+        "tooltip": "Relay 1",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q2\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-lightbulb-o fa-2x",
+        "oncolor": "orange",
+        "offvalue": "{\"DO3\":{\"Q2\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-lightbulb-o fa-2x",
+        "offcolor": "grey",
+        "x": 800,
+        "y": 2060,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "6e9e680e.800c88",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q3",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q3\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q3\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 2100,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "74241a38.05e5d4",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q4",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q4\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q4\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 2140,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "93e27313.1c366",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q5",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q5\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q5\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 2180,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "ab966498.f56688",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q6",
+        "tooltip": "Relay 2",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q6\":1}}",
+        "onvalueType": "json",
+        "onicon": "fa-lightbulb-o fa-2x",
+        "oncolor": "orange",
+        "offvalue": "{\"DO3\":{\"Q6\":0}}",
+        "offvalueType": "json",
+        "officon": "fa-lightbulb-o fa-2x",
+        "offcolor": "grey",
+        "x": 800,
+        "y": 2220,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "ebd6d3a7.59d9a",
+        "type": "ui_switch",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "label": "DO3: Q7",
+        "tooltip": "",
+        "group": "358f0320.ddd13c",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "{\"DO3\":{\"Q7\":1}}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"DO3\":{\"Q7\":0}}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 800,
+        "y": 2260,
+        "wires": [
+            [
+                "55081876.c0acf8"
+            ]
+        ]
+    },
+    {
+        "id": "f082941a.bddf88",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI0",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "6b562dee.9e7a34",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI1",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "20cccf0b.e092f",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI2",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "493aed20.672294",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI3",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "ccd2b6ea.1896e8",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI4",
+        "format": "{{msg.payload | number:2}} °C",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "b2873987.cc96d8",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI8",
+        "format": "{{msg.payload | number:2}} °C",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "20acf6be.d1e0aa",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI9",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "e91558f6.94a848",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI10",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "baeb77a7.9536d8",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 9,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI11",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "a0fb8230.0c5b",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 10,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI12",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "565ddc5b.96cbe4",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI13",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "f6472fe1.fa387",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "18e51aee.f9cc95",
+        "order": 12,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "AI14",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "b4d10b2e.fdccc8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1440,
+        "wires": [
+            [
+                "f082941a.bddf88"
+            ]
+        ]
+    },
+    {
+        "id": "6491d948.801578",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1460,
+        "wires": [
+            [
+                "6b562dee.9e7a34"
+            ]
+        ]
+    },
+    {
+        "id": "dd5e473d.71a1b8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1480,
+        "wires": [
+            [
+                "20cccf0b.e092f"
+            ]
+        ]
+    },
+    {
+        "id": "7fc026bd.3929b8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI3;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1500,
+        "wires": [
+            [
+                "493aed20.672294"
+            ]
+        ]
+    },
+    {
+        "id": "f7275fa9.b2bbc",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = parseFloat(payload.U1.AI.AI4).toFixed(2);\nmsg.topic = \"Temperature\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1520,
+        "wires": [
+            [
+                "ccd2b6ea.1896e8",
+                "7f6ec299.68669c"
+            ]
+        ]
+    },
+    {
+        "id": "67e1732d.e6468c",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = parseFloat(payload.U1.AI.AI8).toFixed(2);\nmsg.topic = \"Temperature\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1540,
+        "wires": [
+            [
+                "b2873987.cc96d8"
+            ]
+        ]
+    },
+    {
+        "id": "d3529087.56966",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI9;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1560,
+        "wires": [
+            [
+                "20acf6be.d1e0aa"
+            ]
+        ]
+    },
+    {
+        "id": "8c573a72.3cb028",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI10;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1580,
+        "wires": [
+            [
+                "e91558f6.94a848"
+            ]
+        ]
+    },
+    {
+        "id": "e0e7eb04.7bd078",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI11;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1600,
+        "wires": [
+            [
+                "baeb77a7.9536d8"
+            ]
+        ]
+    },
+    {
+        "id": "4297c7ee.e7ed08",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI12;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1620,
+        "wires": [
+            [
+                "a0fb8230.0c5b"
+            ]
+        ]
+    },
+    {
+        "id": "4d5f2bdf.114d04",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI13;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1640,
+        "wires": [
+            [
+                "565ddc5b.96cbe4"
+            ]
+        ]
+    },
+    {
+        "id": "80682b1f.c11988",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.AI.AI14;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1660,
+        "wires": [
+            [
+                "f6472fe1.fa387"
+            ]
+        ]
+    },
+    {
+        "id": "6b080045.c40e4",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.DI.I1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1720,
+        "wires": [
+            [
+                "ade6f020.6f4b3"
+            ]
+        ]
+    },
+    {
+        "id": "31c90a4f.c389c6",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = msg.payload;\nmsg.payload = payload.U1.DI.I0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 1700,
+        "wires": [
+            [
+                "8c213dae.34145"
+            ]
+        ]
+    },
+    {
+        "id": "8c213dae.34145",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "c19cfac9.702a88",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DI0",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "ade6f020.6f4b3",
+        "type": "ui_text",
+        "z": "6e2de0a8.936f6",
+        "group": "c19cfac9.702a88",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DI1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "d3b0b2c9.be01",
+        "type": "ui_chart",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "group": "20f830e.02813d",
+        "order": 3,
+        "width": "12",
+        "height": "5",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1310,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f6ec299.68669c",
+        "type": "delay",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 1150,
+        "y": 1520,
+        "wires": [
+            [
+                "d3b0b2c9.be01"
+            ]
+        ]
+    },
+    {
+        "id": "95af86d8.a1ee08",
+        "type": "ui_time_scheduler",
+        "z": "6e2de0a8.936f6",
+        "group": "9e0f3462.276f88",
+        "name": "",
+        "refresh": 60,
+        "devices": [
+            "BlueLED"
+        ],
+        "customPayload": false,
+        "eventMode": false,
+        "outputs": 2,
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "x": 140,
+        "y": 1580,
+        "wires": [
+            [
+                "87afd44a.350408",
+                "fae56bd.8599e98"
+            ],
+            [
+                "7bbdbb4a.86c0e4",
+                "555415b4.cd751c"
+            ]
+        ]
+    },
+    {
+        "id": "7bbdbb4a.86c0e4",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "if(msg.payload == true)\n{\n    msg.payload = {\"DO1\":{\"Q0\":1}};\n}\nelse\n{\n    msg.payload = {\"DO1\":{\"Q0\":0}};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 1580,
+        "wires": [
+            [
+                "3660cfae.b8374"
+            ]
+        ]
+    },
+    {
+        "id": "555415b4.cd751c",
+        "type": "debug",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "ae52a7c7.f40608",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = global.get(\"_unitData_gw2E2C3AE83E797C\");\nif(payload.U1.DO3.Q2 == true)\n{\n    msg.payload = {\"DO3\":{\"Q2\":1}};\n}\nelse\n{\n    msg.payload = {\"DO3\":{\"Q2\":0}};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 660,
+        "y": 2060,
+        "wires": [
+            [
+                "1074113.9755def"
+            ]
+        ]
+    },
+    {
+        "id": "cb729b11.c4ae08",
+        "type": "link out",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "links": [
+            "ec1c86b5.0a1658"
+        ],
+        "x": 645,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "ec1c86b5.0a1658",
+        "type": "link in",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "links": [
+            "cb729b11.c4ae08"
+        ],
+        "x": 555,
+        "y": 2060,
+        "wires": [
+            [
+                "ae52a7c7.f40608",
+                "77e588c5.fb0ec8"
+            ]
+        ]
+    },
+    {
+        "id": "77e588c5.fb0ec8",
+        "type": "function",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "func": "var payload = global.get(\"_unitData_gw2E2C3AE83E797C\");\nif(payload.U1.DO3.Q6 == true)\n{\n    msg.payload = {\"DO3\":{\"Q6\":1}};\n}\nelse\n{\n    msg.payload = {\"DO3\":{\"Q6\":0}};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 660,
+        "y": 2220,
+        "wires": [
+            [
+                "ab966498.f56688"
+            ]
+        ]
+    },
+    {
+        "id": "51a9f1c4.40d9d",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "timers",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 1540,
+        "wires": [
+            [
+                "95af86d8.a1ee08"
+            ]
+        ]
+    },
+    {
+        "id": "87afd44a.350408",
+        "type": "change",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::timers",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fae56bd.8599e98",
+        "type": "debug",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "fa16489f.388758",
+        "type": "inject",
+        "z": "6e2de0a8.936f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"timers\":[{\"starttime\":1606538040000,\"days\":[0,0,0,0,0,1,1],\"output\":\"0\",\"endtime\":1606538280000}]}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 1480,
+        "wires": [
+            [
+                "95af86d8.a1ee08"
+            ]
+        ]
+    },
+    {
+        "id": "9e6ed9dc.f64ba8",
+        "type": "template",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img width=\"800px\" height=\"480px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "28439a97.39e7a6"
+            ]
+        ]
+    },
+    {
+        "id": "28439a97.39e7a6",
+        "type": "ui_template",
+        "z": "5a8dc8bc.9e5308",
+        "group": "fe6eec95.32266",
+        "name": "",
+        "order": 0,
+        "width": "16",
+        "height": "10",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "e1be9ab8.bff3f8"
+            ]
+        ]
+    },
+    {
+        "id": "e7f06c8d.c0a3b",
+        "type": "base64",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "9e6ed9dc.f64ba8"
+            ]
+        ]
+    },
+    {
+        "id": "d9e05862.cf2338",
+        "type": "ui_button",
+        "z": "5a8dc8bc.9e5308",
+        "name": "",
+        "group": "628c9287.60f8ec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "8ad35a00.ce3c98"
+            ]
+        ]
     }
 ]
