@@ -13265,5 +13265,46 @@
                 "ce78d05e.05e72"
             ]
         ]
+    },
+    {
+        "id": "61dad8fe.441848",
+        "type": "wake on lan",
+        "z": "ce755ade.782f08",
+        "mac": "70:5A:B6:91:A2:76",
+        "host": "192.168.1.255",
+        "udpport": 9,
+        "name": "Ubuntu",
+        "x": 440,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a47606be.1de838",
+        "type": "inject",
+        "z": "ce755ade.782f08",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "61dad8fe.441848"
+            ]
+        ]
     }
 ]
