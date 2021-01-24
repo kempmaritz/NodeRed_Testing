@@ -1313,6 +1313,26 @@
         "collapse": false
     },
     {
+        "id": "8418af9a.bbc66",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "7179c13.0628d4",
+        "order": 5,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "65a72644.483318",
+        "type": "ui_group",
+        "name": "RF Button",
+        "tab": "3c9d693a.5ca736",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
         "id": "6952e3f6.75037c",
         "type": "debug",
         "z": "6e2de0a8.936f6",
@@ -13306,5 +13326,552 @@
                 "61dad8fe.441848"
             ]
         ]
+    },
+    {
+        "id": "b51e2b02.46d418",
+        "type": "trigger",
+        "z": "3bab7d86.a7d252",
+        "name": "Repeat",
+        "op1": "Down",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-140",
+        "extend": false,
+        "units": "ms",
+        "reset": "Up",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 360,
+        "y": 1100,
+        "wires": [
+            [
+                "36fcedb1.36a5e2"
+            ]
+        ]
+    },
+    {
+        "id": "36fcedb1.36a5e2",
+        "type": "function",
+        "z": "3bab7d86.a7d252",
+        "name": "toggle *",
+        "func": "var x = context.get(\"counter\") || 0;\nif (msg.payload == \"Up\")\n{\n    context.set(\"counter\",0);\n    msg.colour = \"black\";\n    msg.payload = \"black\";      //  May not be needed\n    return msg;\n}\n\nif (x === 0)\n{\n    msg.colour = \"lime\";\n    msg.payload = \"lime\";\n} else\nif (x === 1)\n{\n    msg.colour = \"black\";\n    msg.payload = \"black\";\n}\n\nx = (x + 1) % 2;\n\ncontext.set(\"counter\",x);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 520,
+        "y": 1140,
+        "wires": [
+            [
+                "bc5aa5c4.52161",
+                "6af38fee.edbd3"
+            ]
+        ],
+        "info": "You can change the two `msg.payload`s to\nwhat ever you want to be sent for the two\nstates.\nThe code has \"lime\" and \"black\" only because I\nwas using the output/s to control a \n`ui_LED` node and it blinked.\nThe flow sends a \"black\" when the button is\nreleased to turn the indicator off.\nThat is done with `msg.colour`.\n"
+    },
+    {
+        "id": "bc5aa5c4.52161",
+        "type": "ui_template",
+        "z": "3bab7d86.a7d252",
+        "group": "8418af9a.bbc66",
+        "name": "V Up",
+        "order": 1,
+        "width": 2,
+        "height": "1",
+        "format": "<button ng-mousedown=\"send({payload: 'Down'})\" ng-mouseup=\"send({payload: 'Up'})\">\n    <font color = {{msg.colour}}  class=\"fa fa-bullseye fa-2x\"> </font>\n</button>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 130,
+        "y": 1100,
+        "wires": [
+            [
+                "6b7607e4.7d79c",
+                "b51e2b02.46d418"
+            ]
+        ]
+    },
+    {
+        "id": "6b7607e4.7d79c",
+        "type": "switch",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Down",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Up",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 1140,
+        "wires": [
+            [],
+            [
+                "36fcedb1.36a5e2"
+            ]
+        ]
+    },
+    {
+        "id": "6af38fee.edbd3",
+        "type": "switch",
+        "z": "3bab7d86.a7d252",
+        "name": "THIS IS THE OUTPUT NODE *",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 1140,
+        "wires": [
+            []
+        ],
+        "info": "I have used this node like this.\nThe `flow` sends \"black\" and \"lime\" outputs\nalternatly.\nTo change what is sent out, edit the `function`\nnode (\"toggle\") and change the `msg.payload`\nlines.\n"
+    },
+    {
+        "id": "3a4c5635.3da31a",
+        "type": "comment",
+        "z": "3bab7d86.a7d252",
+        "name": "Read me *",
+        "info": "This is a handy little \"flow\" to use so when you press a button, it blinks.\nHandy feedback in some cases.\nOpen the other two nodes who's names end with a `*` as they contain more information in their \"description\" tabs.\n",
+        "x": 530,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "68411b04.f2f68c",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "func": "if (msg.payload.command == \"action.devices.commands.OnOff\") {\n    if (msg.payload.params.on) {\n        msg.payload = true;\n        return [msg,null];\n    } else {\n        msg.payload = false;\n        return [null,msg];\n    }\n} else {\n  //brightness\n  var bright = Math.round(255 * (msg.payload.params.brightness / 100));\n  msg.payload = {\n      state: 1,\n      dim: bright\n  }\n  return [msg,null];\n}",
+        "outputs": "2",
+        "noerr": 0,
+        "x": 300,
+        "y": 940,
+        "wires": [
+            [
+                "d27b03c3.d8bd7"
+            ],
+            [
+                "c035189c.99da48",
+                "32189f53.c3acf"
+            ]
+        ]
+    },
+    {
+        "id": "1477b663.9198a2",
+        "type": "debug",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 290,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "d27b03c3.d8bd7",
+        "type": "trigger",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "op1": "",
+        "op2": "false",
+        "op1type": "pay",
+        "op2type": "bool",
+        "duration": "5",
+        "extend": true,
+        "units": "min",
+        "reset": "",
+        "outputs": 1,
+        "x": 510,
+        "y": 920,
+        "wires": [
+            [
+                "3662a569.efac9a",
+                "32189f53.c3acf"
+            ]
+        ]
+    },
+    {
+        "id": "c035189c.99da48",
+        "type": "change",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 960,
+        "wires": [
+            [
+                "d27b03c3.d8bd7"
+            ]
+        ]
+    },
+    {
+        "id": "3662a569.efac9a",
+        "type": "function",
+        "z": "b53c1f70.8e70f",
+        "name": "",
+        "func": "if (!msg.payload) {\nmsg.payload = {\n    command: \"action.devices.commands.OnOff\",\n    params: {\n        on: false\n    }\n};\n\ndelete msg._confId;\n\nreturn msg;\n} else {\n    return;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 920,
+        "wires": [
+            [
+                "8729f1d0.629448"
+            ]
+        ]
+    },
+    {
+        "id": "8729f1d0.629448",
+        "type": "debug",
+        "z": "b53c1f70.8e70f",
+        "name": "GoogleHome-Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "32189f53.c3acf",
+        "type": "debug",
+        "z": "b53c1f70.8e70f",
+        "name": "Wemo Out",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "32743777.9d43a8",
+        "type": "inject",
+        "z": "b53c1f70.8e70f",
+        "name": "GoogleHome",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 940,
+        "wires": [
+            [
+                "68411b04.f2f68c",
+                "1477b663.9198a2"
+            ]
+        ]
+    },
+    {
+        "id": "29e7d45f.dea00c",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "toggle-me",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 1300,
+        "wires": [
+            [
+                "38a5d91c.0be77e"
+            ]
+        ]
+    },
+    {
+        "id": "1b6fe3d1.5580a4",
+        "type": "switch",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "property": "toggle-me",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 260,
+        "y": 1400,
+        "wires": [
+            [
+                "8991bf63.f4d578"
+            ],
+            [
+                "5fec9b00.abd0d4"
+            ]
+        ]
+    },
+    {
+        "id": "8cddecf3.4a24f",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "toggle-me",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 1440,
+        "wires": [
+            [
+                "38a5d91c.0be77e"
+            ]
+        ]
+    },
+    {
+        "id": "1e692860.33a6d",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "toggle-me",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 1360,
+        "wires": [
+            [
+                "38a5d91c.0be77e"
+            ]
+        ]
+    },
+    {
+        "id": "dc371121.720208",
+        "type": "inject",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 1300,
+        "wires": [
+            [
+                "29e7d45f.dea00c"
+            ]
+        ]
+    },
+    {
+        "id": "5fec9b00.abd0d4",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1440,
+        "wires": [
+            [
+                "8cddecf3.4a24f"
+            ]
+        ]
+    },
+    {
+        "id": "8991bf63.f4d578",
+        "type": "change",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1360,
+        "wires": [
+            [
+                "1e692860.33a6d"
+            ]
+        ]
+    },
+    {
+        "id": "38a5d91c.0be77e",
+        "type": "ui_text_input",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "65a72644.483318",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 930,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9af5b2c6.42c3d",
+        "type": "ui_button",
+        "z": "3bab7d86.a7d252",
+        "name": "",
+        "group": "65a72644.483318",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 140,
+        "y": 1400,
+        "wires": [
+            [
+                "1b6fe3d1.5580a4"
+            ]
+        ]
+    },
+    {
+        "id": "f40c5c0.c964128",
+        "type": "comment",
+        "z": "3bab7d86.a7d252",
+        "name": "At startup set default value (false)",
+        "info": "",
+        "x": 430,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "e62c42b2.ed0408",
+        "type": "comment",
+        "z": "3bab7d86.a7d252",
+        "name": "if flow.state is true set it to false, if flow.state is false set it to true",
+        "info": "",
+        "x": 580,
+        "y": 1400,
+        "wires": []
     }
 ]
