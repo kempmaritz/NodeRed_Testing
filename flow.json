@@ -1,5 +1,12 @@
 [
     {
+        "id": "139cde0.a086c22",
+        "type": "tab",
+        "label": "Power Meter",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "3bab7d86.a7d252",
         "type": "tab",
         "label": "Example",
@@ -900,7 +907,7 @@
         "type": "ui_tab",
         "name": "Home",
         "icon": "dashboard",
-        "order": 1,
+        "order": 2,
         "disabled": false,
         "hidden": false
     },
@@ -909,7 +916,7 @@
         "type": "ui_tab",
         "name": "GeyserWorx",
         "icon": "fa-shower",
-        "order": 3,
+        "order": 8,
         "disabled": false,
         "hidden": false
     },
@@ -955,7 +962,7 @@
         "type": "ui_tab",
         "name": "Charts",
         "icon": "dashboard",
-        "order": 4
+        "order": 9
     },
     {
         "id": "c467b276.39485",
@@ -998,7 +1005,7 @@
         "type": "ui_tab",
         "name": "Weather",
         "icon": "fa-thermometer-half",
-        "order": 5,
+        "order": 10,
         "disabled": false,
         "hidden": false
     },
@@ -1083,7 +1090,7 @@
         "type": "ui_tab",
         "name": "Irrigation",
         "icon": "call_split",
-        "order": 2
+        "order": 4
     },
     {
         "id": "ada4e0c8.ca2d58",
@@ -1100,7 +1107,8 @@
         "type": "ui_tab",
         "z": "3bab7d86.a7d252",
         "name": "tab2",
-        "icon": "dashboard"
+        "icon": "dashboard",
+        "order": 11
     },
     {
         "id": "b03bb86e.990f38",
@@ -1137,7 +1145,7 @@
         "type": "ui_tab",
         "name": "Dashboard",
         "icon": "dashboard",
-        "order": 1,
+        "order": 3,
         "disabled": false,
         "hidden": false
     },
@@ -1166,6 +1174,7 @@
         "type": "ui_tab",
         "name": "Nest Controller",
         "icon": "fa-thermometer-half",
+        "order": 12,
         "disabled": false,
         "hidden": false
     },
@@ -1204,7 +1213,7 @@
         "type": "ui_tab",
         "name": "Security",
         "icon": "security",
-        "order": 2,
+        "order": 5,
         "disabled": false,
         "hidden": false
     },
@@ -1223,7 +1232,7 @@
         "type": "ui_tab",
         "name": "Scheduler",
         "icon": "autorenew",
-        "order": 2,
+        "order": 6,
         "disabled": false,
         "hidden": false
     },
@@ -1330,6 +1339,103 @@
         "order": 1,
         "disp": true,
         "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "55c643aa.b8e56c",
+        "type": "ui_group",
+        "name": "Power Now",
+        "tab": "185e5816.0d8238",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c9e3da5a.1f1148",
+        "type": "serial-port",
+        "serialport": "COM10",
+        "serialbaud": "250000",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "250",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "",
+        "responsetimeout": ""
+    },
+    {
+        "id": "f1de1a38.2e5178",
+        "type": "ui_group",
+        "name": "Main Incomer",
+        "tab": "a42ed959.8ca628",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "bbfe365f.6cc2f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.244",
+        "port": "1883",
+        "clientid": "Node-Red",
+        "usetls": false,
+        "verifyservercert": true,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": null,
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": null,
+        "willPayload": ""
+    },
+    {
+        "id": "185e5816.0d8238",
+        "type": "ui_tab",
+        "name": "Power Meter",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a42ed959.8ca628",
+        "type": "ui_tab",
+        "name": "Energy Usage",
+        "icon": "dashboard",
+        "order": 7
+    },
+    {
+        "id": "183b81b5.1aff9e",
+        "type": "ui_group",
+        "name": "Power Now",
+        "tab": "185e5816.0d8238",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5febdbe5.0ab974",
+        "type": "ui_group",
+        "name": "Historical",
+        "tab": "185e5816.0d8238",
+        "order": 2,
+        "disp": true,
+        "width": "8",
         "collapse": false
     },
     {
@@ -13872,6 +13978,682 @@
         "info": "",
         "x": 580,
         "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "b02ef332.985ac",
+        "type": "ui_gauge",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "group": "55c643aa.b8e56c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "KW",
+        "label": "KW",
+        "format": "{{value | number:2}}kw",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 830,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d9a0efab.3320a",
+        "type": "change",
+        "z": "139cde0.a086c22",
+        "name": "kw->payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "kw",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "b02ef332.985ac",
+                "ab1d0b85.7b2ac8",
+                "9595a0d1.7bb51",
+                "7de37e7c.e049c"
+            ]
+        ]
+    },
+    {
+        "id": "ab1d0b85.7b2ac8",
+        "type": "ui_text",
+        "z": "139cde0.a086c22",
+        "group": "55c643aa.b8e56c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Last Time",
+        "format": "{{msg.orgtimestamp}}",
+        "layout": "row-spread",
+        "x": 1220,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5ed83012.652b8",
+        "type": "serial in",
+        "z": "139cde0.a086c22",
+        "name": "OWL USB",
+        "serial": "c9e3da5a.1f1148",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "8dabb600.78f9e8",
+                "162475d9.f9416a"
+            ]
+        ]
+    },
+    {
+        "id": "4f6861f0.35fcb",
+        "type": "delay",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "d9a0efab.3320a",
+                "989214e2.30eab8"
+            ]
+        ]
+    },
+    {
+        "id": "2b4492fc.5951ce",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 490,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9595a0d1.7bb51",
+        "type": "ui_gauge",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "group": "f1de1a38.2e5178",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "KW",
+        "label": "KW",
+        "format": "{{value | number:2}}kw",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 950,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7de37e7c.e049c",
+        "type": "ui_chart",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "group": "55c643aa.b8e56c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Incomer",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 2,
+        "x": 1080,
+        "y": 200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "989214e2.30eab8",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "func": "msg.payload = msg.kw;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "aaa1f29f.f7334"
+            ]
+        ]
+    },
+    {
+        "id": "aaa1f29f.f7334",
+        "type": "mqtt out",
+        "z": "139cde0.a086c22",
+        "name": "kW",
+        "topic": "energy/totalPower",
+        "qos": "0",
+        "retain": "true",
+        "broker": "bbfe365f.6cc2f8",
+        "x": 830,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ebe1d243.d924f",
+        "type": "delay",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "e33eced1.18008"
+            ]
+        ]
+    },
+    {
+        "id": "e33eced1.18008",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "func": "msg.payload = msg.amps;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 120,
+        "wires": [
+            [
+                "6e966ccd.2451a4"
+            ]
+        ]
+    },
+    {
+        "id": "6e966ccd.2451a4",
+        "type": "mqtt out",
+        "z": "139cde0.a086c22",
+        "name": "Amps",
+        "topic": "energy/amps",
+        "qos": "0",
+        "retain": "true",
+        "broker": "bbfe365f.6cc2f8",
+        "x": 830,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8dabb600.78f9e8",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 270,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "673cbe8e.1aaac",
+        "type": "serial out",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "serial": "c9e3da5a.1f1148",
+        "x": 500,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "db5d4c5d.0dbca",
+        "type": "comment",
+        "z": "139cde0.a086c22",
+        "name": "Protocol notes",
+        "info": "OWL USB Serial Protocol:\n========================\n\nOnly after USB *cable* disconnect/reconnect is *all* historical data available.  At other times, only UNSENT historical data is available.\n\neach msg received is 11 bytes:\n\n\n['\\xa9', 'I', 'D', 'T', 'C', 'M', 'V', '0', '0', '1', '\\x01']\nIndicates that the device is present, and has not had a response from the PC for a while.\nRespond with 0x5a ('Z') - within 1 second (250ms seems to work ok).\nIF sent > 1s after the IDTC message, the 'Z' will be silently swallowed, then any subsequent 'Z' will work (leading to very confusing results).\n\nThis will cause the OWL to send historical data (lots of data, maybe as much as 32kbytes?)\nThe end of each chunk of historical data is indicated by\n['\\xa9', 'I', 'D', 'T', 'W', 'A', 'I', 'T', 'P', 'C', 'R']\nat which time the Computer can process the received data before returning \n0xa5\nWhich tells the owl to send more historical data.\n\neach 11 byte message consists of a type, plus 9 bytes of information, and a checksum\nthe last byte is the sum of the first 10 bytes.\n\nTypes:\n=====\n81 - Live data\n89 - historical data\n169 - IDTCMV001 or IDTWAITPC\n\nbasic processing:\n\nswitch (type)\n\tcase 81 (dec)\n\t\tstore/display live data\n\t\tbreak\n\tcase 89 (dec)\n\t\tif (message starts with 255,255,255)\n\t\t\tignore\n\t\telse\n\t\t\tplace historical data into historical buffer\n\t\tbreak\n\tcase 169 (dec)\n\t\tif msg contains 001\n\t\t\trespond 90 (dec)\n\t\t\tbreak\n\t\tif msg contains WAIT\n\t\t\tprocess historical buffer\n\t\t\tthen respond 165\n\t\t\tclear historical buffer\n\t\t\tbreak\n\t\tbreak\n}\n\n\n\n\nLive data format:\n=================\ne.g.\n['Q', '\\x10', '\\x0b', '\\x05', '\\n', '\\x15', '\\xe2', '\\x04', '\\x97', '\\x00', '\\r']\n\nAmps = ((data[9] << 8) | data[8])\nWatts = Amps * 0.7 * Voltage.\n\nCostI = (data[7] << 8) | data[6];\ndata[2] & 128 indicates cost should be multiplied by 100.\ndata[2] === 'Data Unit'.\ntime is take as time of reciept?  (time in message is not reliable - may be last time from last historical? - so ignore it).\n\n(note: 'data unit' replaces month.... hence why funny month values...)\n\n\nHistorical data format:\n=======================\ne.g.\n['Y', '\\x10', '\\n', '\\x06', '\\n', '&', '\\xe2', '\\x04', 'l', '\\x00', '\\xfb']\n\ndata[1] is year\ndata[2] & 63 is mon (1-12)\ndata[2] & 64 is 'Data available' if 0 (i.e. it's set on the last one?)\ndata[2] & 128 is 'Tarrif Units'\ndata[3] is day\ndata[4] is hour\ndata[5] is minute\n\nAmps = ((data[9] << 8) | data[8])\nWatts = Amps * 0.7 * Voltage.\n\nCostI = (data[7] << 8) | data[6];\ndata[2] & 128 indicates cost should be multiplied by 100.\n\nAlso observed the following 'bad' message:\n['Y', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\xFF', '\\x80']\n",
+        "x": 270,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "46876bb8.713174",
+        "type": "ui_template",
+        "z": "139cde0.a086c22",
+        "group": "183b81b5.1aff9e",
+        "name": "Counts",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "    <p>Ident: {{msg.payload.ident || '0'}} \n        Wait: {{msg.payload.wait || '0'}} \n        Realtime: {{msg.payload.realtime || '0'}} \n        Historic: {{msg.payload.totalhistoric || '0'}}</p>\n    <p>Duplicates: {{msg.payload.duplicates || '0'}} \n        Unknown: {{msg.payload.unknown || '0'}} \n        Outmsgs: {{msg.payload.outputmessages || '0'}}</p>\n    <p>Count today: {{msg.payload.daypoints || '0'}}</p>\n    <p>Curr Dayname: {{msg.payload.dayname || ''}}</p>\n    <p>Daysback: {{msg.payload.daysback || '0'}} \n    Displayed: {{msg.payload.daysbackdisplayed || '0'}}</p>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 900,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b50e136.1977a",
+        "type": "ui_button",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "group": "183b81b5.1aff9e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "Reset",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "39ce4f51.1f89b"
+            ]
+        ]
+    },
+    {
+        "id": "39ce4f51.1f89b",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "Reset",
+        "func": "var count = {};\nflow.set('count', count);\nmsg.payload = count;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "c910a438.e98c08"
+            ]
+        ]
+    },
+    {
+        "id": "162475d9.f9416a",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "Process CM160",
+        "func": "// first output goes back to serial\n\n// second output carries update data and 'stored'\n// data more recent than last update data\n\n// third output is histroical data - lots at the start,\n// then every minute\n\n// fourth output is unknown messages\n\nvar counts = flow.get('count') || {};\nif (!counts.init){\n    flow.set('count', counts);\n    counts.init = true;\n}\n\nvar historical = flow.get('historical') || {};\nif (!historical.init){\n    flow.set('historical', historical);\n    historical.init = true;\n    historical.data = [];\n}\n\n\nvar procmess = function(a, msg, realtime){\n    msg.receivedat = new Date();\n    if (!realtime){\n        var year    = 2000 + a[1];\n        var month   = a[2] & 0x3f;\n        var day     = a[3];\n        var hour    = a[4];\n        var minute  = a[5];\n        \n        if ((year < 2050) && (month < 13) && (day < 32) && (hour < 24) && (minute < 60)){\n        } else {\n            year    = 2000 + (a[1] & 0x7f);\n            month   = a[2] & 0xf;\n            day     = a[3] & 0x1f;\n            hour    = a[4] & 0x1f;\n            minute  = a[5] & 0x3f;\n\n            var nmsg = {};\n            nmsg.payload = \"invalid date in \" + a;\n            node.send([null, null, null, null, nmsg]);\n        }\n        \n        msg.orgtimestamp = new Date(year, month - 1, day, hour, minute, 0, 0);\n        msg.realtime = false;\n        msg.islast = a[2] & 0x40;\n    } else {\n        msg.orgtimestamp = msg.receivedat;\n        msg.data_unit = a[2];\n        msg.realtime = true;\n    }\n    \n    msg.cost    = a[6] + (a[7] << 8);\n    msg.cost    = msg.cost/100;\n    if (a[2] & 0x80)\n        msg.cost = msg.cost*100;\n    msg.amps    = (a[8] + (a[9] << 8))  *0.07;\n    msg.kw      = Math.floor(msg.amps * 230 ) / 1000;\n}\n\nvar all = new Uint8Array(msg.payload);\n\n//console.log(all.length);\n\n\nvar process_historical = function(){\n    var histcount = historical.data.length;\n    \n    if (histcount){\n        var start = new Date();\n        //console.log(\"process \" + histcount + \" messages at \", start);\n        \n        var out = [];\n        \n        for (var i = 0; i < histcount; i++){\n            var a = historical.data[i];\n            var newmsg = {};\n    \n            newmsg.data = a;\n            newmsg.type = 'stored';\n            procmess(a, newmsg, false);\n            counts.stored = (counts.stored || 0) + 1;\n            \n            point = [];\n            point.push(newmsg.orgtimestamp.valueOf());\n            point.push(newmsg.kw);\n            \n            out.push(point);\n        }\n    \n        var end = new Date();\n        console.log(\"processed \" + histcount + \" messages in \" + (end - start) + \"ms\");\n    \n        var msg = {};\n        msg.payload = out;\n        // send on stored output only\n        node.send([null, null, null, msg, null]);\n    }\n    historical.data = [];\n}\n\n\nvar ProcessData = function(a){\n    switch (a[0]){\n    // if it is an update message\n        case 0x51:{ //'Q'\n            var newmsg = {};\n            newmsg.data = a;\n            newmsg.type = 'update';\n            procmess(a, newmsg, true);\n            context.lastrealtime = newmsg;\n            counts.realtime = (counts.realtime || 0) + 1;\n            // send on update output\n            node.send([null, newmsg, null, null, null]);\n            break;\n        }\n    \n        case 0x59:{ //'Y'\n            var process = true;\n            // ignore observed bad message\n            if (a[1] === 255){\n                if (a[2] === 255){\n                    if (a[3] === 255){\n                        process = false;    \n                    }\n                }\n            }\n            if (process){\n                historical.data.push(a);\n            }\n            break;\n        }\n    \n        case 0xA9:{//\n            switch(a[4]){\n                // if a waiting message\n                case 0x57:{ //'IDTWAITPC'\n                    // process gathered historical\n                    process_historical();\n                    var newmsg = {};\n                    newmsg.topic = \"\";\n                    // send a5 on serial\n                    newmsg.payload = Buffer([0xa5]); //\n                    counts.wait = (counts.wait || 0) + 1;\n                    // send back to serial\n                    node.send([newmsg, null, null, null, null]);\n                    break;\n                }\n            \n                // if an ident message\n                case 0x43:{ //'IDTCMV001'\n                    var newmsg = {payload:\"Z\", topic:\"msg1\"};\n                    // send 5a on serial\n                    counts.ident = (counts.ident || 0) + 1;\n                    //newmsg.payload = Buffer([0x5a]); //\n\n                    // send back to serial\n                    node.send([newmsg, null, null, null, null]);\n\n                    //var newmsg2 = {payload:\"Z\", topic:\"msg2\"};\n                    //console.log(\"send 2nd msg\");\n                    //node.send([newmsg2, null, null, null, null]);\n                    break;\n                }\n                \n                default:{\n                    var newmsg = {};\n                    newmsg.data = a;\n                    newmsg.type = a[4];\n                    counts.unknown = (counts.unknown || 0) + 1;\n                    // send 'unknown' output\n                    node.send([null, null, null, null, newmsg]);\n                break;\n                }\n            }\n            break;\n        }\n    \n        default:{\n            // we did not recognise it.\n            var newmsg = {};\n            newmsg.data = a;\n            newmsg.here = true;\n            counts.unknown = (counts.unknown || 0) + 1;\n            \n            // send 'unknown' output\n            node.send([null, null, null, null, newmsg]);\n            break;\n        }\n    }\n}\n\n\ncounts.unknown = (counts.unknown || 0);\n\nvar orgun  = counts.unknown;\nfor (var posn = 0; posn < all.length; posn += 11){\n    var a = all.slice(posn, posn+11);\n    ProcessData(a);\n}\n\n//console.log(\"Msgs: \" + all.length/11 + \" Unknown \" + (counts.unknown - orgun));\n",
+        "outputs": "5",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "2b4492fc.5951ce",
+                "673cbe8e.1aaac"
+            ],
+            [
+                "4395f14e.b152b",
+                "ebe1d243.d924f",
+                "4f6861f0.35fcb"
+            ],
+            [
+                "aff96065.71eb7"
+            ],
+            [
+                "a22fea27.877278"
+            ],
+            [
+                "6b935057.b7db5"
+            ]
+        ],
+        "outputLabels": [
+            "Serial Output",
+            "Live Data",
+            "",
+            "Historical Data",
+            "Unknown Messages"
+        ]
+    },
+    {
+        "id": "c910a438.e98c08",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "read flow counts",
+        "func": "var store = (flow.get('store') || []);\n\nmsg.payload = flow.get('count') || {};\nmsg.payload.storecount = store.length;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "46876bb8.713174",
+                "b0c9fba8.036268"
+            ]
+        ]
+    },
+    {
+        "id": "d8e5c40f.ca0eb8",
+        "type": "ui_slider",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "label": "days back",
+        "tooltip": "",
+        "group": "5febdbe5.0ab974",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "sendgraph",
+        "min": "0",
+        "max": "30",
+        "step": 1,
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "d84224a6.5cbcf8",
+                "53bdda85.3da714"
+            ]
+        ]
+    },
+    {
+        "id": "53bdda85.3da714",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "storedaysback",
+        "func": "flow.set('daysback', msg.payload);\nvar count = flow.get('count')||{};\ncount.daysback = msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "6261445f.e6d99c"
+            ]
+        ]
+    },
+    {
+        "id": "d84224a6.5cbcf8",
+        "type": "ui_text",
+        "z": "139cde0.a086c22",
+        "group": "5febdbe5.0ab974",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Days Back display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 930,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4395f14e.b152b",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6261445f.e6d99c",
+        "type": "delay",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "3e681459.ddb0ec"
+            ]
+        ]
+    },
+    {
+        "id": "1729842.0b08c7c",
+        "type": "inject",
+        "z": "139cde0.a086c22",
+        "name": "1 Sec",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "c910a438.e98c08",
+                "3e681459.ddb0ec"
+            ]
+        ]
+    },
+    {
+        "id": "b0c9fba8.036268",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 910,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a22fea27.877278",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "store values",
+        "func": "\nvar store = (flow.get('stores') || []);\nif (store.length === 0)\n    flow.set('stores', store);\nvar counts = flow.get('count') || {};\n\nvar maxtime = 1440; // 2 hours\nvar maxcount = 43200; // 30 days\n\nvar finddatetimefromend = function( data, t ){\n    var len = data.length;\n    var t1 = t.valueOf();\n    \n    for (var x = len-1; x >= 0; x--){\n        if (data[x][0] <= t1){\n            return x;\n        }\n    }\n    return len;\n}\n\n\n// payload is an array of points.\n\n// split it into days/runs of ordered dates\nvar oneday = 86400000;\n\n// if a new day, just assign.\n// else\n// if first is after last in the day found, just append\n// else \n// if last is before first in the day found, just pre-pend\n// else find time (expect 1 minute intervals, jump then search)\n// and insert checking for duplicates\n\n\nconsole.log(\"payload len = \");\nconsole.log(\" = \" + msg.payload.length);\n\nvar changeday = true;\nvar dayzero = 0;\nvar nextday = 0;\n\nvar day = { updated: false, data: [] };\ncounts.duplicates = (counts.duplicates || 0);\ncounts.totalhistoric = (counts.totalhistoric || 0);\ncounts.totalhistoric += msg.payload.length;\n\nfor (var i = 0; i < msg.payload.length; i++){\n    var point = msg.payload[i];\n\n    if ((point[0] < dayzero) || (point[0] >= nextday)){\n        var p0 = msg.payload[i];\n        var d0 = Math.floor(p0[0]/oneday);\n        d0 = d0 * oneday;\n        dayzero = d0;\n        nextday = dayzero + oneday;\n        changeday = true;\n    }\n\n    var fname = dayzero;\n    //console.log(\"then = \" + fname);\n    \n    if (changeday){\n        changeday = false;\n        day = { updated: false, data: [] };\n        if (store[fname]){\n            console.log(\"found \" + fname);\n            day = store[fname];\n        } else {\n            // create a new day\n            store[fname] = day;\n            console.log(\"new \" + fname);\n        }\n        \n        counts.dayname = fname;\n        \n        if (day.updated === undefined){\n            day.updated = false;\n        }\n        if (day.data === undefined){\n            day.data = [];\n        }\n        \n        var name = fname + \".json\";\n        //console.log(\"store file \" + name);        \n        \n        if (day.data.length === 0){\n            var fs = global.get('fs');\n            try{\n                fs.accessSync(name, fs.constants.R_OK);\n                console.log(\"store access file ok \" + name);        \n                var x = fs.readFileSync(name);\n                console.log(\"store read file ok \" + name);        \n                day = JSON.parse(x);\n                console.log(\"store parse file ok \" + name);        \n            } catch(e) {\n                console.log(\"store Failed (\"+ e + \") to access file \" + name);        \n            }\n        }\n        day.updated = true;\n        // mark it as recently used\n        day.age = 0;\n    }\n\n    var posn = finddatetimefromend(day.data, point[0]);\n    \n    if (posn === day.data.length){\n        day.data.push(point);\n        //console.log(\"set updated \" + name);        \n    } else {\n        //insert after posn\n        if (point[0] !== day.data[posn][0]){\n            day.data.splice(posn+1, 0, point);\n            //console.log(\"set updated \" + name);        \n        } else {\n            counts.duplicates++;\n            //console.log(\"duplicate \" + name);        \n        }\n    }\n}\n\n\ncounts.daypoints = day.data.length;\nreturn;\n",
+        "outputs": "1",
+        "noerr": 0,
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e681459.ddb0ec",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "store",
+        "func": "var store = (flow.get('stores') || []);\nvar counts = flow.get('count') || {};\n\n\nvar maxtime = 1440; // 2 hours\nvar maxcount = 43200; // 30 days\n\nvar daysback = counts.daysback || 0;\n\nif (msg.topic === 'resetstore'){\n    store = [];\n    flow.set('stores', store);\n    console.log(\"stores reset\");\n    return;\n}\n\ncounts.daysrepeat = counts.daysrepeat || 0;\n\n// if we displayed this day, the only \n// re-display every 30 seconds\nif (daysback === counts.daysbackdisplayed){\n    counts.daysrepeat++;\n    if (counts.daysrepeat < 30){\n        return;\n    }\n}\ncounts.daysrepeat = 0;\n\n\nvar finddatetimefromend = function( data, t ){\n    var len = data.length;\n    var t1 = t.valueOf();\n    \n    for (var x = len-1; x >= 0; x--){\n        if (data[x][0] <= t1){\n            return x;\n        }\n    }\n    return len;\n}\n\nvar finddatetimefromstart = function( data, t ){\n    var len = data.length;\n    var t1 = t.valueOf();\n    \n    for (var x = 0; x < len; x++){\n        if (data[x][0] >= t1){\n            return x;\n        }\n    }\n    return len;\n}\n\n\nvar out = 1;\n\n\n\n\nvar now = new Date();\nnow.setDate(now.getDate() - daysback);\nvar then = new Date(now);\nnow.setHours(0,0,0,0);\nthen.setHours(23,59,59,999);\nvar fname = now.valueOf();\n\nvar day = { updated: false, data: [] };\nif (store[fname]){\n    day = store[fname];\n}\n\nif (day.updated === undefined){\n    day.updated = false;\n}\nif (day.data === undefined){\n    day.data = [];\n}\n\nvar name = fname + \".json\";\nconsole.log(\"to read file \" + name + \" because \" + now + \" - days \" + daysback);        \n\nif (day.data.length === 0){\n    var fs = global.get('fs');\n    try{\n        fs.accessSync(name, fs.constants.R_OK);\n        console.log(\"access file ok \" + name);        \n        var x = fs.readFileSync(name);\n        console.log(\"read file ok \" + name);        \n        day = JSON.parse(x);\n        console.log(\"parse file ok \" + name);        \n        day.updated = false;\n        console.log(\"update reset ok \" + name);        \n       // create a new day\n        store[fname] = day;\n    } catch(e) {\n        console.log(\"Failed (\"+ e + \") to access file \" + name);        \n    }\n}\n\n\nvar line2  = { values: [] };\nvar pfirst = [ now.valueOf(), 0 ];\nvar plast  = [ then.valueOf(), 0 ];\nline2.values.push(pfirst);\nline2.values.push(plast);\n\n// mark it as recently used\nday.age = 0;\n\n\nvar payload = {};\n\npayload.values = day.data;\n//console.log(payload.values.length);\npayload.key = 'KW';\n\nvar kwhtotal = 0;\n\nif (payload.values.length){\n    var lasttime = payload.values[0][0];\n    for(var i = 1; i < payload.values.length; i++)\n    {\n        kwhtotal = kwhtotal + \n            payload.values[i][1]*\n                (payload.values[i][0] - lasttime)/\n                    (1000*60*60);\n        lasttime = payload.values[i][0];\n    }\n}\n\n\n\nfunction convertDate(inputFormat) {\n  function pad(s) { return (s < 10) ? '0' + s : s; }\n  var d = new Date(inputFormat);\n  return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/');\n}\n\nvar kwt = Math.floor(kwhtotal * 10)/10;\nmsg1 = {};\nmsg1.payload = {kwhtotal: kwt, day: convertDate(now)};\n\nmsg.payload = [];\nmsg.payload.push(payload);\nmsg.payload.push(line2);\nmsg.topic = 'restore';\n\ncounts.daysbackdisplayed = daysback;\n\nreturn [msg, msg1];\n",
+        "outputs": "2",
+        "noerr": 0,
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [],
+            [
+                "b0c9fba8.036268",
+                "e43152.c234eeb"
+            ]
+        ]
+    },
+    {
+        "id": "67037bf7.2293c4",
+        "type": "function",
+        "z": "139cde0.a086c22",
+        "name": "read/write store",
+        "func": "var store = (flow.get('stores') || []);\nvar keys = Object.keys(store);\n//console.log(\"check \" + keys);\n\nfor (var i = 0; i < keys.length; i++){\n    //console.log(\"check \" + keys[i] + '.json');\n    if (store[keys[i]].updated){\n        var fs = global.get('fs');\n        store[keys[i]].updated = false;\n        // rest age if we ever get updated; don't want to delete the current day!\n        store[keys[i]].age = 0;\n        \n        fs.writeFile( keys[i] + '.json', JSON.stringify(store[keys[i]], null, 1), function(){});\n        console.log(\"wrote \" + keys[i] + '.json');\n        break;\n    }\n}\n\n// clear up days which have not been used for a while (100 calls here) \nfor (var j = 0; j < keys.length; j++){\n    if (store[keys[j]].age === undefined){\n        store[keys[j]].age = 0;\n    }\n    store[keys[j]].age++;\n    \n    if (store[keys[j]].age > 100){\n        delete store[keys[j]];\n        msg = {payload: \"deleted memory for day \" + keys[j]};\n        node.send(msg);\n    }\n}\n\n\nreturn;",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "3f438fa5.7f0f2"
+            ]
+        ]
+    },
+    {
+        "id": "8a1faba7.5fb198",
+        "type": "inject",
+        "z": "139cde0.a086c22",
+        "name": "5 Sec trigger store to disk",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "topic": "trigger",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 460,
+        "wires": [
+            [
+                "67037bf7.2293c4"
+            ]
+        ]
+    },
+    {
+        "id": "3f438fa5.7f0f2",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e43152.c234eeb",
+        "type": "ui_template",
+        "z": "139cde0.a086c22",
+        "group": "5febdbe5.0ab974",
+        "name": "KW in graph",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<p><b>Total KWh for Day: {{msg.payload.kwhtotal}}</b></p>\n<p>Date Shown: {{msg.payload.day}}</p>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 910,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aff96065.71eb7",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 490,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6b935057.b7db5",
+        "type": "debug",
+        "z": "139cde0.a086c22",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 490,
+        "y": 220,
         "wires": []
     }
 ]
